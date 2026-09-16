@@ -1,0 +1,4080 @@
+{
+  "unit": "one complete model response checked against the supplied legal pages and stipulated facts",
+  "rationale_status": {
+    "consistent": "No definite substantive error identified; does not certify completeness or full legal correctness.",
+    "substantive_error": "A definite legal, factual, temporal, quantitative or scope error is present.",
+    "indeterminate": "The terse or ambiguous explanation cannot be confidently classified."
+  },
+  "alignment": {
+    "aligned": "The stated substantive explanation supports the returned label, even if the explanation misreads the law.",
+    "misaligned": "The substantive explanation supports a different label under the task conventions.",
+    "indeterminate": "The explanation is incomplete, internally inconsistent, or does not resolve the label."
+  },
+  "classification_phrase_policy": "Generic phrases such as \"the claim is supported\" are not independently counted as legal errors; assess the accompanying substantive proposition.",
+  "records": [
+    {
+      "split": "heldout",
+      "case_id": "ADD05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation correctly describes the over-100-ton anchoring prohibition but labels the matching prohibition claim CONTRADICTED.",
+      "reference_pages": [
+        "ADD:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation correctly describes the over-100-ton anchoring prohibition but labels the matching prohibition claim CONTRADICTED.",
+      "reference_pages": [
+        "ADD:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The threshold and conditional prohibition are stated accurately; the conclusion that this contradicts the prohibition claim does not follow.",
+      "reference_pages": [
+        "ADD:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation describes an express exception but does not supply any reason it applies when the claim expressly excludes those authorisations; no definite false legal proposition is separately stated.",
+      "reference_pages": [
+        "ADD:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The reason describes a necessary permit but omits the decisive SICZ vessel-fishing prohibition; necessity alone does not resolve sufficiency.",
+      "reference_pages": [
+        "ADD:p12"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The reason describes a necessary permit but omits the decisive SICZ vessel-fishing prohibition; necessity alone does not resolve sufficiency.",
+      "reference_pages": [
+        "ADD:p12"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "zone_scope",
+        "cross_reference"
+      ],
+      "note": "Regulation 9(2) bans vessel fishing in SICZ and CPICZ without a permit exception; the response inserts a without-a-permit condition.",
+      "reference_pages": [
+        "ADD:p12"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "zone_scope",
+        "cross_reference"
+      ],
+      "note": "The response inserts a permit exception into regulation 9(2) and assigns the vessel-fishing ban to 9(3), which instead addresses CPICZ diving.",
+      "reference_pages": [
+        "ADD:p12"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "ADD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The stated vessel certificates and activity requirements occur on the page but do not explain the claimed limits on residual authorisation.",
+      "reference_pages": [
+        "ADD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "ADD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "ADD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason correctly identifies absent fishing-pressure data, which warrants INSUFFICIENT under the frozen evidential convention; the document-proves wording also admits a competing literal reading.",
+      "reference_pages": [
+        "ADD:p6",
+        "ADD:p12"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "ADD:p6",
+        "ADD:p12"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "ADD:p6",
+        "ADD:p12"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "ADD08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "ADD:p6",
+        "ADD:p12"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "Amended regulation 4(1) explicitly retains the permit required for operating or attempting to operate a SCUBA business, contrary to the reason.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "Amended regulation 4(1) explicitly retains the permit required for operating or attempting to operate a SCUBA business, contrary to the reason.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The response says the no-permit prohibition was removed while also describing a permit requirement; substituted 4(1) expressly retains that prohibition.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The draft proposes removal of the individual-diving requirement, but the terse explanation does not establish the claimed enactment.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "temporal_validity"
+      ],
+      "note": "The reason gives operative effect to the draft on publication and then labels that same enactment claim contradicted.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The reason treats the retained business permit as contradicting removal of the individual-diving requirement and does not resolve the draft-status distinction.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The reason treats the retained business permit as contradicting removal of the individual-diving requirement and does not resolve the draft-status distinction.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The business permit requirement is compatible with the source, but does not determine whether this particular business received a permit.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The business permit requirement is compatible with the source, but does not determine whether this particular business received a permit.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "invented_individual_fact",
+        "actor_scope"
+      ],
+      "note": "The amendment requires a permit; it does not confirm that no permit was issued, as the response states.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "AMA08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "invented_individual_fact"
+      ],
+      "note": "The permit requirement is retained, and an application procedure neither abolishes it nor establishes that no permit was issued to this business.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "source_content"
+      ],
+      "note": "Regulation 8(3) expressly addresses a vessel deploying divers and its alpha flag; the response denies that the provision concerns vessels.",
+      "reference_pages": [
+        "DWE:p7"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "source_content"
+      ],
+      "note": "Regulation 8(3) expressly addresses a vessel deploying divers and its alpha flag; the response denies that the provision concerns vessels.",
+      "reference_pages": [
+        "DWE:p7"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "DWE:p7"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "DWE:p7"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation correctly states that the consultation draft is not operative without final enactment, which refutes the claim that the draft alone suffices.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation correctly states that the consultation draft is not operative without final enactment, which refutes the claim that the draft alone suffices.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "DWE:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason states the scientific-research permit requirement, supporting the claim it labels CONTRADICTED.",
+      "reference_pages": [
+        "DWE:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "DWE:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "DWE:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "DWE08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "indeterminate",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The answer invokes missing information on an outside collection process rather than resolving whether the Minister must consider outside collection.",
+      "reference_pages": [
+        "PEC:p7",
+        "PEC:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation says outside collection circumstances must be considered by the Minister, supporting the proposition it labels INSUFFICIENT.",
+      "reference_pages": [
+        "PEC:p7",
+        "PEC:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "cross_reference"
+      ],
+      "note": "The outside-collection criterion is regulation 7(6)(d), not regulation 7(5) as stated; the substantive duty and label are otherwise correct.",
+      "reference_pages": [
+        "PEC:p7",
+        "PEC:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "cross_reference"
+      ],
+      "note": "The outside-collection criterion is regulation 7(6)(d), not regulation 7(5) as stated; the substantive duty and label are otherwise correct.",
+      "reference_pages": [
+        "PEC:p7",
+        "PEC:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "activity_scope"
+      ],
+      "note": "The reason substitutes VMS operation for hook stowage and states an unqualified fishing VMS requirement; the supplied rule applies to vessels required by law to have VMS when entering or traversing with gear.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason repeats the exact three-working-day duty that supports the claim, but returns CONTRADICTED or INSUFFICIENT.",
+      "reference_pages": [
+        "PEC:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason repeats the exact three-working-day duty that supports the claim, but returns CONTRADICTED or INSUFFICIENT.",
+      "reference_pages": [
+        "PEC:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "PEC:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "PEC:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PEC08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "indeterminate",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The missing coral-cover data conclusion is clear, but the opening reference to instruments prohibiting fishing is too broad to determine whether conditional restrictions or a categorical ban is intended.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The explanation correctly describes the original individual and business requirements, but does not address whether the supplied 2024 substitution retains the business requirement.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The explanation correctly describes the original individual and business requirements, but does not address whether the supplied 2024 substitution retains the business requirement.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "actor_scope",
+        "cross_reference"
+      ],
+      "note": "Deleted regulation 8 concerns individual diving, while substituted regulation 9 retains the business permit. The explanation both acknowledges a remaining permit mandate and claims it is nullified.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "actor_scope",
+        "cross_reference"
+      ],
+      "note": "Deleted regulation 8 concerns individual diving, while substituted regulation 9 retains the business permit. The explanation both acknowledges a remaining permit mandate and claims it is nullified.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The draft includes a proposed individual-permit removal, but stating proposed content does not establish enactment; the reason does not distinguish the two.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity"
+      ],
+      "note": "The response treats the consultation draft as removing the permit requirement upon publication, although the publication is an invitation for comments.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The explanation uses the proposed business permit requirement to contradict removal of a separate individual-diving requirement, conflating actors rather than resolving draft status.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The explanation uses the proposed business permit requirement to contradict removal of a separate individual-diving requirement, conflating actors rather than resolving draft status.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "claim_scope"
+      ],
+      "note": "The claim concerns the permit required for the business; the explanation invents a contrast with an individual SCUBA permit that the claim does not assert.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "Application and fee requirements in the original provision do not establish whether this business applied or received its permit; the reason does not identify such facts.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "PON08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "cross_reference",
+        "invented_individual_fact"
+      ],
+      "note": "The deleted provision is the individual-diving rule; the response incorrectly removes the retained business permit and infers that no such permit exists.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "indeterminate",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "Removal of an unspecified SCUBA permit is ambiguous between the deleted individual requirement and the retained business requirement; the reason does not resolve the claim actor.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "indeterminate",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The reason refers to original diving permission and subsequent permits without specifying actors or the transitional date, so its historical assertion and relation to the business claim cannot be resolved confidently.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The draft does propose removal of the individual requirement, but describing the proposal does not establish that it was enacted; the terse reason does not explicitly make that distinction.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The draft does propose removal of the individual requirement, but describing the proposal does not establish that it was enacted; the terse reason does not explicitly make that distinction.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The reason treats retaining a business permit as evidence against the proposed removal of the individual requirement; these concern different actors.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The reason treats retaining a business permit as evidence against the proposed removal of the individual requirement; these concern different actors.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The amended provision retains the business-operation permit; the response instead describes removal of the prohibition and does not resolve actual issuance.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "In the business context both original and amended instruments impose a permit requirement; that fact alone does not resolve issuance to this business.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason correctly identifies a permit requirement and absence of an individual issuance record; that combination supports INSUFFICIENT rather than a negative factual determination.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "STI08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason correctly identifies a permit requirement and absence of an individual issuance record; that combination supports INSUFFICIENT rather than a negative factual determination.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason explicitly says the amended business permit remains required, supporting the claim labelled CONTRADICTED.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity",
+        "actor_scope"
+      ],
+      "note": "The amended provision requires a business permit, while the original individual-diving regulation 8 is deleted; the response presents both as current requirements.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "Substituted regulation 9(1) expressly requires a permit for the business; the response incorrectly treats deletion of the separate regulation or wording of permit issuance as removal of this requirement.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "Substituted regulation 9(1) expressly requires a permit for the business; the response incorrectly treats deletion of the separate regulation or wording of permit issuance as removal of this requirement.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "indeterminate",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The reason calls the instrument a draft but says it repeals the permit requirement; it does not distinguish proposed text from operative enactment clearly enough for a separate substantive-error decision.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "Identifying the supplied instrument as a draft that is not enacted directly contradicts the claim of enactment; it does not warrant INSUFFICIENT.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "source_content"
+      ],
+      "note": "The draft proposes deletion of individual-diving regulation 8 and retains a business permit in proposed regulation 9; the reason reverses this distinction and does not rely on the decisive draft status.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "source_content"
+      ],
+      "note": "The draft proposes deletion of individual-diving regulation 8 and retains a business permit in proposed regulation 9; the reason reverses this distinction and does not rely on the decisive draft status.",
+      "reference_pages": [
+        "DRF:p1"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "actor_scope",
+        "temporal_validity"
+      ],
+      "note": "The answer carries forward both individual and business permits after amendment and does not establish whether the named business received its permit.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The amended application authority is the Manager, not the Minister; the reason otherwise identifies missing issuance evidence, which supports INSUFFICIENT.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TMN08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope",
+        "source_content"
+      ],
+      "note": "The amendment retains application to the Manager and possible conditions, contrary to the stated change to the Minister and absence of conditions; missing issuance evidence supports INSUFFICIENT.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "claim_scope",
+        "activity_scope"
+      ],
+      "note": "The response substitutes longline, purse-seine and rock-lobster gear issues for a claim about the express shore-only/vessel-fishing restriction.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "activity_scope",
+        "cross_reference"
+      ],
+      "note": "The response substitutes the fish-species cumulative limit in 8(5)(a) for the bait-halving rule in 8(6), although its label is correct.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The substantive rule quoted is the same halving-and-rounding rule in the claim; no different rule is established despite the CONTRADICTED label.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p9"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "invented_individual_fact",
+        "claim_scope"
+      ],
+      "note": "Absence of explicit swimming permission in general rules does not establish that a separate, unsupplied site rule restricts this visitor.",
+      "reference_pages": [
+        "TSI:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "TSI08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "TSI:p5"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "exception_scope",
+        "cross_reference"
+      ],
+      "note": "The shark prohibition is 8(3), expressly subject to 8(4); 8(4) provides the shore catch-and-release exception instead of prohibiting it.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH05",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "exception_scope",
+        "cross_reference"
+      ],
+      "note": "The shark prohibition is 8(3), expressly subject to 8(4); 8(4) provides the shore catch-and-release exception instead of prohibiting it.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH05",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH06",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH06",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "UTH:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH07",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "source_content"
+      ],
+      "note": "The response denies that the page identifies GPS data, although regulation 5(6) expressly specifies a GPS mapping device with an active trail and seven-day GPS data retention.",
+      "reference_pages": [
+        "UTH:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "UTH:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH07",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "UTH:p8"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason identifies the insufficiency of normative restrictions for ecological conclusions; under the frozen missing-observation convention this supports INSUFFICIENT, with competing literal wording acknowledged separately.",
+      "reference_pages": [
+        "UTH:p8",
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH08",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason identifies the insufficiency of normative restrictions for ecological conclusions; under the frozen missing-observation convention this supports INSUFFICIENT, with competing literal wording acknowledged separately.",
+      "reference_pages": [
+        "UTH:p8",
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The explanation is compatible with the supplied rule and stipulated facts and supports its label; no definite substantive error identified.",
+      "reference_pages": [
+        "UTH:p8",
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "heldout",
+      "case_id": "UTH08",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason correctly explains that activity restrictions do not establish ecological outcomes; its CONTRADICTED label differs from the frozen evidence-gap convention.",
+      "reference_pages": [
+        "UTH:p8",
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "permit_conjunction"
+      ],
+      "note": "The explanation treats the Minister permit alone as satisfying regulation 3(1), omitting the cumulative management-authority permit.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "invented_stipulated_fact"
+      ],
+      "note": "The explanation invents water-skiing and geographic-coordinate requirements as part of the claim; neither is a stipulated condition of this research-permit question.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "permit_conjunction"
+      ],
+      "note": "The explanation substitutes either/or for the cumulative permits in regulation 3(1), while also asserting a second requirement; the explanation is internally inconsistent.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "permit_conjunction"
+      ],
+      "note": "The explanation substitutes either/or for the cumulative permits in regulation 3(1), while also asserting a second requirement; the explanation is internally inconsistent.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "indeterminate",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The reason acknowledges both issuing authorities but refers generally to applications under section 83. Source regulation 3(2) applies that route to the Minister, whereas 3(3) gives the management authority its own form; the terse wording does not make clear whether the former route is incorrectly extended to both. Its substantive dual-authority account supports the claim labelled contradicted.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "permit_conjunction"
+      ],
+      "note": "The explanation changes the claim to simultaneous issuance and treats separate applications as grounds for uncertainty; the text concerns possession of both permits, not simultaneous processing.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "permit_conjunction"
+      ],
+      "note": "The explanation explicitly denies the cumulative Minister and management-authority permit requirement.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "permit_conjunction"
+      ],
+      "note": "The explanation explicitly denies the cumulative Minister and management-authority permit requirement.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation explicitly states that the claim is contradicted by the port-authorisation exception, but the returned label is SUPPORTED.",
+      "reference_pages": [
+        "ADD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The substantive explanation correctly recognises the anchoring exception, which refutes the continuing-prohibition claim despite the SUPPORTED label.",
+      "reference_pages": [
+        "ADD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "ADD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "ADD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "indeterminate",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The reference to a missing permit application process is ambiguous: the supplied regulation describes an application route, but the individual application history is missing.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "permit_conjunction"
+      ],
+      "note": "Abstention about issuance is appropriate, but the explanation incorrectly describes the two permits as alternatives.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "ADD04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "permit_conjunction"
+      ],
+      "note": "Abstention about issuance is appropriate, but the explanation incorrectly describes the two permits as alternatives.",
+      "reference_pages": [
+        "ADD:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity"
+      ],
+      "note": "Original regulation 4(1)(a) prohibits individual diving without a permit; the response says the opposite at the historical date.",
+      "reference_pages": [
+        "AMA:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity"
+      ],
+      "note": "Original regulation 4(1)(a) prohibits individual diving without a permit; the response says the opposite at the historical date.",
+      "reference_pages": [
+        "AMA:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The substantive account of the original individual permit and later business-only substitution is compatible with the sources, but supports the historical claim.",
+      "reference_pages": [
+        "AMA:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "temporal_validity"
+      ],
+      "note": "The reason incorrectly concludes that no individual permit provision remains before the amendment.",
+      "reference_pages": [
+        "AMA:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "indeterminate",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The phrase removes SCUBA diving without a permit from regulations is too ambiguous to establish its intended legal proposition.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "Substituted regulation 4(1) retains the business permit, whereas the explanation states it is removed and thereby supports the claim it labels contradicted.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "Substituted regulation 4(1) retains the business permit, whereas the explanation states it is removed and thereby supports the claim it labels contradicted.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity",
+        "actor_scope",
+        "invented_individual_fact"
+      ],
+      "note": "The answer carries forward an individual permit prohibition after substitution and uses it to infer noncompliance with separate, unsupplied site-access rules.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity",
+        "actor_scope",
+        "invented_individual_fact"
+      ],
+      "note": "The answer carries forward an individual permit prohibition after substitution and uses it to infer noncompliance with separate, unsupplied site-access rules.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity",
+        "actor_scope",
+        "invented_individual_fact"
+      ],
+      "note": "The answer says the amendment confirms an individual permit prohibition, then infers private-diver noncompliance without the separate rules.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "AMA04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "invented_individual_fact"
+      ],
+      "note": "Removal of the individual permit provision does not establish that private diving is prohibited or that separate access rules do not exist.",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "claim_scope"
+      ],
+      "note": "The claim concerns whether a 10-knot operation is prohibited, not whether the speed limit is 10 knots; the stated 8-knot limit supports prohibition.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "claim_scope"
+      ],
+      "note": "The response rewrites the claim as saying the operation is allowed; its correct rule explanation supports the actual prohibition claim.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation explicitly states that this operation is prohibited, which supports the claim rather than contradicting it.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity",
+        "cross_reference"
+      ],
+      "note": "The 8-knot emergency exception is in the new 2024 regulation 10(6), not the original regulation as stated.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "DWE04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "cross_reference"
+      ],
+      "note": "The allowed fishing methods are correctly identified, but regulation 3 is incorrectly invoked as a coral-disturbance prohibition; it is the scientific-research provision.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "activity_scope"
+      ],
+      "note": "The explanation treats fishing as categorically prohibited and ignores the expressly authorised large-pelagic longline activity.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "activity_scope"
+      ],
+      "note": "The explanation claims the supplied provisions do not address the specified activity, although regulation 7(2)(a) expressly identifies it.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "exception_scope"
+      ],
+      "note": "The explanation reverses the default coral restriction, saying coral fishing is allowed unless prohibited; the source prohibits it subject to regulation 3.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "A general coral prohibition is accurately mentioned, but its research qualification is not discussed, so the explanation does not resolve the absolute-prohibition claim.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "cross_reference"
+      ],
+      "note": "Scientific research is incorrectly attributed to regulation 7(2); the relevant route is the cross-reference to regulation 3 in 7(3).",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "invented_individual_fact"
+      ],
+      "note": "The explanation concludes that Vessel A cannot catch the target species despite neither the species nor its permit conditions being supplied.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PEC04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "activity_scope"
+      ],
+      "note": "The explanation overstates the Annexure 2 restriction as governing the permit generally, ignoring the separate large-pelagic longline alternative in 7(2)(a).",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation acknowledges the original individual permit requirement but returns CONTRADICTED for that historical claim.",
+      "reference_pages": [
+        "PON:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation acknowledges the original individual permit requirement but returns CONTRADICTED for that historical claim.",
+      "reference_pages": [
+        "PON:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "temporal_validity"
+      ],
+      "note": "The explanation says deletion removes the requirement before the amendment takes effect, while also acknowledging the original requirement.",
+      "reference_pages": [
+        "PON:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The description of deletion as of the amendment effective date is accurate; it does not contradict the pre-amendment claim.",
+      "reference_pages": [
+        "PON:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "Regulation 8 concerns individual diving; the response instead says a business permit requirement is removed.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The business permit requirement is retained in substituted regulation 9, contrary to the reason; its abolition explanation also conflicts with its CONTRADICTED label.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The business permit requirement is retained in substituted regulation 9, contrary to the reason; its abolition explanation also conflicts with its CONTRADICTED label.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "cross_reference"
+      ],
+      "note": "The final retained-business conclusion is correct, but deleted regulation 8 is incorrectly described as the business provision.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "actor_scope",
+        "cross_reference"
+      ],
+      "note": "The response misidentifies regulation 8 as the business provision and gives mutually inconsistent implications of its deletion.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation is compatible with the supplied provisions and stipulated facts and supports its label; no definite error identified.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity",
+        "actor_scope",
+        "invented_individual_fact"
+      ],
+      "note": "It carries the old individual requirement forward, incorrectly removes the business requirement, and infers that unsupplied site-access rules do not exist.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "PON04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity",
+        "actor_scope",
+        "invented_individual_fact"
+      ],
+      "note": "It incorrectly removes the business requirement and treats absence of private permit information as proof of unauthorized diving.",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "temporal_validity",
+        "cross_reference"
+      ],
+      "note": "The 2009 commencement threshold is attributed to the 2024 amendment rather than the original instrument. Even the stated dates do not refute the January 2024 requirement.",
+      "reference_pages": [
+        "STI:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation expressly confirms the individual permit requirement in the original regulation but returns CONTRADICTED for that same historical claim.",
+      "reference_pages": [
+        "STI:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The substantive statements correctly identify the original requirement from 2009 and its later replacement in 2024; those facts support the before-amendment claim, despite the opposite label.",
+      "reference_pages": [
+        "STI:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The substantive statements correctly identify the original requirement from 2009 and its later replacement in 2024; those facts support the before-amendment claim, despite the opposite label.",
+      "reference_pages": [
+        "STI:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p5",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "indeterminate",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The vague statement that the amendment allows permits does not distinguish the deleted individual requirement from the retained business permit or establish why the claim is refuted.",
+      "reference_pages": [
+        "AMD:p5",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p5",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p5",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The explanation says the diving-operation permit was abolished, although amended regulation 6(1) retains the business permit; this also conflicts with the CONTRADICTED label.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The explanation says the diving-operation permit was abolished, although amended regulation 6(1) retains the business permit; this also conflicts with the CONTRADICTED label.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "invented_individual_fact"
+      ],
+      "note": "The explanation applies an operating-permit requirement to the private dive and assumes the claim entails lack of a permit, which is not a stipulated fact.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity",
+        "actor_scope",
+        "invented_individual_fact"
+      ],
+      "note": "The explanation carries the individual requirement into the amended regime and describes a non-commercial dive without a permit even though no such individual fact is supplied.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "temporal_validity",
+        "actor_scope"
+      ],
+      "note": "The explanation treats the old individual prohibition as operative after substitution; it then invokes missing site-access rules without identifying a factual breach.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "STI04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "invented_individual_fact"
+      ],
+      "note": "Amended business and alpha-flag provisions are misread as requiring a permit for every individual dive; absence of a permit is asserted without a supplied individual record.",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity"
+      ],
+      "note": "The explanation incorrectly claims original regulation 8 had removed the permit requirement before the 2024 amendment.",
+      "reference_pages": [
+        "TMN:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation acknowledges that original regulation 8 stipulated the requirement and that deletion occurs in the 2024 amendment; this supports the historical claim.",
+      "reference_pages": [
+        "TMN:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity"
+      ],
+      "note": "The explanation explicitly denies the pre-amendment requirement or treats the May amendment as operative at the January assessment date.",
+      "reference_pages": [
+        "TMN:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "temporal_validity"
+      ],
+      "note": "The explanation explicitly denies the pre-amendment requirement or treats the May amendment as operative at the January assessment date.",
+      "reference_pages": [
+        "TMN:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p3",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "cross_reference"
+      ],
+      "note": "The explanation says the amendment does not address individual diving permits, overlooking its explicit deletion of original regulation 8.",
+      "reference_pages": [
+        "AMD:p3",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p3",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p3",
+        "AMD:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The explanation says the business permit requirement was removed, which misreads the retained operating-permit provision and also supports the opposite label.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "The explanation says the business permit requirement was removed, which misreads the retained operating-permit provision and also supports the opposite label.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the dated provision and the scope of the claim.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "temporal_validity",
+        "actor_scope"
+      ],
+      "note": "The explanation treats both individual and business diving permits as still required after deletion of the individual provision; it does not address the absent site rules.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "indeterminate",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The phrase removes any SCUBA diving permit authority is overbroad or ambiguous given retained business permits. The acknowledged absence of site-access rules supports insufficient evidence, not refutation of compliance.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TMN04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "cross_reference",
+        "zone_scope"
+      ],
+      "note": "The explanation says the Table Mountain deletion is replaced by an alpha-flag rule and treats those vessel rules as the separate site-access regime; that substitution is not in the supplied Table Mountain amendment.",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "quantity_or_time"
+      ],
+      "note": "The explanation says more than four days are allowed; regulation 8(4) imposes a maximum of four.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "quantity_or_time"
+      ],
+      "note": "The SUPPORTED label agrees with the four-day-limit claim, but the explanation states that access for more than four days is allowed.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "indeterminate",
+      "error_types": [
+        "quantity_or_time"
+      ],
+      "note": "The explanation attaches the 18:00–06:00 restriction to October–March rather than April–September; the stated season does not resolve the stipulated July event.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "invented_individual_fact"
+      ],
+      "note": "Booking with the named business is taken as proof that it is not permitted, despite no authorisation record being supplied.",
+      "reference_pages": [
+        "TSI:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "indeterminate",
+      "error_types": [],
+      "note": "The permit requirement is correctly stated, but no reason is given for treating this particular business as unauthorised; a general rule alone does not determine the claim.",
+      "reference_pages": [
+        "TSI:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "TSI04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "TSI:p9"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The explanation correctly says the stipulated permit authorises anchoring, which refutes the continuing-prohibition claim despite the SUPPORTED label.",
+      "reference_pages": [
+        "UTH:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH01",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "The anchoring exception is correctly explained but supports CONTRADICTED, not the returned SUPPORTED label.",
+      "reference_pages": [
+        "UTH:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH01",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "exception_scope"
+      ],
+      "note": "The explanation says only the activity-permit exception allows anchoring although 5(1) lists other exceptions; its recognition of this vessel exception also conflicts with the SUPPORTED label.",
+      "reference_pages": [
+        "UTH:p7"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH02",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "zone_scope",
+        "claim_scope"
+      ],
+      "note": "The explanation generalises the specified pelagic-zone rule to Controlled zones and treats the claim as unrestricted fishing; the actual claim expressly contains limits.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH02",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH03",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "indeterminate",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The SCUBA exclusion is recognised, but the phrase without an exemption in (5) is ambiguous because (5) itself provides the exclusion.",
+      "reference_pages": [
+        "UTH:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH03",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p8"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p5",
+        "UTH:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH04",
+      "model": "Phi-4-mini-instruct-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p5",
+        "UTH:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p5",
+        "UTH:p6"
+      ]
+    },
+    {
+      "split": "pilot",
+      "case_id": "UTH04",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "The substantive explanation matches the relevant provision and stipulated facts.",
+      "reference_pages": [
+        "UTH:p5",
+        "UTH:p6"
+      ]
+    }
+  ]
+}

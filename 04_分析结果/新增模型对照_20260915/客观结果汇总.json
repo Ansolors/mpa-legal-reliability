@@ -1,0 +1,953 @@
+{
+  "created_utc": "2026-09-16T07:28:37.065911+00:00",
+  "model": "Qwen3-14B-4bit",
+  "scope": "Objective comparison on the original 36 heldout claims; these cases were already analysed for the two original models before selecting this supplementary comparator.",
+  "outputs": 72,
+  "case_composition": {
+    "SUPPORTED": 18,
+    "CONTRADICTED": 9,
+    "INSUFFICIENT": 9
+  },
+  "groups": [
+    {
+      "model": "Qwen3-14B-4bit",
+      "method": "direct",
+      "n": 36,
+      "total_weight": 36.0,
+      "correct": 31.0,
+      "accuracy": 0.8611111111111112,
+      "macro_f1": 0.8095238095238095,
+      "f1": {
+        "SUPPORTED": 1.0,
+        "CONTRADICTED": 0.7619047619047619,
+        "INSUFFICIENT": 0.6666666666666666
+      },
+      "recall": {
+        "SUPPORTED": 1.0,
+        "CONTRADICTED": 0.8888888888888888,
+        "INSUFFICIENT": 0.5555555555555556
+      },
+      "invalid_outputs": 0,
+      "unsupported_decisions": 4,
+      "valid_unsupported_decisions": 4,
+      "over_abstentions": 1,
+      "strict_json_label": 36,
+      "exact_schema_after_wrapper": 36,
+      "valid_citation_ids": 34,
+      "outer_fences": 0,
+      "word_limit_exceeded": 0,
+      "length_stops": 0,
+      "mean_required_page_recall": 0.8055555555555556,
+      "median_seconds": 18.76062956266105,
+      "total_generation_tokens": 2613,
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 18
+        },
+        "CONTRADICTED": {
+          "CONTRADICTED": 8,
+          "INSUFFICIENT": 1
+        },
+        "INSUFFICIENT": {
+          "INSUFFICIENT": 5,
+          "CONTRADICTED": 4
+        }
+      },
+      "prompt_tokens_range": [
+        794,
+        2487
+      ],
+      "generation_tokens_range": [
+        57,
+        106
+      ],
+      "peak_memory_gb_range": [
+        8.802092264,
+        9.060573016
+      ]
+    },
+    {
+      "model": "Qwen3-14B-4bit",
+      "method": "structured",
+      "n": 36,
+      "total_weight": 36.0,
+      "correct": 32.0,
+      "accuracy": 0.8888888888888888,
+      "macro_f1": 0.8441558441558442,
+      "f1": {
+        "SUPPORTED": 1.0,
+        "CONTRADICTED": 0.8181818181818182,
+        "INSUFFICIENT": 0.7142857142857143
+      },
+      "recall": {
+        "SUPPORTED": 1.0,
+        "CONTRADICTED": 1.0,
+        "INSUFFICIENT": 0.5555555555555556
+      },
+      "invalid_outputs": 0,
+      "unsupported_decisions": 4,
+      "valid_unsupported_decisions": 4,
+      "over_abstentions": 0,
+      "strict_json_label": 36,
+      "exact_schema_after_wrapper": 36,
+      "valid_citation_ids": 34,
+      "outer_fences": 0,
+      "word_limit_exceeded": 0,
+      "length_stops": 0,
+      "mean_required_page_recall": 0.7638888888888888,
+      "median_seconds": 20.205893333419226,
+      "total_generation_tokens": 2615,
+      "confusion_matrix": {
+        "SUPPORTED": {
+          "SUPPORTED": 18
+        },
+        "CONTRADICTED": {
+          "CONTRADICTED": 9
+        },
+        "INSUFFICIENT": {
+          "INSUFFICIENT": 5,
+          "CONTRADICTED": 4
+        }
+      },
+      "prompt_tokens_range": [
+        960,
+        2653
+      ],
+      "generation_tokens_range": [
+        43,
+        107
+      ],
+      "peak_memory_gb_range": [
+        8.802092928,
+        9.110905328
+      ]
+    }
+  ],
+  "paired": {
+    "improved": [
+      "TMN06"
+    ],
+    "worsened": [],
+    "both_correct": 31,
+    "both_incorrect": 4,
+    "label_disagreements": [
+      "TMN06"
+    ]
+  },
+  "shared_question_weights": {
+    "ADD05": 1.0,
+    "ADD06": 1.0,
+    "ADD07": 1.0,
+    "ADD08": 1.0,
+    "TSI05": 1.0,
+    "TSI06": 1.0,
+    "TSI07": 1.0,
+    "TSI08": 1.0,
+    "PEC05": 1.0,
+    "PEC06": 1.0,
+    "PEC07": 1.0,
+    "PEC08": 1.0,
+    "UTH05": 1.0,
+    "UTH06": 1.0,
+    "UTH07": 1.0,
+    "UTH08": 1.0,
+    "TMN05": 1.0,
+    "TMN06": 0.2,
+    "TMN07": 0.25,
+    "TMN08": 1.0,
+    "STI05": 1.0,
+    "STI06": 0.2,
+    "STI07": 0.25,
+    "STI08": 1.0,
+    "PON05": 1.0,
+    "PON06": 0.2,
+    "PON07": 0.25,
+    "PON08": 1.0,
+    "AMA05": 1.0,
+    "AMA06": 0.2,
+    "AMA07": 0.25,
+    "AMA08": 1.0,
+    "DWE05": 1.0,
+    "DWE06": 0.2,
+    "DWE07": 1.0,
+    "DWE08": 1.0
+  },
+  "sensitivity": [
+    {
+      "analysis": "all_heldout",
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 31.0,
+          "accuracy": 0.8611111111111112,
+          "macro_f1": 0.8095238095238095,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7619047619047619,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8888888888888888,
+            "INSUFFICIENT": 0.5555555555555556
+          }
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 32.0,
+          "accuracy": 0.8888888888888888,
+          "macro_f1": 0.8441558441558442,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8181818181818182,
+            "INSUFFICIENT": 0.7142857142857143
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5555555555555556
+          }
+        }
+      },
+      "accuracy_difference": 0.02777777777777768,
+      "macro_f1_difference": 0.03463203463203468
+    },
+    {
+      "analysis": "shared_draft_and_commencement_equal_group_weight",
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 28.999999999999996,
+          "correct": 24.799999999999997,
+          "accuracy": 0.8551724137931035,
+          "macro_f1": 0.7999591753419065,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.6956521739130436,
+            "INSUFFICIENT": 0.7042253521126761
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.96,
+            "INSUFFICIENT": 0.5555555555555556
+          }
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 28.999999999999996,
+          "correct": 24.999999999999996,
+          "accuracy": 0.8620689655172413,
+          "macro_f1": 0.8095238095238095,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7142857142857143,
+            "INSUFFICIENT": 0.7142857142857143
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5555555555555556
+          }
+        }
+      },
+      "accuracy_difference": 0.006896551724137834,
+      "macro_f1_difference": 0.009564634181903009
+    },
+    {
+      "analysis": "exclude_shared_amendment_or_draft_inputs",
+      "groups": {
+        "direct": {
+          "n": 18,
+          "total_weight": 18.0,
+          "correct": 18.0,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        },
+        "structured": {
+          "n": 18,
+          "total_weight": 18.0,
+          "correct": 18.0,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        }
+      },
+      "accuracy_difference": 0.0,
+      "macro_f1_difference": 0.0
+    },
+    {
+      "analysis": "exclude_four_outcome_wording_cases",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.6825396825396826,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7619047619047619,
+            "INSUFFICIENT": 0.2857142857142857
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8888888888888888,
+            "INSUFFICIENT": 0.2
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.7171717171717171,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8181818181818182,
+            "INSUFFICIENT": 0.3333333333333333
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.2
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.03463203463203457
+    },
+    {
+      "analysis": "exclude_mpa_ADD",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.7840755735492577,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7368421052631579,
+            "INSUFFICIENT": 0.6153846153846154
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.875,
+            "INSUFFICIENT": 0.5
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.8222222222222222,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.03814664867296447
+    },
+    {
+      "analysis": "exclude_mpa_AMA",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.8306878306878307,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7777777777777778,
+            "INSUFFICIENT": 0.7142857142857143
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.875,
+            "INSUFFICIENT": 0.625
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 29.0,
+          "accuracy": 0.90625,
+          "macro_f1": 0.8704453441295547,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8421052631578947,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.03975751344172396
+    },
+    {
+      "analysis": "exclude_mpa_DWE",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.7840755735492577,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7368421052631579,
+            "INSUFFICIENT": 0.6153846153846154
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.875,
+            "INSUFFICIENT": 0.5
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.8222222222222222,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.03814664867296447
+    },
+    {
+      "analysis": "exclude_mpa_PEC",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.7840755735492577,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7368421052631579,
+            "INSUFFICIENT": 0.6153846153846154
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.875,
+            "INSUFFICIENT": 0.5
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.8222222222222222,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.03814664867296447
+    },
+    {
+      "analysis": "exclude_mpa_PON",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.8306878306878307,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7777777777777778,
+            "INSUFFICIENT": 0.7142857142857143
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.875,
+            "INSUFFICIENT": 0.625
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 29.0,
+          "accuracy": 0.90625,
+          "macro_f1": 0.8704453441295547,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8421052631578947,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.03975751344172396
+    },
+    {
+      "analysis": "exclude_mpa_STI",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.8306878306878307,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7777777777777778,
+            "INSUFFICIENT": 0.7142857142857143
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.875,
+            "INSUFFICIENT": 0.625
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 29.0,
+          "accuracy": 0.90625,
+          "macro_f1": 0.8704453441295547,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8421052631578947,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.03975751344172396
+    },
+    {
+      "analysis": "exclude_mpa_TMN",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 29.0,
+          "accuracy": 0.90625,
+          "macro_f1": 0.8704453441295547,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8421052631578947,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 29.0,
+          "accuracy": 0.90625,
+          "macro_f1": 0.8704453441295547,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8421052631578947,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        }
+      },
+      "accuracy_difference": 0.0,
+      "macro_f1_difference": 0.0
+    },
+    {
+      "analysis": "exclude_mpa_TSI",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.7840755735492577,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7368421052631579,
+            "INSUFFICIENT": 0.6153846153846154
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.875,
+            "INSUFFICIENT": 0.5
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.8222222222222222,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.03814664867296447
+    },
+    {
+      "analysis": "exclude_mpa_UTH",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.7840755735492577,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.7368421052631579,
+            "INSUFFICIENT": 0.6153846153846154
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.875,
+            "INSUFFICIENT": 0.5
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.8222222222222222,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.8,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.03814664867296447
+    }
+  ],
+  "permit_issuance_cases": [
+    {
+      "case_id": "TMN08",
+      "method": "structured",
+      "model": "Qwen3-14B-4bit",
+      "split": "heldout",
+      "mpa_id": "TMN",
+      "family": "missing_permit_content",
+      "gold": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "status": "completed",
+      "outer_fence": false,
+      "strict_json_label": true,
+      "exact_schema": true,
+      "citation_ids_valid": true,
+      "required_page_recall": 1.0,
+      "reason": "The 2024 amendment deleted regulation 8 (SCUBA diving permit) and amended regulation 9, requiring a permit to operate a SCUBA diving business. However, no permit, registry entry, or authorization is supplied for the named business.",
+      "evidence": [
+        "AMD:p3",
+        "TMN:p7"
+      ],
+      "reason_word_count": 35,
+      "shared_instrument": true,
+      "prompt_tokens": 1872,
+      "generation_tokens": 88,
+      "elapsed_seconds": 26.823022125056013,
+      "finish_reason": "stop",
+      "peak_memory_gb": 8.966722992
+    },
+    {
+      "case_id": "TMN08",
+      "method": "direct",
+      "model": "Qwen3-14B-4bit",
+      "split": "heldout",
+      "mpa_id": "TMN",
+      "family": "missing_permit_content",
+      "gold": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "status": "completed",
+      "outer_fence": false,
+      "strict_json_label": true,
+      "exact_schema": true,
+      "citation_ids_valid": true,
+      "required_page_recall": 1.0,
+      "reason": "The 2024 amendment deleted regulation 8, which required SCUBA diving permits, and amended regulation 9 to require a SCUBA diving business permit. No permit or application was provided, contradicting the claim.",
+      "evidence": [
+        "AMD:p3",
+        "TMN:p7"
+      ],
+      "reason_word_count": 31,
+      "shared_instrument": true,
+      "prompt_tokens": 1706,
+      "generation_tokens": 82,
+      "elapsed_seconds": 24.596777874976397,
+      "finish_reason": "stop",
+      "peak_memory_gb": 8.916914968
+    },
+    {
+      "case_id": "STI08",
+      "method": "structured",
+      "model": "Qwen3-14B-4bit",
+      "split": "heldout",
+      "mpa_id": "STI",
+      "family": "missing_permit_content",
+      "gold": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "status": "completed",
+      "outer_fence": false,
+      "strict_json_label": true,
+      "exact_schema": true,
+      "citation_ids_valid": true,
+      "required_page_recall": 1.0,
+      "reason": "The 2024 amendment to regulation 6 requires a permit to operate a SCUBA diving business in the MPA. No permit, permit registry entry, or individual authorization is supplied, contradicting the claim.",
+      "evidence": [
+        "STI:p3",
+        "AMD:p5"
+      ],
+      "reason_word_count": 31,
+      "shared_instrument": true,
+      "prompt_tokens": 2332,
+      "generation_tokens": 80,
+      "elapsed_seconds": 31.722898666979745,
+      "finish_reason": "stop",
+      "peak_memory_gb": 9.060572396
+    },
+    {
+      "case_id": "STI08",
+      "method": "direct",
+      "model": "Qwen3-14B-4bit",
+      "split": "heldout",
+      "mpa_id": "STI",
+      "family": "missing_permit_content",
+      "gold": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "status": "completed",
+      "outer_fence": false,
+      "strict_json_label": true,
+      "exact_schema": true,
+      "citation_ids_valid": true,
+      "required_page_recall": 1.0,
+      "reason": "The claim states the diving business has been issued a permit, but no permit or registry entry is provided. The 2024 amendment requires a permit for operating a SCUBA diving business, and the stipulated fact confirms no permit is supplied.",
+      "evidence": [
+        "STI:p3",
+        "AMD:p5"
+      ],
+      "reason_word_count": 40,
+      "shared_instrument": true,
+      "prompt_tokens": 2166,
+      "generation_tokens": 86,
+      "elapsed_seconds": 30.15563645819202,
+      "finish_reason": "stop",
+      "peak_memory_gb": 9.016531528
+    },
+    {
+      "case_id": "PON08",
+      "method": "structured",
+      "model": "Qwen3-14B-4bit",
+      "split": "heldout",
+      "mpa_id": "PON",
+      "family": "missing_permit_content",
+      "gold": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "status": "completed",
+      "outer_fence": false,
+      "strict_json_label": true,
+      "exact_schema": true,
+      "citation_ids_valid": true,
+      "required_page_recall": 1.0,
+      "reason": "The 2024 amendment deleted regulation 8, which required a SCUBA diving business permit, and amended regulation 9 to require a permit for operating a SCUBA diving business. No permit is supplied, contradicting the claim.",
+      "evidence": [
+        "AMD:p7",
+        "AMD:p8"
+      ],
+      "reason_word_count": 34,
+      "shared_instrument": true,
+      "prompt_tokens": 2653,
+      "generation_tokens": 84,
+      "elapsed_seconds": 35.81993545801379,
+      "finish_reason": "stop",
+      "peak_memory_gb": 9.110905328
+    },
+    {
+      "case_id": "PON08",
+      "method": "direct",
+      "model": "Qwen3-14B-4bit",
+      "split": "heldout",
+      "mpa_id": "PON",
+      "family": "missing_permit_content",
+      "gold": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "status": "completed",
+      "outer_fence": false,
+      "strict_json_label": true,
+      "exact_schema": true,
+      "citation_ids_valid": true,
+      "required_page_recall": 1.0,
+      "reason": "The 2024 amendment explicitly requires a permit for SCUBA diving businesses. No permit or authorization is provided for the named business, contradicting the claim.",
+      "evidence": [
+        "AMD:p7",
+        "AMD:p8"
+      ],
+      "reason_word_count": 24,
+      "shared_instrument": true,
+      "prompt_tokens": 2487,
+      "generation_tokens": 68,
+      "elapsed_seconds": 32.8278278328944,
+      "finish_reason": "stop",
+      "peak_memory_gb": 9.060573016
+    },
+    {
+      "case_id": "AMA08",
+      "method": "structured",
+      "model": "Qwen3-14B-4bit",
+      "split": "heldout",
+      "mpa_id": "AMA",
+      "family": "missing_permit_content",
+      "gold": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "status": "completed",
+      "outer_fence": false,
+      "strict_json_label": true,
+      "exact_schema": true,
+      "citation_ids_valid": true,
+      "required_page_recall": 1.0,
+      "reason": "The 2024 amendment to regulation 4 of the Amathole MPA Regulations requires a permit to operate a SCUBA diving business. No permit, registry entry, or authorization is supplied, contradicting the claim.",
+      "evidence": [
+        "AMD:p9",
+        "AMD:p10",
+        "AMA:p3"
+      ],
+      "reason_word_count": 31,
+      "shared_instrument": true,
+      "prompt_tokens": 1750,
+      "generation_tokens": 87,
+      "elapsed_seconds": 25.346981917042285,
+      "finish_reason": "stop",
+      "peak_memory_gb": 8.946914264
+    },
+    {
+      "case_id": "AMA08",
+      "method": "direct",
+      "model": "Qwen3-14B-4bit",
+      "split": "heldout",
+      "mpa_id": "AMA",
+      "family": "missing_permit_content",
+      "gold": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "status": "completed",
+      "outer_fence": false,
+      "strict_json_label": true,
+      "exact_schema": true,
+      "citation_ids_valid": true,
+      "required_page_recall": 1.0,
+      "reason": "The 2024 amendment to regulation 4 of the Amathole MPA Regulations requires a permit for operating a SCUBA diving business. No permit or authorization is provided for the named business, contradicting the claim.",
+      "evidence": [
+        "AMD:p9",
+        "AMD:p10"
+      ],
+      "reason_word_count": 33,
+      "shared_instrument": true,
+      "prompt_tokens": 1584,
+      "generation_tokens": 82,
+      "elapsed_seconds": 23.133194166934118,
+      "finish_reason": "stop",
+      "peak_memory_gb": 8.91691448
+    }
+  ],
+  "input_sha256": {
+    "04_分析结果/新增模型对照_20260915/Qwen3-14B-4bit_heldout_raw.jsonl": "b548736664503d3284ca0f72a4c499a2dd3a60c14277f13817ff0f94c34b49d2",
+    "04_分析结果/新增模型对照_20260915/固定新增实验协议.json": "ebf19fc003cfbe8082e8cace2314622584c08fc97ab17955df0f6f4783134f76",
+    "04_分析结果/法规命题基准/cases_v1.json": "caa1599c3162edab738bd3ed6a70bab14dee4b9cd6d3650321984a0ac084ad44",
+    "04_分析结果/法规命题基准/evidence_v1.json": "aed69cd2b4ae0290080777509ebc45f893676ae8023edde200cd943674a1a92f",
+    "04_分析结果/法规命题基准/publication_manifest.json": "5341ecb0bf11d9a7800a2abf25e320e7c459dab6fc26b4ec97fd0e9469694861"
+  },
+  "analysis_scope": "Label, format and source-reference metrics; explanation and joint results are provided separately."
+}

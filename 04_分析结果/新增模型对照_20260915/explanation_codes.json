@@ -1,0 +1,855 @@
+{
+  "schema_version": 1,
+  "unit": "One complete model response compared with its supplied source pages, stipulated facts, claim and returned label.",
+  "coding_scope": "Explanation status and label-explanation alignment only. Frozen reference labels, model outputs, citation scoring and primary 288-response coding remain unchanged.",
+  "ambiguity_rule": "Ambiguous explanations are excluded from joint measures. Borderline interpretations are flagged for focused human confirmation.",
+  "records": [
+    {
+      "case_id": "ADD05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "5(5)规定受控区超过100吨船舶的锚泊禁令，并保留5(6)—(7)。题目已明确排除例外；“未提及例外”的措辞不够精确，但未改变该题结论。",
+      "reference_pages": [
+        "ADD:p9"
+      ]
+    },
+    {
+      "case_id": "ADD05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "准确指出5(5)的吨位门槛及5(6)—(7)例外，并依据题目排除例外的设定支持命题。",
+      "reference_pages": [
+        "ADD:p9"
+      ]
+    },
+    {
+      "case_id": "ADD06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "9(2)明确禁止SICZ船上捕鱼，一般有效捕鱼许可不能克服该分区禁令。",
+      "reference_pages": [
+        "ADD:p12"
+      ]
+    },
+    {
+      "case_id": "ADD06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "正确适用9(2)的SICZ船上捕鱼禁令，否定仅凭有效许可即可捕鱼的命题。",
+      "reference_pages": [
+        "ADD:p12"
+      ]
+    },
+    {
+      "case_id": "ADD07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "准确概括4(15)的不冲突要求；未展开4(14)的其他授权条件，属于解释不完整，未明确否定或改变该条件。",
+      "reference_pages": [
+        "ADD:p8"
+      ]
+    },
+    {
+      "case_id": "ADD07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "提及其他法律要求和与法一致性，概括了4(14)—(15)的条件结构；未逐一重述全部限制，但未发现明确实质错误。",
+      "reference_pages": [
+        "ADD:p8"
+      ]
+    },
+    {
+      "case_id": "ADD08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "正确区分分区和许可规则与实际捕捞压力变化；给定页面没有2023年的观测或比较数据。",
+      "reference_pages": [
+        "ADD:p6",
+        "ADD:p12"
+      ]
+    },
+    {
+      "case_id": "ADD08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "后句明确指出缺少2023年活动水平数据，支持证据不足。首句“no ... regulation regarding fishing pressure”措辞偏宽；结合后句，按趋势证据语境理解。",
+      "reference_pages": [
+        "ADD:p6",
+        "ADD:p12"
+      ]
+    },
+    {
+      "case_id": "AMA05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订后的第4条保留潜水经营者许可，申请向部长提出，解释与对应条文一致。",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "AMA05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订后的第4条保留潜水经营者许可，申请向部长提出，解释与对应条文一致。",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "AMA06",
+      "method": "direct",
+      "rationale_status": "indeterminate",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "已正确识别仅为提案而非最终生效，足以支持否定标签；但末句“the permit requirement was retained”未区分个人潜水与经营者许可。若指前者则错误，若指后者则属实，因此将解释状态保守列为含糊。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p8"
+      ]
+    },
+    {
+      "case_id": "AMA06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "明确识别公开征求意见稿而非正式法规，正确说明公告本身不使拟移除个人许可的修订生效。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p8"
+      ]
+    },
+    {
+      "case_id": "AMA07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条及公报日期支持2024年5月3日生效；只列p10影响必要页面覆盖，不构成明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "AMA07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条及公报日期支持2024年5月3日生效；只列p10影响必要页面覆盖，不构成明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "AMA08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "经营许可规则与缺少该企业授权记录均概括正确，但这些事实只能支持证据不足，不能否定已签发许可的个案命题。",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "AMA08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "经营许可规则与缺少该企业授权记录均概括正确，但这些事实只能支持证据不足，不能否定已签发许可的个案命题。",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "DWE05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(3)明确要求已经放下潜水者的船舶展示alpha旗，解释和标签均与条文一致。",
+      "reference_pages": [
+        "DWE:p7"
+      ]
+    },
+    {
+      "case_id": "DWE05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(3)明确要求已经放下潜水者的船舶展示alpha旗，解释和标签均与条文一致。",
+      "reference_pages": [
+        "DWE:p7"
+      ]
+    },
+    {
+      "case_id": "DWE06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "正确区分草案中拟议的公布即生效条款与该征求意见稿本身的法律效力；草案不足以确立速度修订已经生效。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p8"
+      ]
+    },
+    {
+      "case_id": "DWE06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "正确区分草案中拟议的公布即生效条款与该征求意见稿本身的法律效力；草案不足以确立速度修订已经生效。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p8"
+      ]
+    },
+    {
+      "case_id": "DWE07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "11(1)要求在保护区开展科研须获得部长签发的科研许可，解释与条文一致。",
+      "reference_pages": [
+        "DWE:p9"
+      ]
+    },
+    {
+      "case_id": "DWE07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "11(1)要求在保护区开展科研须获得部长签发的科研许可，解释与条文一致。",
+      "reference_pages": [
+        "DWE:p9"
+      ]
+    },
+    {
+      "case_id": "DWE08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "速度和船舶规则没有提供海洋哺乳动物碰撞次数的前后观测，无法证明2024年5月3日后碰撞下降。",
+      "reference_pages": [
+        "DWE:p8",
+        "DWE:p9",
+        "AMD:p9"
+      ]
+    },
+    {
+      "case_id": "DWE08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "速度和船舶规则没有提供海洋哺乳动物碰撞次数的前后观测，无法证明2024年5月3日后碰撞下降。",
+      "reference_pages": [
+        "DWE:p8",
+        "DWE:p9",
+        "AMD:p9"
+      ]
+    },
+    {
+      "case_id": "PEC05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "7(6)(d)要求考虑能否在保护区外采集，与命题一致；清单回答仅列p8，属于必要页面覆盖诊断，不据此认定解释有法律错误。",
+      "reference_pages": [
+        "PEC:p7",
+        "PEC:p8"
+      ]
+    },
+    {
+      "case_id": "PEC05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "7(6)(d)要求考虑能否在保护区外采集，与命题一致；清单回答仅列p8，属于必要页面覆盖诊断，不据此认定解释有法律错误。",
+      "reference_pages": [
+        "PEC:p7",
+        "PEC:p8"
+      ]
+    },
+    {
+      "case_id": "PEC06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "7(4)(a)要求未经许可捕鱼者断开钩、拟饵和配重并按规定存放，不能让钩继续连接鱼线。",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "case_id": "PEC06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "7(4)(a)要求未经许可捕鱼者断开钩、拟饵和配重并按规定存放，不能让钩继续连接鱼线。",
+      "reference_pages": [
+        "PEC:p6"
+      ]
+    },
+    {
+      "case_id": "PEC07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "5(3)明确要求部长口头锚泊授权在三个工作日内书面确认，解释和标签一致。",
+      "reference_pages": [
+        "PEC:p5"
+      ]
+    },
+    {
+      "case_id": "PEC07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "5(3)明确要求部长口头锚泊授权在三个工作日内书面确认，解释和标签一致。",
+      "reference_pages": [
+        "PEC:p5"
+      ]
+    },
+    {
+      "case_id": "PEC08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "给定许可、渔具和珊瑚活动规则不提供2019年以来珊瑚覆盖变化的观测证据，证据不足结论与理由一致。",
+      "reference_pages": [
+        "PEC:p4",
+        "PEC:p6",
+        "PEC:p7"
+      ]
+    },
+    {
+      "case_id": "PEC08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "给定许可、渔具和珊瑚活动规则不提供2019年以来珊瑚覆盖变化的观测证据，证据不足结论与理由一致。",
+      "reference_pages": [
+        "PEC:p4",
+        "PEC:p6",
+        "PEC:p7"
+      ]
+    },
+    {
+      "case_id": "PON05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订后的第9条仍要求经营或尝试经营潜水业务须持许可，解释与命题一致。",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "case_id": "PON05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订后的第9条仍要求经营或尝试经营潜水业务须持许可，解释与命题一致。",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "case_id": "PON06",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "已称文书为draft，但把第9条的潜水业务经营许可混同为个人潜水许可，以保留经营许可反驳个人许可移除，监管对象错误。该错误读法支持所返否定标签。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p6"
+      ]
+    },
+    {
+      "case_id": "PON06",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "temporal_validity"
+      ],
+      "note": "将草案称为已经修订第9条，并把经营潜水业务的许可说成个人潜水许可。标签正确但理由的监管对象与生效状态均有明确错误。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p6"
+      ]
+    },
+    {
+      "case_id": "PON07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条及公报日期支持2024年5月3日生效；只列p10影响必要页面覆盖，不构成明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "PON07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条及公报日期支持2024年5月3日生效；只列p10影响必要页面覆盖，不构成明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "PON08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "正确指出经营许可义务与个案记录缺失；这些事实支持证据不足，不能支持否定签发的标签。",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "case_id": "PON08",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope",
+        "cross_reference"
+      ],
+      "note": "误称被删第8条规定潜水业务经营许可；该条实际为个人潜水许可。解释同时正确指出第9条仍要求经营许可和个案记录缺失，实质上应得证据不足而非否定。没有另行断言该企业未获签发，不加编造个案事实错误。",
+      "reference_pages": [
+        "PON:p6",
+        "PON:p7",
+        "AMD:p7",
+        "AMD:p8"
+      ]
+    },
+    {
+      "case_id": "STI05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "替换后的第6条将经营或尝试经营潜水业务列为须获许可的活动，解释与2024文本一致。",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "case_id": "STI05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "替换后的第6条将经营或尝试经营潜水业务列为须获许可的活动，解释与2024文本一致。",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "case_id": "STI06",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "草案中的许可义务针对经营SCUBA diving business，解释将其概括为SCUBA diving的个人活动许可，因而误称草案增加而非移除题目中的个人许可。解释中的错误读法与返回的否定标签方向一致。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p4"
+      ]
+    },
+    {
+      "case_id": "STI06",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "temporal_validity"
+      ],
+      "note": "把经营潜水业务的许可要求说成个人潜水许可，并称GN 321已修订规则，未保留其公开征求意见稿效力。标签虽正确，理由对监管对象和草案状态均有明确错误。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p4"
+      ]
+    },
+    {
+      "case_id": "STI07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条与公告日期共同支持2024年5月3日生效；只列p10属于必要页面覆盖问题，解释无明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "STI07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条与公告日期共同支持2024年5月3日生效；只列p10属于必要页面覆盖问题，解释无明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "STI08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "准确指出经营许可义务和个案许可记录缺失；记录缺失不能证明没有签发，实质解释支持INSUFFICIENT，与返回的CONTRADICTED不一致。",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "case_id": "STI08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "准确指出经营许可义务和个案许可记录缺失；记录缺失不能证明没有签发，实质解释支持INSUFFICIENT，与返回的CONTRADICTED不一致。",
+      "reference_pages": [
+        "AMD:p5"
+      ]
+    },
+    {
+      "case_id": "TMN05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订替换第9条后仍要求经营或尝试经营潜水业务须持许可，申请对象为Manager；与命题一致。",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "case_id": "TMN05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订替换第9条后仍要求经营或尝试经营潜水业务须持许可，申请对象为Manager；与命题一致。",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "case_id": "TMN06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "已识别公告仅提出修订而非实施修订；针对该公告本身在公布时已经生效的命题，这一解释支持否定，而非返回的证据不足。末句较保守的措辞不改变对草案性质的正确识别。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p2"
+      ]
+    },
+    {
+      "case_id": "TMN06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "明确识别公开征求意见稿，并区分拟删除个人许可要求与实际生效，正确否定命题。漏列DRF:p1属于引用覆盖诊断。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p2"
+      ]
+    },
+    {
+      "case_id": "TMN07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条与公告日期共同支持2024年5月3日生效。只列p10影响预列必要页面覆盖；该页页眉亦显示日期，解释无明确事实错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "TMN07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条与公告日期共同支持2024年5月3日生效。只列p10影响预列必要页面覆盖；该页页眉亦显示日期，解释无明确事实错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ]
+    },
+    {
+      "case_id": "TMN08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "解释正确区分删除个人潜水许可条款与保留经营许可要求，也正确指出未提供个案许可记录；这些事实支持证据不足，不能支持所返否定标签。“contradicting the claim”等一般分类短语不另计事实错误。",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "case_id": "TMN08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "解释正确区分删除个人潜水许可条款与保留经营许可要求，也正确指出未提供个案许可记录；这些事实支持证据不足，不能支持所返否定标签。“contradicting the claim”等一般分类短语不另计事实错误。",
+      "reference_pages": [
+        "AMD:p3"
+      ]
+    },
+    {
+      "case_id": "TSI05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(9)仅允许岸上捕鱼并明确禁止保护区内船上捕鱼；注册和一般许可不改变该限制。",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "case_id": "TSI05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(9)仅允许岸上捕鱼并明确禁止保护区内船上捕鱼；注册和一般许可不改变该限制。",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "case_id": "TSI06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "准确引用8(6)的减半与向上取整规则，并据题设普通限额5计算2.5向上取整为3。",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "case_id": "TSI06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "准确引用8(6)的减半与向上取整规则，并据题设普通限额5计算2.5向上取整为3。",
+      "reference_pages": [
+        "TSI:p8"
+      ]
+    },
+    {
+      "case_id": "TSI07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "9(1)明确要求潜水者作为经管理机构许可的潜水企业的客户参与，解释与该规定一致。",
+      "reference_pages": [
+        "TSI:p9"
+      ]
+    },
+    {
+      "case_id": "TSI07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "9(1)明确要求潜水者作为经管理机构许可的潜水企业的客户参与，解释与该规定一致。",
+      "reference_pages": [
+        "TSI:p9"
+      ]
+    },
+    {
+      "case_id": "TSI08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "4(4)允许另以管理计划或内部规则限制活动；题设未提供这些文件，不能据基本条例断定具体地点没有游泳限制。",
+      "reference_pages": [
+        "TSI:p5"
+      ]
+    },
+    {
+      "case_id": "TSI08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "4(4)允许另以管理计划或内部规则限制活动；题设未提供这些文件，不能据基本条例断定具体地点没有游泳限制。",
+      "reference_pages": [
+        "TSI:p5"
+      ]
+    },
+    {
+      "case_id": "UTH05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(4)明文允许从受控区岸上进行鲨鱼钓放，题设结论与该例外一致。回答将页ID写成UTh:p10，属于标识符格式问题，另由客观指标计分。",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "case_id": "UTH05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(4)明文允许从受控区岸上进行鲨鱼钓放，题设结论与该例外一致。回答将页ID写成UTh:p10，属于标识符格式问题，另由客观指标计分。",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "case_id": "UTH06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(6)禁止日落至日出期间的船上捕鱼，一般有效许可不排除此禁令。UTh:p10的大小写错误仅影响引用标识符指标。",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "case_id": "UTH06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(6)禁止日落至日出期间的船上捕鱼，一般有效许可不排除此禁令。UTh:p10的大小写错误仅影响引用标识符指标。",
+      "reference_pages": [
+        "UTH:p10"
+      ]
+    },
+    {
+      "case_id": "UTH07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "5(6)要求携带渔具通过限制区的机动船开启GPS轨迹，并在通过后七个日历日内保留数据；解释概括了七日保留要求。",
+      "reference_pages": [
+        "UTH:p8"
+      ]
+    },
+    {
+      "case_id": "UTH07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "5(6)要求携带渔具通过限制区的机动船开启GPS轨迹，并在通过后七个日历日内保留数据；解释概括了七日保留要求。",
+      "reference_pages": [
+        "UTH:p8"
+      ]
+    },
+    {
+      "case_id": "UTH08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "给定条文规定活动和许可条件，不能据此确认实际达到全面有效保护；解释未把规则直接等同于保护成效。",
+      "reference_pages": [
+        "UTH:p8",
+        "UTH:p10"
+      ]
+    },
+    {
+      "case_id": "UTH08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "给定条文规定活动和许可条件，不能据此确认实际达到全面有效保护；解释未把规则直接等同于保护成效。",
+      "reference_pages": [
+        "UTH:p8",
+        "UTH:p10"
+      ]
+    }
+  ]
+}

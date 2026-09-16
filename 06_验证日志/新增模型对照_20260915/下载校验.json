@@ -1,0 +1,220 @@
+{
+  "created_utc": "2026-09-15T02:57:01.015823+00:00",
+  "repository": "mlx-community/Qwen3-14B-4bit",
+  "revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+  "metadata_urls": [
+    "https://huggingface.co/api/models/mlx-community/Qwen3-14B-4bit/revision/a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4?blobs=true",
+    "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo/files?Revision=master&Recursive=true"
+  ],
+  "files": [
+    {
+      "file": "special_tokens_map.json",
+      "expected_sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "bytes_expected": 613,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "dfc9c763d23e3c2203c9835785a6b447d57d88bf",
+      "start_utc": "2026-09-15T02:40:11.065355+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=dfc9c763d23e3c2203c9835785a6b447d57d88bf&FilePath=special_tokens_map.json",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:40:11.466302+00:00",
+          "error": "",
+          "actual_sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:40:11.467996+00:00"
+    },
+    {
+      "file": "added_tokens.json",
+      "expected_sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680",
+      "bytes_expected": 707,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "dfc9c763d23e3c2203c9835785a6b447d57d88bf",
+      "start_utc": "2026-09-15T02:40:11.065987+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=dfc9c763d23e3c2203c9835785a6b447d57d88bf&FilePath=added_tokens.json",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:40:11.466585+00:00",
+          "error": "",
+          "actual_sha256": "c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:40:11.467586+00:00"
+    },
+    {
+      "file": "README.md",
+      "expected_sha256": "175eb7f573a18b441830c4791bb93b7789efaa2d44b4e214c015ed5ec02892bc",
+      "bytes_expected": 865,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "dfc9c763d23e3c2203c9835785a6b447d57d88bf",
+      "start_utc": "2026-09-15T02:40:11.467759+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=dfc9c763d23e3c2203c9835785a6b447d57d88bf&FilePath=README.md",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:40:11.812168+00:00",
+          "error": "",
+          "actual_sha256": "175eb7f573a18b441830c4791bb93b7789efaa2d44b4e214c015ed5ec02892bc"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:40:11.812831+00:00"
+    },
+    {
+      "file": "config.json",
+      "expected_sha256": "a54ec18ffe24f3c909e9556471dc156ed9b3b61b872008831c7cba9d4768b4a5",
+      "bytes_expected": 939,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "dfc9c763d23e3c2203c9835785a6b447d57d88bf",
+      "start_utc": "2026-09-15T02:40:11.468053+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=dfc9c763d23e3c2203c9835785a6b447d57d88bf&FilePath=config.json",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:40:11.841225+00:00",
+          "error": "",
+          "actual_sha256": "a54ec18ffe24f3c909e9556471dc156ed9b3b61b872008831c7cba9d4768b4a5"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:40:11.842316+00:00"
+    },
+    {
+      "file": "tokenizer_config.json",
+      "expected_sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+      "bytes_expected": 9706,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "dfc9c763d23e3c2203c9835785a6b447d57d88bf",
+      "start_utc": "2026-09-15T02:40:11.812951+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=dfc9c763d23e3c2203c9835785a6b447d57d88bf&FilePath=tokenizer_config.json",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:40:12.184571+00:00",
+          "error": "",
+          "actual_sha256": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:40:12.185555+00:00"
+    },
+    {
+      "file": "model.safetensors.index.json",
+      "expected_sha256": "eb522fa2269e4a958bf625765bccde4a0677895a09eed23cdd8d1760dfc0259c",
+      "bytes_expected": 86266,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "dfc9c763d23e3c2203c9835785a6b447d57d88bf",
+      "start_utc": "2026-09-15T02:40:11.842481+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=dfc9c763d23e3c2203c9835785a6b447d57d88bf&FilePath=model.safetensors.index.json",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:40:12.371903+00:00",
+          "error": "",
+          "actual_sha256": "eb522fa2269e4a958bf625765bccde4a0677895a09eed23cdd8d1760dfc0259c"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:40:12.372868+00:00"
+    },
+    {
+      "file": "merges.txt",
+      "expected_sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "bytes_expected": 1671853,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "dfc9c763d23e3c2203c9835785a6b447d57d88bf",
+      "start_utc": "2026-09-15T02:40:12.185739+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=dfc9c763d23e3c2203c9835785a6b447d57d88bf&FilePath=merges.txt",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:40:13.370083+00:00",
+          "error": "",
+          "actual_sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:40:13.374479+00:00"
+    },
+    {
+      "file": "vocab.json",
+      "expected_sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "bytes_expected": 2776833,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "dfc9c763d23e3c2203c9835785a6b447d57d88bf",
+      "start_utc": "2026-09-15T02:40:12.373039+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=dfc9c763d23e3c2203c9835785a6b447d57d88bf&FilePath=vocab.json",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:40:14.596715+00:00",
+          "error": "",
+          "actual_sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:40:14.600953+00:00"
+    },
+    {
+      "file": "tokenizer.json",
+      "expected_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "bytes_expected": 11422654,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "dfc9c763d23e3c2203c9835785a6b447d57d88bf",
+      "start_utc": "2026-09-15T02:40:13.374694+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=dfc9c763d23e3c2203c9835785a6b447d57d88bf&FilePath=tokenizer.json",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:40:16.757279+00:00",
+          "error": "",
+          "actual_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:40:16.772729+00:00"
+    },
+    {
+      "file": "model-00002-of-00002.safetensors",
+      "expected_sha256": "2814562d654fe2d541fd4682804a0ccaa400e79701872c8e9f5998cf9481fdf8",
+      "bytes_expected": 2953517134,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "e4d2db956472a64d93454d9055aed31f66c75cec",
+      "start_utc": "2026-09-15T02:40:14.601117+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=e4d2db956472a64d93454d9055aed31f66c75cec&FilePath=model-00002-of-00002.safetensors",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:50:50.078783+00:00",
+          "error": "",
+          "actual_sha256": "2814562d654fe2d541fd4682804a0ccaa400e79701872c8e9f5998cf9481fdf8"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:50:51.940246+00:00"
+    },
+    {
+      "file": "model-00001-of-00002.safetensors",
+      "expected_sha256": "5795efcfc7c96fd273e600562e8b111bfcc427415de9001d0a07e70cd99cff19",
+      "bytes_expected": 5354381380,
+      "huggingface_revision": "a4d9b2df59d2c150bef02fcbe0d91046b7ca33a4",
+      "modelscope_revision": "e4d2db956472a64d93454d9055aed31f66c75cec",
+      "start_utc": "2026-09-15T02:40:16.772954+00:00",
+      "attempts": [
+        {
+          "url": "https://modelscope.cn/api/v1/models/mlx-community/Qwen3-14B-4bit/repo?Revision=e4d2db956472a64d93454d9055aed31f66c75cec&FilePath=model-00001-of-00002.safetensors",
+          "exit_code": 0,
+          "end_utc": "2026-09-15T02:56:57.670928+00:00",
+          "error": "",
+          "actual_sha256": "5795efcfc7c96fd273e600562e8b111bfcc427415de9001d0a07e70cd99cff19"
+        }
+      ],
+      "status": "downloaded_verified",
+      "end_utc": "2026-09-15T02:57:01.015417+00:00"
+    }
+  ]
+}

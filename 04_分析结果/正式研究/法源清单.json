@@ -1,0 +1,110 @@
+{
+  "ADD": {
+    "document_id": "ADD",
+    "file": "03_法规与政策/MPA候选/Addo_2019_GN777.pdf",
+    "filename": "Addo_2019_GN777.pdf",
+    "pages": 22,
+    "sha256": "2a344c16fdb5ba11323b172527a02ce4a9f7636d0dee36b3210aa1ba34a4d0a2",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/201905/424792rg10950gon777.pdf",
+    "role": "source-page inputs"
+  },
+  "TSI": {
+    "document_id": "TSI",
+    "file": "03_法规与政策/MPA候选/Tsitsikamma_2016_GN1579.pdf",
+    "filename": "Tsitsikamma_2016_GN1579.pdf",
+    "pages": 18,
+    "sha256": "c1dbce8389c379f01b0a41bc259e983164cf5bef8b169ba00e0fbf200a2fb45f",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/201612/40511rg10676gon1579.pdf",
+    "role": "source-page inputs"
+  },
+  "PEC": {
+    "document_id": "PEC",
+    "file": "03_法规与政策/MPA候选/Port_Elizabeth_Corals_2019_GN789.pdf",
+    "filename": "Port_Elizabeth_Corals_2019_GN789.pdf",
+    "pages": 13,
+    "sha256": "47ce8abef216f15d23dd93760c1672852f6599a53264eab7a895aee4cb606373",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/201905/42479rg10950gon789.pdf",
+    "role": "source-page inputs"
+  },
+  "UTH": {
+    "document_id": "UTH",
+    "file": "03_法规与政策/MPA候选/Uthukela_2019_GN790.pdf",
+    "filename": "Uthukela_2019_GN790.pdf",
+    "pages": 20,
+    "sha256": "94095e20da7b5995fc5da306eca94df874d4d95b9d604457364937a6a8cbb650",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/201905/42479rg10950gon790.pdf",
+    "role": "source-page inputs"
+  },
+  "TMN": {
+    "document_id": "TMN",
+    "file": "03_法规与政策/正式法源/Table_Mountain_2004_GN695.pdf",
+    "filename": "Table_Mountain_2004_GN695.pdf",
+    "pages": 8,
+    "sha256": "c5f96def588f6d87fad9cbca63c4d8c8e407ec17c0be7d51d8afd328897b2481",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/201409/264310.pdf",
+    "role": "source-page inputs"
+  },
+  "STI": {
+    "document_id": "STI",
+    "file": "03_法规与政策/正式法源/Stilbaai_2008_GN1108.pdf",
+    "filename": "Stilbaai_2008_GN1108.pdf",
+    "pages": 4,
+    "sha256": "6709ec27cd9f1280f5a6b3160745582afc136c5c88279f9f4b429daf15113076",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/201409/31516reggaz89741108.pdf",
+    "role": "source-page inputs"
+  },
+  "PON": {
+    "document_id": "PON",
+    "file": "03_法规与政策/正式法源/Pondoland_2004_GN694.pdf",
+    "filename": "Pondoland_2004_GN694.pdf",
+    "pages": 9,
+    "sha256": "ffa35eb0f6d97321e37f7a6c3efba81e902edc4861fb0c07cadd3748fe6f3e62",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/201409/264300.pdf",
+    "role": "source-page inputs"
+  },
+  "AMA": {
+    "document_id": "AMA",
+    "file": "03_法规与政策/正式法源/Amathole_2011_GN731.pdf",
+    "filename": "Amathole_2011_GN731.pdf",
+    "pages": 3,
+    "sha256": "77dbff29d2f809480ad25aa5af3cf334eb98d8c4acb11ebb5ca8725643f3e445",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/201409/34596rg9587gon731.pdf",
+    "role": "source-page inputs"
+  },
+  "DWE": {
+    "document_id": "DWE",
+    "file": "03_法规与政策/正式法源/Dwesa_Cwebe_2015_GN1074.pdf",
+    "filename": "Dwesa_Cwebe_2015_GN1074.pdf",
+    "pages": 16,
+    "sha256": "a52c0e9a9969add9eab388f7ed2347410390c19f88eb63946724590068661bc4",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/201511/39379gon1074.pdf",
+    "role": "source-page inputs"
+  },
+  "AMD": {
+    "document_id": "AMD",
+    "file": "03_法规与政策/正式法源/Amendments_2024_GN4786.pdf",
+    "filename": "Amendments_2024_GN4786.pdf",
+    "pages": 10,
+    "sha256": "5768cb76043c748d52ecb52151da5e1d39cea262ed9a7141bfd707ed5660313d",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/202405/50617gon4786.pdf",
+    "role": "source-page inputs"
+  },
+  "DRF": {
+    "document_id": "DRF",
+    "file": "03_法规与政策/正式法源/Draft_2020_GN321.pdf",
+    "filename": "Draft_2020_GN321.pdf",
+    "pages": 8,
+    "sha256": "1d83ed0c576670df1f8f3a5bcfb81b71407802ac75d40d2e3bf4dd63665f681b",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/202003/43110gon321.pdf",
+    "role": "source-page inputs"
+  },
+  "ACT": {
+    "document_id": "ACT",
+    "file": "03_法规与政策/正式法源/NEMPAA_2014_Act21.pdf",
+    "filename": "NEMPAA_2014_Act21.pdf",
+    "pages": 8,
+    "sha256": "5e896f090e42af04565b39847066b5f1e433a1bb698bd8fbf7dbe53a5b15ebd5",
+    "url": "https://www.gov.za/sites/default/files/gcis_document/201409/377102-6act21of2014natenvironmanagea.pdf",
+    "role": "context only"
+  }
+}

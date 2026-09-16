@@ -1,0 +1,30 @@
+{
+  "frozen_utc": "2026-09-10T10:14:42.004436+00:00",
+  "total_cases": 72,
+  "split_counts": {
+    "pilot": 36,
+    "heldout": 36
+  },
+  "label_counts": {
+    "CONTRADICTED": 27,
+    "SUPPORTED": 27,
+    "INSUFFICIENT": 18
+  },
+  "mpa_counts": {
+    "ADD": 8,
+    "TSI": 8,
+    "PEC": 8,
+    "UTH": 8,
+    "TMN": 8,
+    "STI": 8,
+    "PON": 8,
+    "AMA": 8,
+    "DWE": 8
+  },
+  "note": "冻结于首次法规测试推理前；非公开预注册。pilot用于可行性；heldout未运行前不得据pilot表现改答案或问题。",
+  "files": {
+    "cases_v1.json": "666807ab7dc5d3bf3fe6ed5c0a701fa583d007238fbd9b31db3c5676d304c1cb",
+    "evidence_v1.json": "aed69cd2b4ae0290080777509ebc45f893676ae8023edde200cd943674a1a92f"
+  },
+  "generator_sha256": "d82a0ed874f449a186be1ddd181e30e81ea12a8309a3c51b25f7843ceb092af4"
+}

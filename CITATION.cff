@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript when using these data and code."
+title: "Reliability of large language models in interpreting South African marine protected area regulations"
+authors:
+  - family-names: Qi
+    given-names: Yifan
+  - family-names: Shuai
+    given-names: Rence
+  - family-names: Zhao
+    given-names: Yingze
+  - family-names: Miao
+    given-names: Yulin
+date-released: 2026-09-16
+repository-code: "https://github.com/Ansolors/mpa-legal-reliability"
+url: "https://github.com/Ansolors/mpa-legal-reliability"

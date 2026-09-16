@@ -1,0 +1,10 @@
+{
+  "primary": "strict JSON parse; exact label; generation errors, invalid JSON or label count as incorrect",
+  "macro_f1": "arithmetic mean of label F1 over the three prespecified labels; invalid prediction acts as false negative for gold label",
+  "citation_id_validity": "all returned IDs must refer to supplied pages; at least one ID required; this is identifier validity, NOT semantic citation correctness",
+  "required_page_recall": "fraction of prelisted necessary source-page IDs cited; diagnostic, not a substitute for substantive answer auditing",
+  "unsupported_decision": "SUPPORTED or CONTRADICTED on a gold INSUFFICIENT case",
+  "over_abstention": "INSUFFICIENT on a determinate gold case",
+  "inferential_scope": "finite-case descriptive pilot only; no significance claim, no national/global error-rate inference; cases share MPA regulations and a cross-MPA amendment",
+  "frozen_utc": "2026-09-10T10:18:01.321726+00:00"
+}

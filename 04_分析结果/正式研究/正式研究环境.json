@@ -1,0 +1,16 @@
+{
+  "hardware": "Apple M1 Pro",
+  "unified_memory_gib": 16,
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.10.6",
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "transformers": "5.17.0",
+    "tokenizers": "0.23.2",
+    "safetensors": "0.8.0",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.1",
+    "pdfplumber": "0.11.5"
+  }
+}

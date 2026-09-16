@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-10T10:28:51.843072+00:00",
+  "status": "post-hoc diagnostic for pilot; fixed before heldout inference",
+  "reason": "Phi produced outer Markdown code fences despite the identical JSON instruction; do not equate a wrapper with legal error",
+  "operation": "strip whitespace and one whole-output outer ```json ... ``` or ``` ... ``` wrapper; standard JSON parse; exact uppercase labels only",
+  "no_changes": [
+    "label value",
+    "reason text",
+    "evidence references",
+    "gold",
+    "input corpus",
+    "prompts"
+  ],
+  "main_pilot_score": "original strict-JSON result remains in 先导结果摘要.json",
+  "heldout_use": "readable label accuracy as substantive task metric; strict JSON and citation diagnostics separately"
+}

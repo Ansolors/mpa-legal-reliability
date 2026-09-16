@@ -1,0 +1,20 @@
+{
+  "start_utc": "2026-09-10T10:17:02.879928+00:00",
+  "model": "Qwen3-4B-Instruct-2507-4bit",
+  "split": "pilot",
+  "model_weight_sha256": "2a73c6c248601ab904e035548abd8e6abb65ea27dcb5f342fb0a8910eb44173f",
+  "config_sha256": "574349e5a343236546fda55e4744a76e181f534182d7dc60ff1bad7e7a502849",
+  "protocol_sha256": "2a8fa4aa453c9491a842ced3d154f4e7073f4b3603a6b5eb1053bfdd73289d9b",
+  "runner_sha256": "8fb8e2cb9c9ca4ac87e3599b86baf3abb3723ce1100439f2d664173f5e02a432",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.10.6",
+  "packages": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "transformers": "5.17.0",
+    "tokenizers": "0.23.2",
+    "safetensors": "0.8.0"
+  },
+  "end_utc": "2026-09-10T10:25:52.216335+00:00",
+  "raw_file_sha256": "720450d2c547e4793b8b9f8a2e95a34515f9aef9a19356996a8566ce83e02e0d"
+}

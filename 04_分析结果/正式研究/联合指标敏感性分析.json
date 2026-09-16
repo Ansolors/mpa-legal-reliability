@@ -1,0 +1,2084 @@
+{
+  "created_utc": "2026-09-16T07:28:36.965876+00:00",
+  "analysis": "Extension of the existing held-out sensitivity analyses to joint measures.",
+  "definitions": {
+    "joint": "Reference-label agreement and no identified definite substantive explanation error.",
+    "aligned_joint": "Joint criterion plus label--explanation alignment.",
+    "denominator": "Total retained response weight; ambiguous explanations remain in the denominator.",
+    "difference": "Checklist minus direct rate, in percentage points.",
+    "weights": "Five draft claims receive 1/5 each; four commencement claims receive 1/4 each; all others receive 1.",
+    "scope": "Descriptive comparisons using the archived labels and codes; no new inference or recoding."
+  },
+  "inputs_sha256": {
+    "04_分析结果/法规命题基准/publication_manifest.json": "5341ecb0bf11d9a7800a2abf25e320e7c459dab6fc26b4ec97fd0e9469694861",
+    "04_分析结果/法规命题基准/cases_v1.json": "caa1599c3162edab738bd3ed6a70bab14dee4b9cd6d3650321984a0ac084ad44",
+    "04_分析结果/法规命题基准/evidence_v1.json": "aed69cd2b4ae0290080777509ebc45f893676ae8023edde200cd943674a1a92f",
+    "04_分析结果/正式研究/正式逐条分析.json": "2bda080cdb8681515df75b81f93edca1e8e6b9c21cc6c76ba49dc549bb0c9bec",
+    "04_分析结果/正式研究/正式研究结果.json": "b32b99baaafca5681c9ef849debb26cdf4e737c5a33fb695bf589ffd558fa5d9",
+    "04_分析结果/正式研究/explanation_codes.json": "0d884117d08fb056e8e34855bf9ff89a18f11931d759ebe46f34b125d20a9b2e",
+    "04_分析结果/模型先导实验/Phi-4-mini-instruct-4bit_heldout_raw.jsonl": "29cefd4f6c9b515798b18525b8c29703404085902dd21be36dbf271943c6af4d",
+    "04_分析结果/模型先导实验/Qwen3-4B-Instruct-2507-4bit_heldout_raw.jsonl": "1d35dae351b3b83e3fae97d501248865420dab51885b9052b4eb6ece1705b4bd",
+    "05_分析代码/analyse_joint_sensitivity.py": "80193bfb2efb2472981b793148cf1c8d61a954549b63e56eb679e5da95c5c7ba",
+    "05_分析代码/score_readable_labels.py": "2569d705b9e3b4616f2e85edf127da85b95ad5a4386b631bb604d55b4f750c61"
+  },
+  "shared_question_weights": {
+    "ADD05": "1",
+    "ADD06": "1",
+    "ADD07": "1",
+    "ADD08": "1",
+    "TSI05": "1",
+    "TSI06": "1",
+    "TSI07": "1",
+    "TSI08": "1",
+    "PEC05": "1",
+    "PEC06": "1",
+    "PEC07": "1",
+    "PEC08": "1",
+    "UTH05": "1",
+    "UTH06": "1",
+    "UTH07": "1",
+    "UTH08": "1",
+    "TMN05": "1",
+    "TMN06": "1/5",
+    "TMN07": "1/4",
+    "TMN08": "1",
+    "STI05": "1",
+    "STI06": "1/5",
+    "STI07": "1/4",
+    "STI08": "1",
+    "PON05": "1",
+    "PON06": "1/5",
+    "PON07": "1/4",
+    "PON08": "1",
+    "AMA05": "1",
+    "AMA06": "1/5",
+    "AMA07": "1/4",
+    "AMA08": "1",
+    "DWE05": "1",
+    "DWE06": "1/5",
+    "DWE07": "1",
+    "DWE08": "1"
+  },
+  "sensitivity": [
+    {
+      "analysis": "all_heldout",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 30.0,
+          "accuracy": 0.8333333333333334,
+          "macro_f1": 0.8196969696969697,
+          "joint_count": 24.0,
+          "joint_rate": 0.6666666666666666,
+          "aligned_joint_count": 24.0,
+          "aligned_joint_rate": 0.6666666666666666,
+          "exact_counts": {
+            "total_weight": "36",
+            "joint": "24",
+            "aligned_joint": "24"
+          }
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 26.0,
+          "accuracy": 0.7222222222222222,
+          "macro_f1": 0.6989838118870377,
+          "joint_count": 19.0,
+          "joint_rate": 0.5277777777777778,
+          "aligned_joint_count": 19.0,
+          "aligned_joint_rate": 0.5277777777777778,
+          "exact_counts": {
+            "total_weight": "36",
+            "joint": "19",
+            "aligned_joint": "19"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -11.111111111111116,
+        "joint_rate": -13.888888888888884,
+        "aligned_joint_rate": -13.888888888888884
+      }
+    },
+    {
+      "analysis": "all_heldout",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 16.0,
+          "accuracy": 0.4444444444444444,
+          "macro_f1": 0.40966286799620133,
+          "joint_count": 16.0,
+          "joint_rate": 0.4444444444444444,
+          "aligned_joint_count": 14.0,
+          "aligned_joint_rate": 0.3888888888888889,
+          "exact_counts": {
+            "total_weight": "36",
+            "joint": "16",
+            "aligned_joint": "14"
+          }
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 18.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.4868388316664179,
+          "joint_count": 14.0,
+          "joint_rate": 0.3888888888888889,
+          "aligned_joint_count": 11.0,
+          "aligned_joint_rate": 0.3055555555555556,
+          "exact_counts": {
+            "total_weight": "36",
+            "joint": "14",
+            "aligned_joint": "11"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 5.555555555555558,
+        "joint_rate": -5.555555555555553,
+        "aligned_joint_rate": -8.333333333333332
+      }
+    },
+    {
+      "analysis": "shared_draft_and_commencement_equal_group_weight",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 29.0,
+          "correct": 23.0,
+          "accuracy": 0.7931034482758621,
+          "macro_f1": 0.7712962962962963,
+          "joint_count": 20.2,
+          "joint_rate": 0.696551724137931,
+          "aligned_joint_count": 20.2,
+          "aligned_joint_rate": 0.696551724137931,
+          "exact_counts": {
+            "total_weight": "29",
+            "joint": "101/5",
+            "aligned_joint": "101/5"
+          }
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 29.0,
+          "correct": 19.0,
+          "accuracy": 0.6551724137931034,
+          "macro_f1": 0.6384615384615384,
+          "joint_count": 15.2,
+          "joint_rate": 0.5241379310344828,
+          "aligned_joint_count": 15.2,
+          "aligned_joint_rate": 0.5241379310344828,
+          "exact_counts": {
+            "total_weight": "29",
+            "joint": "76/5",
+            "aligned_joint": "76/5"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -13.793103448275868,
+        "joint_rate": -17.24137931034482,
+        "aligned_joint_rate": -17.24137931034482
+      }
+    },
+    {
+      "analysis": "shared_draft_and_commencement_equal_group_weight",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 29.0,
+          "correct": 13.0,
+          "accuracy": 0.4482758620689655,
+          "macro_f1": 0.4299100090449455,
+          "joint_count": 13.0,
+          "joint_rate": 0.4482758620689655,
+          "aligned_joint_count": 11.0,
+          "aligned_joint_rate": 0.3793103448275862,
+          "exact_counts": {
+            "total_weight": "29",
+            "joint": "13",
+            "aligned_joint": "11"
+          }
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 29.0,
+          "correct": 14.2,
+          "accuracy": 0.4896551724137931,
+          "macro_f1": 0.4827682014443297,
+          "joint_count": 11.0,
+          "joint_rate": 0.3793103448275862,
+          "aligned_joint_count": 8.0,
+          "aligned_joint_rate": 0.27586206896551724,
+          "exact_counts": {
+            "total_weight": "29",
+            "joint": "11",
+            "aligned_joint": "8"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 4.137931034482756,
+        "joint_rate": -6.896551724137934,
+        "aligned_joint_rate": -10.344827586206895
+      }
+    },
+    {
+      "analysis": "exclude_shared_amendment_or_draft_inputs",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "DWE05",
+        "DWE07",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 18,
+          "total_weight": 18.0,
+          "correct": 17.0,
+          "accuracy": 0.9444444444444444,
+          "macro_f1": 0.9454191033138402,
+          "joint_count": 15.0,
+          "joint_rate": 0.8333333333333334,
+          "aligned_joint_count": 15.0,
+          "aligned_joint_rate": 0.8333333333333334,
+          "exact_counts": {
+            "total_weight": "18",
+            "joint": "15",
+            "aligned_joint": "15"
+          }
+        },
+        "structured": {
+          "n": 18,
+          "total_weight": 18.0,
+          "correct": 15.0,
+          "accuracy": 0.8333333333333334,
+          "macro_f1": 0.8244348244348244,
+          "joint_count": 12.0,
+          "joint_rate": 0.6666666666666666,
+          "aligned_joint_count": 12.0,
+          "aligned_joint_rate": 0.6666666666666666,
+          "exact_counts": {
+            "total_weight": "18",
+            "joint": "12",
+            "aligned_joint": "12"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -11.111111111111105,
+        "joint_rate": -16.666666666666675,
+        "aligned_joint_rate": -16.666666666666675
+      }
+    },
+    {
+      "analysis": "exclude_shared_amendment_or_draft_inputs",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "DWE05",
+        "DWE07",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 18,
+          "total_weight": 18.0,
+          "correct": 10.0,
+          "accuracy": 0.5555555555555556,
+          "macro_f1": 0.5111111111111111,
+          "joint_count": 10.0,
+          "joint_rate": 0.5555555555555556,
+          "aligned_joint_count": 9.0,
+          "aligned_joint_rate": 0.5,
+          "exact_counts": {
+            "total_weight": "18",
+            "joint": "10",
+            "aligned_joint": "9"
+          }
+        },
+        "structured": {
+          "n": 18,
+          "total_weight": 18.0,
+          "correct": 9.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.5023310023310024,
+          "joint_count": 7.0,
+          "joint_rate": 0.3888888888888889,
+          "aligned_joint_count": 5.0,
+          "aligned_joint_rate": 0.2777777777777778,
+          "exact_counts": {
+            "total_weight": "18",
+            "joint": "7",
+            "aligned_joint": "5"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -5.555555555555558,
+        "joint_rate": -16.666666666666668,
+        "aligned_joint_rate": -22.22222222222222
+      }
+    },
+    {
+      "analysis": "exclude_four_outcome_wording_cases",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 26.0,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7435064935064936,
+          "joint_count": 20.0,
+          "joint_rate": 0.625,
+          "aligned_joint_count": 20.0,
+          "aligned_joint_rate": 0.625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "20",
+            "aligned_joint": "20"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 23.0,
+          "accuracy": 0.71875,
+          "macro_f1": 0.6129032258064516,
+          "joint_count": 17.0,
+          "joint_rate": 0.53125,
+          "aligned_joint_count": 17.0,
+          "aligned_joint_rate": 0.53125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "17",
+            "aligned_joint": "17"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -9.375,
+        "joint_rate": -9.375,
+        "aligned_joint_rate": -9.375
+      }
+    },
+    {
+      "analysis": "exclude_four_outcome_wording_cases",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.315,
+          "joint_count": 14.0,
+          "joint_rate": 0.4375,
+          "aligned_joint_count": 12.0,
+          "aligned_joint_rate": 0.375,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "14",
+            "aligned_joint": "12"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.42911877394636017,
+          "joint_count": 11.0,
+          "joint_rate": 0.34375,
+          "aligned_joint_count": 8.0,
+          "aligned_joint_rate": 0.25,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "11",
+            "aligned_joint": "8"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 3.125,
+        "joint_rate": -9.375,
+        "aligned_joint_rate": -12.5
+      }
+    }
+  ],
+  "leave_one_mpa_out": [
+    {
+      "excluded_mpa": "ADD",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.8214896214896215,
+          "joint_count": 22.0,
+          "joint_rate": 0.6875,
+          "aligned_joint_count": 22.0,
+          "aligned_joint_rate": 0.6875,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "22",
+            "aligned_joint": "22"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 23.0,
+          "accuracy": 0.71875,
+          "macro_f1": 0.6808658008658008,
+          "joint_count": 17.0,
+          "joint_rate": 0.53125,
+          "aligned_joint_count": 17.0,
+          "aligned_joint_rate": 0.53125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "17",
+            "aligned_joint": "17"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -12.5,
+        "joint_rate": -15.625,
+        "aligned_joint_rate": -15.625
+      }
+    },
+    {
+      "excluded_mpa": "AMA",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.8385331143951834,
+          "joint_count": 22.0,
+          "joint_rate": 0.6875,
+          "aligned_joint_count": 22.0,
+          "aligned_joint_rate": 0.6875,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "22",
+            "aligned_joint": "22"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 24.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7301587301587301,
+          "joint_count": 18.0,
+          "joint_rate": 0.5625,
+          "aligned_joint_count": 18.0,
+          "aligned_joint_rate": 0.5625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "18",
+            "aligned_joint": "18"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -9.375,
+        "joint_rate": -12.5,
+        "aligned_joint_rate": -12.5
+      }
+    },
+    {
+      "excluded_mpa": "DWE",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 26.0,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7976850735471425,
+          "joint_count": 20.0,
+          "joint_rate": 0.625,
+          "aligned_joint_count": 20.0,
+          "aligned_joint_rate": 0.625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "20",
+            "aligned_joint": "20"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 22.0,
+          "accuracy": 0.6875,
+          "macro_f1": 0.6585513252179919,
+          "joint_count": 15.0,
+          "joint_rate": 0.46875,
+          "aligned_joint_count": 15.0,
+          "aligned_joint_rate": 0.46875,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "15",
+            "aligned_joint": "15"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -12.5,
+        "joint_rate": -15.625,
+        "aligned_joint_rate": -15.625
+      }
+    },
+    {
+      "excluded_mpa": "PEC",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 26.0,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7976850735471425,
+          "joint_count": 21.0,
+          "joint_rate": 0.65625,
+          "aligned_joint_count": 21.0,
+          "aligned_joint_rate": 0.65625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "21",
+            "aligned_joint": "21"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 22.0,
+          "accuracy": 0.6875,
+          "macro_f1": 0.6585513252179919,
+          "joint_count": 17.0,
+          "joint_rate": 0.53125,
+          "aligned_joint_count": 17.0,
+          "aligned_joint_rate": 0.53125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "17",
+            "aligned_joint": "17"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -12.5,
+        "joint_rate": -12.5,
+        "aligned_joint_rate": -12.5
+      }
+    },
+    {
+      "excluded_mpa": "PON",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.8214896214896215,
+          "joint_count": 22.0,
+          "joint_rate": 0.6875,
+          "aligned_joint_count": 22.0,
+          "aligned_joint_rate": 0.6875,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "22",
+            "aligned_joint": "22"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 24.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7301587301587301,
+          "joint_count": 18.0,
+          "joint_rate": 0.5625,
+          "aligned_joint_count": 18.0,
+          "aligned_joint_rate": 0.5625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "18",
+            "aligned_joint": "18"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -9.375,
+        "joint_rate": -12.5,
+        "aligned_joint_rate": -12.5
+      }
+    },
+    {
+      "excluded_mpa": "STI",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.8385331143951834,
+          "joint_count": 22.0,
+          "joint_rate": 0.6875,
+          "aligned_joint_count": 22.0,
+          "aligned_joint_rate": 0.6875,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "22",
+            "aligned_joint": "22"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 23.0,
+          "accuracy": 0.71875,
+          "macro_f1": 0.7071604938271605,
+          "joint_count": 17.0,
+          "joint_rate": 0.53125,
+          "aligned_joint_count": 17.0,
+          "aligned_joint_rate": 0.53125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "17",
+            "aligned_joint": "17"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -12.5,
+        "joint_rate": -15.625,
+        "aligned_joint_rate": -15.625
+      }
+    },
+    {
+      "excluded_mpa": "TMN",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.8634920634920635,
+          "joint_count": 23.0,
+          "joint_rate": 0.71875,
+          "aligned_joint_count": 23.0,
+          "aligned_joint_rate": 0.71875,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "23",
+            "aligned_joint": "23"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 24.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7301587301587301,
+          "joint_count": 18.0,
+          "joint_rate": 0.5625,
+          "aligned_joint_count": 18.0,
+          "aligned_joint_rate": 0.5625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "18",
+            "aligned_joint": "18"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -12.5,
+        "joint_rate": -15.625,
+        "aligned_joint_rate": -15.625
+      }
+    },
+    {
+      "excluded_mpa": "TSI",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 26.0,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7976850735471425,
+          "joint_count": 20.0,
+          "joint_rate": 0.625,
+          "aligned_joint_count": 20.0,
+          "aligned_joint_rate": 0.625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "20",
+            "aligned_joint": "20"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 23.0,
+          "accuracy": 0.71875,
+          "macro_f1": 0.6808658008658008,
+          "joint_count": 16.0,
+          "joint_rate": 0.5,
+          "aligned_joint_count": 16.0,
+          "aligned_joint_rate": 0.5,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "16",
+            "aligned_joint": "16"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -9.375,
+        "joint_rate": -12.5,
+        "aligned_joint_rate": -12.5
+      }
+    },
+    {
+      "excluded_mpa": "UTH",
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 26.0,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7976850735471425,
+          "joint_count": 20.0,
+          "joint_rate": 0.625,
+          "aligned_joint_count": 20.0,
+          "aligned_joint_rate": 0.625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "20",
+            "aligned_joint": "20"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 23.0,
+          "accuracy": 0.71875,
+          "macro_f1": 0.7071604938271605,
+          "joint_count": 16.0,
+          "joint_rate": 0.5,
+          "aligned_joint_count": 16.0,
+          "aligned_joint_rate": 0.5,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "16",
+            "aligned_joint": "16"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": -9.375,
+        "joint_rate": -12.5,
+        "aligned_joint_rate": -12.5
+      }
+    },
+    {
+      "excluded_mpa": "ADD",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.4049641845743795,
+          "joint_count": 14.0,
+          "joint_rate": 0.4375,
+          "aligned_joint_count": 13.0,
+          "aligned_joint_rate": 0.40625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "14",
+            "aligned_joint": "13"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4507422402159244,
+          "joint_count": 11.0,
+          "joint_rate": 0.34375,
+          "aligned_joint_count": 10.0,
+          "aligned_joint_rate": 0.3125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "11",
+            "aligned_joint": "10"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 3.125,
+        "joint_rate": -9.375,
+        "aligned_joint_rate": -9.375
+      }
+    },
+    {
+      "excluded_mpa": "AMA",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4365079365079365,
+          "joint_count": 15.0,
+          "joint_rate": 0.46875,
+          "aligned_joint_count": 13.0,
+          "aligned_joint_rate": 0.40625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "15",
+            "aligned_joint": "13"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 16.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.4829059829059829,
+          "joint_count": 13.0,
+          "joint_rate": 0.40625,
+          "aligned_joint_count": 10.0,
+          "aligned_joint_rate": 0.3125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "13",
+            "aligned_joint": "10"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 3.125,
+        "joint_rate": -6.25,
+        "aligned_joint_rate": -9.375
+      }
+    },
+    {
+      "excluded_mpa": "DWE",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.38022988505747124,
+          "joint_count": 14.0,
+          "joint_rate": 0.4375,
+          "aligned_joint_count": 12.0,
+          "aligned_joint_rate": 0.375,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "14",
+            "aligned_joint": "12"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 17.0,
+          "accuracy": 0.53125,
+          "macro_f1": 0.5124183006535947,
+          "joint_count": 13.0,
+          "joint_rate": 0.40625,
+          "aligned_joint_count": 10.0,
+          "aligned_joint_rate": 0.3125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "13",
+            "aligned_joint": "10"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 9.375,
+        "joint_rate": -3.125,
+        "aligned_joint_rate": -6.25
+      }
+    },
+    {
+      "excluded_mpa": "PEC",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.37222222222222223,
+          "joint_count": 14.0,
+          "joint_rate": 0.4375,
+          "aligned_joint_count": 12.0,
+          "aligned_joint_rate": 0.375,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "14",
+            "aligned_joint": "12"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 16.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.47908496732026146,
+          "joint_count": 13.0,
+          "joint_rate": 0.40625,
+          "aligned_joint_count": 10.0,
+          "aligned_joint_rate": 0.3125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "13",
+            "aligned_joint": "10"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 6.25,
+        "joint_rate": -3.125,
+        "aligned_joint_rate": -6.25
+      }
+    },
+    {
+      "excluded_mpa": "PON",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.41530864197530865,
+          "joint_count": 14.0,
+          "joint_rate": 0.4375,
+          "aligned_joint_count": 13.0,
+          "aligned_joint_rate": 0.40625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "14",
+            "aligned_joint": "13"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 16.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.49444444444444446,
+          "joint_count": 12.0,
+          "joint_rate": 0.375,
+          "aligned_joint_count": 10.0,
+          "aligned_joint_rate": 0.3125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "12",
+            "aligned_joint": "10"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 6.25,
+        "joint_rate": -6.25,
+        "aligned_joint_rate": -9.375
+      }
+    },
+    {
+      "excluded_mpa": "STI",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4365079365079365,
+          "joint_count": 15.0,
+          "joint_rate": 0.46875,
+          "aligned_joint_count": 13.0,
+          "aligned_joint_rate": 0.40625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "15",
+            "aligned_joint": "13"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 17.0,
+          "accuracy": 0.53125,
+          "macro_f1": 0.5203508771929825,
+          "joint_count": 13.0,
+          "joint_rate": 0.40625,
+          "aligned_joint_count": 10.0,
+          "aligned_joint_rate": 0.3125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "13",
+            "aligned_joint": "10"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 6.25,
+        "joint_rate": -6.25,
+        "aligned_joint_rate": -9.375
+      }
+    },
+    {
+      "excluded_mpa": "TMN",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4365079365079365,
+          "joint_count": 15.0,
+          "joint_rate": 0.46875,
+          "aligned_joint_count": 13.0,
+          "aligned_joint_rate": 0.40625,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "15",
+            "aligned_joint": "13"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4617989417989418,
+          "joint_count": 12.0,
+          "joint_rate": 0.375,
+          "aligned_joint_count": 9.0,
+          "aligned_joint_rate": 0.28125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "12",
+            "aligned_joint": "9"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 0.0,
+        "joint_rate": -9.375,
+        "aligned_joint_rate": -12.5
+      }
+    },
+    {
+      "excluded_mpa": "TSI",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "UTH05",
+        "UTH06",
+        "UTH07",
+        "UTH08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 13.0,
+          "accuracy": 0.40625,
+          "macro_f1": 0.38492063492063494,
+          "joint_count": 13.0,
+          "joint_rate": 0.40625,
+          "aligned_joint_count": 11.0,
+          "aligned_joint_rate": 0.34375,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "13",
+            "aligned_joint": "11"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4617989417989418,
+          "joint_count": 12.0,
+          "joint_rate": 0.375,
+          "aligned_joint_count": 9.0,
+          "aligned_joint_rate": 0.28125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "12",
+            "aligned_joint": "9"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 6.25,
+        "joint_rate": -3.125,
+        "aligned_joint_rate": -6.25
+      }
+    },
+    {
+      "excluded_mpa": "UTH",
+      "model": "Phi-4-mini-instruct-4bit",
+      "case_ids": [
+        "ADD05",
+        "ADD06",
+        "ADD07",
+        "ADD08",
+        "AMA05",
+        "AMA06",
+        "AMA07",
+        "AMA08",
+        "DWE05",
+        "DWE06",
+        "DWE07",
+        "DWE08",
+        "PEC05",
+        "PEC06",
+        "PEC07",
+        "PEC08",
+        "PON05",
+        "PON06",
+        "PON07",
+        "PON08",
+        "STI05",
+        "STI06",
+        "STI07",
+        "STI08",
+        "TMN05",
+        "TMN06",
+        "TMN07",
+        "TMN08",
+        "TSI05",
+        "TSI06",
+        "TSI07",
+        "TSI08"
+      ],
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.4049641845743795,
+          "joint_count": 14.0,
+          "joint_rate": 0.4375,
+          "aligned_joint_count": 12.0,
+          "aligned_joint_rate": 0.375,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "14",
+            "aligned_joint": "12"
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 17.0,
+          "accuracy": 0.53125,
+          "macro_f1": 0.5087719298245614,
+          "joint_count": 13.0,
+          "joint_rate": 0.40625,
+          "aligned_joint_count": 10.0,
+          "aligned_joint_rate": 0.3125,
+          "exact_counts": {
+            "total_weight": "32",
+            "joint": "13",
+            "aligned_joint": "10"
+          }
+        }
+      },
+      "differences_pp": {
+        "accuracy": 9.375,
+        "joint_rate": -3.125,
+        "aligned_joint_rate": -6.25
+      }
+    }
+  ],
+  "leave_one_mpa_out_ranges": [
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "joint_rate": {
+        "min_pp": -15.625,
+        "max_pp": -12.5
+      },
+      "aligned_joint_rate": {
+        "min_pp": -15.625,
+        "max_pp": -12.5
+      }
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "joint_rate": {
+        "min_pp": -9.375,
+        "max_pp": -3.125
+      },
+      "aligned_joint_rate": {
+        "min_pp": -12.5,
+        "max_pp": -6.25
+      }
+    }
+  ],
+  "validation": {
+    "heldout_responses_checked_against_raw_and_audit": 144,
+    "legacy_label_metric_comparisons_reproduced": 26
+  }
+}

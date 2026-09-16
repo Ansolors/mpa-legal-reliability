@@ -1,0 +1,1759 @@
+{
+  "created_utc": "2026-09-16T07:28:37.115000+00:00",
+  "human_confirmed": true,
+  "groups": [
+    {
+      "method": "direct",
+      "n": 36,
+      "label_correct": 31,
+      "explanation_status_counts": {
+        "consistent": 33,
+        "indeterminate": 1,
+        "substantive_error": 2
+      },
+      "alignment_counts": {
+        "aligned": 31,
+        "misaligned": 5
+      },
+      "correct_label_excluded_from_joint": [
+        "AMA06",
+        "PON06",
+        "STI06"
+      ],
+      "correct_label_with_error": 2,
+      "joint_compatible_count": 28,
+      "joint_compatible_rate": 0.7777777777777778,
+      "joint_compatible_aligned_count": 28,
+      "joint_compatible_aligned_rate": 0.7777777777777778
+    },
+    {
+      "method": "structured",
+      "n": 36,
+      "label_correct": 32,
+      "explanation_status_counts": {
+        "consistent": 33,
+        "substantive_error": 3
+      },
+      "alignment_counts": {
+        "aligned": 32,
+        "misaligned": 4
+      },
+      "correct_label_excluded_from_joint": [
+        "PON06",
+        "STI06"
+      ],
+      "correct_label_with_error": 2,
+      "joint_compatible_count": 30,
+      "joint_compatible_rate": 0.8333333333333334,
+      "joint_compatible_aligned_count": 30,
+      "joint_compatible_aligned_rate": 0.8333333333333334
+    }
+  ],
+  "sensitivity": [
+    {
+      "analysis": "all_heldout",
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 36.0,
+          "joint_compatible_numerator": 28.0,
+          "joint_compatible_rate": 0.7777777777777778,
+          "joint_compatible_aligned_numerator": 28.0,
+          "joint_compatible_aligned_rate": 0.7777777777777778
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 36.0,
+          "joint_compatible_numerator": 30.0,
+          "joint_compatible_rate": 0.8333333333333334,
+          "joint_compatible_aligned_numerator": 30.0,
+          "joint_compatible_aligned_rate": 0.8333333333333334
+        }
+      }
+    },
+    {
+      "analysis": "shared_draft_and_commencement_equal_group_weight",
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 29.0,
+          "joint_compatible_numerator": 24.2,
+          "joint_compatible_rate": 0.8344827586206897,
+          "joint_compatible_aligned_numerator": 24.2,
+          "joint_compatible_aligned_rate": 0.8344827586206897
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 29.0,
+          "joint_compatible_numerator": 24.599999999999998,
+          "joint_compatible_rate": 0.8482758620689654,
+          "joint_compatible_aligned_numerator": 24.599999999999998,
+          "joint_compatible_aligned_rate": 0.8482758620689654
+        }
+      }
+    },
+    {
+      "analysis": "exclude_shared_amendment_or_draft_inputs",
+      "groups": {
+        "direct": {
+          "n": 18,
+          "total_weight": 18.0,
+          "joint_compatible_numerator": 18.0,
+          "joint_compatible_rate": 1.0,
+          "joint_compatible_aligned_numerator": 18.0,
+          "joint_compatible_aligned_rate": 1.0
+        },
+        "structured": {
+          "n": 18,
+          "total_weight": 18.0,
+          "joint_compatible_numerator": 18.0,
+          "joint_compatible_rate": 1.0,
+          "joint_compatible_aligned_numerator": 18.0,
+          "joint_compatible_aligned_rate": 1.0
+        }
+      }
+    },
+    {
+      "analysis": "exclude_four_outcome_wording_cases",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 24.0,
+          "joint_compatible_rate": 0.75,
+          "joint_compatible_aligned_numerator": 24.0,
+          "joint_compatible_aligned_rate": 0.75
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 26.0,
+          "joint_compatible_rate": 0.8125,
+          "joint_compatible_aligned_numerator": 26.0,
+          "joint_compatible_aligned_rate": 0.8125
+        }
+      }
+    },
+    {
+      "analysis": "exclude_mpa_ADD",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 24.0,
+          "joint_compatible_rate": 0.75,
+          "joint_compatible_aligned_numerator": 24.0,
+          "joint_compatible_aligned_rate": 0.75
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 26.0,
+          "joint_compatible_rate": 0.8125,
+          "joint_compatible_aligned_numerator": 26.0,
+          "joint_compatible_aligned_rate": 0.8125
+        }
+      }
+    },
+    {
+      "analysis": "exclude_mpa_AMA",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 26.0,
+          "joint_compatible_rate": 0.8125,
+          "joint_compatible_aligned_numerator": 26.0,
+          "joint_compatible_aligned_rate": 0.8125
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 27.0,
+          "joint_compatible_rate": 0.84375,
+          "joint_compatible_aligned_numerator": 27.0,
+          "joint_compatible_aligned_rate": 0.84375
+        }
+      }
+    },
+    {
+      "analysis": "exclude_mpa_DWE",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 24.0,
+          "joint_compatible_rate": 0.75,
+          "joint_compatible_aligned_numerator": 24.0,
+          "joint_compatible_aligned_rate": 0.75
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 26.0,
+          "joint_compatible_rate": 0.8125,
+          "joint_compatible_aligned_numerator": 26.0,
+          "joint_compatible_aligned_rate": 0.8125
+        }
+      }
+    },
+    {
+      "analysis": "exclude_mpa_PEC",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 24.0,
+          "joint_compatible_rate": 0.75,
+          "joint_compatible_aligned_numerator": 24.0,
+          "joint_compatible_aligned_rate": 0.75
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 26.0,
+          "joint_compatible_rate": 0.8125,
+          "joint_compatible_aligned_numerator": 26.0,
+          "joint_compatible_aligned_rate": 0.8125
+        }
+      }
+    },
+    {
+      "analysis": "exclude_mpa_PON",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 26.0,
+          "joint_compatible_rate": 0.8125,
+          "joint_compatible_aligned_numerator": 26.0,
+          "joint_compatible_aligned_rate": 0.8125
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 28.0,
+          "joint_compatible_rate": 0.875,
+          "joint_compatible_aligned_numerator": 28.0,
+          "joint_compatible_aligned_rate": 0.875
+        }
+      }
+    },
+    {
+      "analysis": "exclude_mpa_STI",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 26.0,
+          "joint_compatible_rate": 0.8125,
+          "joint_compatible_aligned_numerator": 26.0,
+          "joint_compatible_aligned_rate": 0.8125
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 28.0,
+          "joint_compatible_rate": 0.875,
+          "joint_compatible_aligned_numerator": 28.0,
+          "joint_compatible_aligned_rate": 0.875
+        }
+      }
+    },
+    {
+      "analysis": "exclude_mpa_TMN",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 26.0,
+          "joint_compatible_rate": 0.8125,
+          "joint_compatible_aligned_numerator": 26.0,
+          "joint_compatible_aligned_rate": 0.8125
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 27.0,
+          "joint_compatible_rate": 0.84375,
+          "joint_compatible_aligned_numerator": 27.0,
+          "joint_compatible_aligned_rate": 0.84375
+        }
+      }
+    },
+    {
+      "analysis": "exclude_mpa_TSI",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 24.0,
+          "joint_compatible_rate": 0.75,
+          "joint_compatible_aligned_numerator": 24.0,
+          "joint_compatible_aligned_rate": 0.75
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 26.0,
+          "joint_compatible_rate": 0.8125,
+          "joint_compatible_aligned_numerator": 26.0,
+          "joint_compatible_aligned_rate": 0.8125
+        }
+      }
+    },
+    {
+      "analysis": "exclude_mpa_UTH",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 24.0,
+          "joint_compatible_rate": 0.75,
+          "joint_compatible_aligned_numerator": 24.0,
+          "joint_compatible_aligned_rate": 0.75
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "joint_compatible_numerator": 26.0,
+          "joint_compatible_rate": 0.8125,
+          "joint_compatible_aligned_numerator": 26.0,
+          "joint_compatible_aligned_rate": 0.8125
+        }
+      }
+    }
+  ],
+  "status": "Final explanation coding used in the manuscript",
+  "records": [
+    {
+      "case_id": "ADD05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "5(5)规定受控区超过100吨船舶的锚泊禁令，并保留5(6)—(7)。题目已明确排除例外；“未提及例外”的措辞不够精确，但未改变该题结论。",
+      "reference_pages": [
+        "ADD:p9"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "ADD",
+      "family": "anchoring_exception",
+      "output_sha256": "4cf90ceeb367f08b2d2d916d36736143b47f05e8287b1fa3d5ab8b8bdf10ea53"
+    },
+    {
+      "case_id": "ADD05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "准确指出5(5)的吨位门槛及5(6)—(7)例外，并依据题目排除例外的设定支持命题。",
+      "reference_pages": [
+        "ADD:p9"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "ADD",
+      "family": "anchoring_exception",
+      "output_sha256": "73436789eecb02e065cbeb89c69344de6621233cd525e6678112d6ff32203e54"
+    },
+    {
+      "case_id": "ADD06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "9(2)明确禁止SICZ船上捕鱼，一般有效捕鱼许可不能克服该分区禁令。",
+      "reference_pages": [
+        "ADD:p12"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "ADD",
+      "family": "zone_specific_rule",
+      "output_sha256": "895f9415249ed825891681fcc67c29686021e15eaf13c466ef4c7d896a5cc2e5"
+    },
+    {
+      "case_id": "ADD06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "正确适用9(2)的SICZ船上捕鱼禁令，否定仅凭有效许可即可捕鱼的命题。",
+      "reference_pages": [
+        "ADD:p12"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "ADD",
+      "family": "zone_specific_rule",
+      "output_sha256": "190c0bcb8597b81ae7c1b5f2f9671d23d0ea20df2381f641d1e466a8349f87d0"
+    },
+    {
+      "case_id": "ADD07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "准确概括4(15)的不冲突要求；未展开4(14)的其他授权条件，属于解释不完整，未明确否定或改变该条件。",
+      "reference_pages": [
+        "ADD:p8"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "ADD",
+      "family": "scope_of_authority",
+      "output_sha256": "6dbb3a65dc08096e94553ae5c33e711d80f74d47156d5f39c40b9f7c75dbf274"
+    },
+    {
+      "case_id": "ADD07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "提及其他法律要求和与法一致性，概括了4(14)—(15)的条件结构；未逐一重述全部限制，但未发现明确实质错误。",
+      "reference_pages": [
+        "ADD:p8"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "ADD",
+      "family": "scope_of_authority",
+      "output_sha256": "a02e3f2263b6f811b3530b5af020b144ce24fa51b74424473a293af715412b16"
+    },
+    {
+      "case_id": "ADD08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "正确区分分区和许可规则与实际捕捞压力变化；给定页面没有2023年的观测或比较数据。",
+      "reference_pages": [
+        "ADD:p6",
+        "ADD:p12"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "INSUFFICIENT",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "ADD",
+      "family": "law_to_outcome_gap",
+      "output_sha256": "8e8fc8c24d46327666b57c1f597b0257a622e4f3a87bc61e42a58ba746d6348a"
+    },
+    {
+      "case_id": "ADD08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "后句明确指出缺少2023年活动水平数据，支持证据不足。首句“no ... regulation regarding fishing pressure”措辞偏宽；结合后句，按趋势证据语境理解。",
+      "reference_pages": [
+        "ADD:p6",
+        "ADD:p12"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "INSUFFICIENT",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "ADD",
+      "family": "law_to_outcome_gap",
+      "output_sha256": "1652f824d0f08078eedd31a628079173e9d76fa722c36dbacf6fb75e15ceb0bd"
+    },
+    {
+      "case_id": "AMA05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订后的第4条保留潜水经营者许可，申请向部长提出，解释与对应条文一致。",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "AMA",
+      "family": "actor_scope",
+      "output_sha256": "ddce21731bd08c44220dd5213bc171e922f7c1d622db883db19f19309b71e4e3"
+    },
+    {
+      "case_id": "AMA05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订后的第4条保留潜水经营者许可，申请向部长提出，解释与对应条文一致。",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "AMA",
+      "family": "actor_scope",
+      "output_sha256": "1b88dde51499b4b53ab7e56fd622e1839b59a716be37eece75475e8d656ff6bc"
+    },
+    {
+      "case_id": "AMA06",
+      "method": "direct",
+      "rationale_status": "indeterminate",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "已正确识别仅为提案而非最终生效，足以支持否定标签；但末句“the permit requirement was retained”未区分个人潜水与经营者许可。若指前者则错误，若指后者则属实，因此将解释状态保守列为含糊。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p8"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "AMA",
+      "family": "draft_status",
+      "output_sha256": "f7d39af448ea084054fa3205697f098e11003e706a33a7f0aa0796a01f7beb2a"
+    },
+    {
+      "case_id": "AMA06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "明确识别公开征求意见稿而非正式法规，正确说明公告本身不使拟移除个人许可的修订生效。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p8"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "AMA",
+      "family": "draft_status",
+      "output_sha256": "c21c90cb26ea5814f391fee18adf3785e76ee9921918eac8a58aa1b61d1c0204"
+    },
+    {
+      "case_id": "AMA07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条及公报日期支持2024年5月3日生效；只列p10影响必要页面覆盖，不构成明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "AMA",
+      "family": "effective_date",
+      "output_sha256": "559f4ada028d62567c7885aa57193176edb5d653906a2d81e2fac6d5cea371d8"
+    },
+    {
+      "case_id": "AMA07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条及公报日期支持2024年5月3日生效；只列p10影响必要页面覆盖，不构成明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "AMA",
+      "family": "effective_date",
+      "output_sha256": "8ffbad61ebacc2b420b285f86f58fe6375d55916f4e761f8c8895bf5ba8bcbce"
+    },
+    {
+      "case_id": "AMA08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "经营许可规则与缺少该企业授权记录均概括正确，但这些事实只能支持证据不足，不能否定已签发许可的个案命题。",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "AMA",
+      "family": "missing_permit_content",
+      "output_sha256": "e8b4ee687467aba784980d614d696864eabbda7133a3a1e209fe0a4b7286d0cf"
+    },
+    {
+      "case_id": "AMA08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "经营许可规则与缺少该企业授权记录均概括正确，但这些事实只能支持证据不足，不能否定已签发许可的个案命题。",
+      "reference_pages": [
+        "AMD:p9",
+        "AMD:p10"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "AMA",
+      "family": "missing_permit_content",
+      "output_sha256": "130b02481a36789319492483c5160619560bedfd873391f65573ca0b18be3a98"
+    },
+    {
+      "case_id": "DWE05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(3)明确要求已经放下潜水者的船舶展示alpha旗，解释和标签均与条文一致。",
+      "reference_pages": [
+        "DWE:p7"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "DWE",
+      "family": "alpha_flag",
+      "output_sha256": "9c63a156f3f126ec17472fa176bcc963bcd9f4170079a97a1e250b4a5f70aaa9"
+    },
+    {
+      "case_id": "DWE05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(3)明确要求已经放下潜水者的船舶展示alpha旗，解释和标签均与条文一致。",
+      "reference_pages": [
+        "DWE:p7"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "DWE",
+      "family": "alpha_flag",
+      "output_sha256": "83d65ec6754db74746ef062d0b3d1f2f4f1819393b3a0a75cc98a8f3d572e7b2"
+    },
+    {
+      "case_id": "DWE06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "正确区分草案中拟议的公布即生效条款与该征求意见稿本身的法律效力；草案不足以确立速度修订已经生效。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p8"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "DWE",
+      "family": "draft_status",
+      "output_sha256": "cd3a89b5c7ceb2923e291218da6ca800a603ee40354a54e540900ad77b7efe90"
+    },
+    {
+      "case_id": "DWE06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "正确区分草案中拟议的公布即生效条款与该征求意见稿本身的法律效力；草案不足以确立速度修订已经生效。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p8"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "DWE",
+      "family": "draft_status",
+      "output_sha256": "022169d89d01b3e4205e383e222c7de6992643fbdb8da299b606c09896bf29bf"
+    },
+    {
+      "case_id": "DWE07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "11(1)要求在保护区开展科研须获得部长签发的科研许可，解释与条文一致。",
+      "reference_pages": [
+        "DWE:p9"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "DWE",
+      "family": "permit_requirement",
+      "output_sha256": "f992221e071b9b9fb2bf0fe0458231c090d1f420f7919533b875c2946bc1ac2c"
+    },
+    {
+      "case_id": "DWE07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "11(1)要求在保护区开展科研须获得部长签发的科研许可，解释与条文一致。",
+      "reference_pages": [
+        "DWE:p9"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "DWE",
+      "family": "permit_requirement",
+      "output_sha256": "f992221e071b9b9fb2bf0fe0458231c090d1f420f7919533b875c2946bc1ac2c"
+    },
+    {
+      "case_id": "DWE08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "速度和船舶规则没有提供海洋哺乳动物碰撞次数的前后观测，无法证明2024年5月3日后碰撞下降。",
+      "reference_pages": [
+        "DWE:p8",
+        "DWE:p9",
+        "AMD:p9"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "INSUFFICIENT",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "DWE",
+      "family": "law_to_outcome_gap",
+      "output_sha256": "f4f69647fbd7ef5e497986382bafec1d756c85dc7fbae118c7f61962c4983802"
+    },
+    {
+      "case_id": "DWE08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "速度和船舶规则没有提供海洋哺乳动物碰撞次数的前后观测，无法证明2024年5月3日后碰撞下降。",
+      "reference_pages": [
+        "DWE:p8",
+        "DWE:p9",
+        "AMD:p9"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "INSUFFICIENT",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "DWE",
+      "family": "law_to_outcome_gap",
+      "output_sha256": "fad84cb0bbb682538a62b543b923ec6240788d8073b4100d22dee9ea0f48213a"
+    },
+    {
+      "case_id": "PEC05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "7(6)(d)要求考虑能否在保护区外采集，与命题一致；清单回答仅列p8，属于必要页面覆盖诊断，不据此认定解释有法律错误。",
+      "reference_pages": [
+        "PEC:p7",
+        "PEC:p8"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PEC",
+      "family": "ministerial_discretion",
+      "output_sha256": "02c4b9678bf8eab4d74b0254de44b27e24bd7d429416dc08ec5249c927eda228"
+    },
+    {
+      "case_id": "PEC05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "7(6)(d)要求考虑能否在保护区外采集，与命题一致；清单回答仅列p8，属于必要页面覆盖诊断，不据此认定解释有法律错误。",
+      "reference_pages": [
+        "PEC:p7",
+        "PEC:p8"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PEC",
+      "family": "ministerial_discretion",
+      "output_sha256": "274126941810adae4f288d6859191895a3d8f25a0fc076e227db1e863ee23774"
+    },
+    {
+      "case_id": "PEC06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "7(4)(a)要求未经许可捕鱼者断开钩、拟饵和配重并按规定存放，不能让钩继续连接鱼线。",
+      "reference_pages": [
+        "PEC:p6"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PEC",
+      "family": "gear_stowage",
+      "output_sha256": "247736130f208648612236aa7500e946fea2afd7a906b6755824f926a8b25c2c"
+    },
+    {
+      "case_id": "PEC06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "7(4)(a)要求未经许可捕鱼者断开钩、拟饵和配重并按规定存放，不能让钩继续连接鱼线。",
+      "reference_pages": [
+        "PEC:p6"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PEC",
+      "family": "gear_stowage",
+      "output_sha256": "f748c6fd96acdcc45f3935a14d9077000a0d06ce571d8bdc9cf7be249ef214e7"
+    },
+    {
+      "case_id": "PEC07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "5(3)明确要求部长口头锚泊授权在三个工作日内书面确认，解释和标签一致。",
+      "reference_pages": [
+        "PEC:p5"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PEC",
+      "family": "written_confirmation",
+      "output_sha256": "74cdd62dd4002d0077f65b20fb4671f94ffc4c737aa83d1c9e25bf87002b639c"
+    },
+    {
+      "case_id": "PEC07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "5(3)明确要求部长口头锚泊授权在三个工作日内书面确认，解释和标签一致。",
+      "reference_pages": [
+        "PEC:p5"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PEC",
+      "family": "written_confirmation",
+      "output_sha256": "51804aac5a54d150d0ea08716a81b24d0103d83532452a920685e7519059e02b"
+    },
+    {
+      "case_id": "PEC08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "给定许可、渔具和珊瑚活动规则不提供2019年以来珊瑚覆盖变化的观测证据，证据不足结论与理由一致。",
+      "reference_pages": [
+        "PEC:p4",
+        "PEC:p6",
+        "PEC:p7"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "INSUFFICIENT",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PEC",
+      "family": "law_to_outcome_gap",
+      "output_sha256": "7ec80c434f88b008b06d6cb9717570d0b1b72042746c24eeface4e1bf2a961ad"
+    },
+    {
+      "case_id": "PEC08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "给定许可、渔具和珊瑚活动规则不提供2019年以来珊瑚覆盖变化的观测证据，证据不足结论与理由一致。",
+      "reference_pages": [
+        "PEC:p4",
+        "PEC:p6",
+        "PEC:p7"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "INSUFFICIENT",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PEC",
+      "family": "law_to_outcome_gap",
+      "output_sha256": "50e2daadcc739cb7b4ecc0741a6b4a4e5fea41dcacf6bb2f45713a92f83ac430"
+    },
+    {
+      "case_id": "PON05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订后的第9条仍要求经营或尝试经营潜水业务须持许可，解释与命题一致。",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PON",
+      "family": "actor_scope",
+      "output_sha256": "8a7792e815ee2ff98819cd937183d7dd5af8704f33830034d1b4fec721c2ea32"
+    },
+    {
+      "case_id": "PON05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订后的第9条仍要求经营或尝试经营潜水业务须持许可，解释与命题一致。",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PON",
+      "family": "actor_scope",
+      "output_sha256": "84085baf567a7e0dff22151929b0c7c2f5303156391ffa32a459bd753053efeb"
+    },
+    {
+      "case_id": "PON06",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "已称文书为draft，但把第9条的潜水业务经营许可混同为个人潜水许可，以保留经营许可反驳个人许可移除，监管对象错误。该错误读法支持所返否定标签。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p6"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "PON",
+      "family": "draft_status",
+      "output_sha256": "f13538f52a52038b8d613c7b2a8955e364c957712a6c6cc51505b107cdd5b083"
+    },
+    {
+      "case_id": "PON06",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "temporal_validity"
+      ],
+      "note": "将草案称为已经修订第9条，并把经营潜水业务的许可说成个人潜水许可。标签正确但理由的监管对象与生效状态均有明确错误。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p6"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "PON",
+      "family": "draft_status",
+      "output_sha256": "e41437f08ee5ef6f34a26e533a1ff93bdfe46ed469304f9281e4bb4eca7ac0a8"
+    },
+    {
+      "case_id": "PON07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条及公报日期支持2024年5月3日生效；只列p10影响必要页面覆盖，不构成明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PON",
+      "family": "effective_date",
+      "output_sha256": "559f4ada028d62567c7885aa57193176edb5d653906a2d81e2fac6d5cea371d8"
+    },
+    {
+      "case_id": "PON07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条及公报日期支持2024年5月3日生效；只列p10影响必要页面覆盖，不构成明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "PON",
+      "family": "effective_date",
+      "output_sha256": "2ceeaf766f88812c3d78466d1a0621b0462c3c8156e36893b254625f29cb9ce5"
+    },
+    {
+      "case_id": "PON08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "正确指出经营许可义务与个案记录缺失；这些事实支持证据不足，不能支持否定签发的标签。",
+      "reference_pages": [
+        "AMD:p7",
+        "AMD:p8"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "PON",
+      "family": "missing_permit_content",
+      "output_sha256": "2f1eac3b19da1392dba118bd2257fd01e2a0ace8d2f90b014962fe4362e2fd74"
+    },
+    {
+      "case_id": "PON08",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "misaligned",
+      "error_types": [
+        "actor_scope",
+        "cross_reference"
+      ],
+      "note": "误称被删第8条规定潜水业务经营许可；该条实际为个人潜水许可。解释同时正确指出第9条仍要求经营许可和个案记录缺失，实质上应得证据不足而非否定。没有另行断言该企业未获签发，不加编造个案事实错误。",
+      "reference_pages": [
+        "PON:p6",
+        "PON:p7",
+        "AMD:p7",
+        "AMD:p8"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "PON",
+      "family": "missing_permit_content",
+      "output_sha256": "66596b7e955463da189ebd2706d3a8703b80754e33be9868b8fb70a84c3aa20b"
+    },
+    {
+      "case_id": "STI05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "替换后的第6条将经营或尝试经营潜水业务列为须获许可的活动，解释与2024文本一致。",
+      "reference_pages": [
+        "AMD:p5"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "STI",
+      "family": "actor_scope",
+      "output_sha256": "400b1d45bad999a83398832bd88694a82089dcf8cace1f35a5893feb3c081429"
+    },
+    {
+      "case_id": "STI05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "替换后的第6条将经营或尝试经营潜水业务列为须获许可的活动，解释与2024文本一致。",
+      "reference_pages": [
+        "AMD:p5"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "STI",
+      "family": "actor_scope",
+      "output_sha256": "95057667504d173e9531b280ee0cef2b74417efc5f88ed7f6b3bf649a4bf175d"
+    },
+    {
+      "case_id": "STI06",
+      "method": "direct",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope"
+      ],
+      "note": "草案中的许可义务针对经营SCUBA diving business，解释将其概括为SCUBA diving的个人活动许可，因而误称草案增加而非移除题目中的个人许可。解释中的错误读法与返回的否定标签方向一致。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p4"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "STI",
+      "family": "draft_status",
+      "output_sha256": "6a1d109fe4096522c5ae71e669b96ce826396db171193919a7b8c7b429601ff1"
+    },
+    {
+      "case_id": "STI06",
+      "method": "structured",
+      "rationale_status": "substantive_error",
+      "alignment": "aligned",
+      "error_types": [
+        "actor_scope",
+        "temporal_validity"
+      ],
+      "note": "把经营潜水业务的许可要求说成个人潜水许可，并称GN 321已修订规则，未保留其公开征求意见稿效力。标签虽正确，理由对监管对象和草案状态均有明确错误。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p4"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "STI",
+      "family": "draft_status",
+      "output_sha256": "06bcddf1a88260f789d1a699465b565edc65f398f49be649b7f538df3ac6dec2"
+    },
+    {
+      "case_id": "STI07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条与公告日期共同支持2024年5月3日生效；只列p10属于必要页面覆盖问题，解释无明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "STI",
+      "family": "effective_date",
+      "output_sha256": "559f4ada028d62567c7885aa57193176edb5d653906a2d81e2fac6d5cea371d8"
+    },
+    {
+      "case_id": "STI07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条与公告日期共同支持2024年5月3日生效；只列p10属于必要页面覆盖问题，解释无明确实质错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "STI",
+      "family": "effective_date",
+      "output_sha256": "2ceeaf766f88812c3d78466d1a0621b0462c3c8156e36893b254625f29cb9ce5"
+    },
+    {
+      "case_id": "STI08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "准确指出经营许可义务和个案许可记录缺失；记录缺失不能证明没有签发，实质解释支持INSUFFICIENT，与返回的CONTRADICTED不一致。",
+      "reference_pages": [
+        "AMD:p5"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "STI",
+      "family": "missing_permit_content",
+      "output_sha256": "9517425d92da22d2f752e60d1887d85c20806482ca4d6dc7dd1652aeb47380d1"
+    },
+    {
+      "case_id": "STI08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "准确指出经营许可义务和个案许可记录缺失；记录缺失不能证明没有签发，实质解释支持INSUFFICIENT，与返回的CONTRADICTED不一致。",
+      "reference_pages": [
+        "AMD:p5"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "STI",
+      "family": "missing_permit_content",
+      "output_sha256": "7893bdd14232fdd59caf745b430108aae7f802cb7f83ed6310e5a419271707e5"
+    },
+    {
+      "case_id": "TMN05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订替换第9条后仍要求经营或尝试经营潜水业务须持许可，申请对象为Manager；与命题一致。",
+      "reference_pages": [
+        "AMD:p3"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TMN",
+      "family": "actor_scope",
+      "output_sha256": "6336beb8706828150235cbd20e0b4929ff7c558a8680b320c01470327b707d50"
+    },
+    {
+      "case_id": "TMN05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "2024修订替换第9条后仍要求经营或尝试经营潜水业务须持许可，申请对象为Manager；与命题一致。",
+      "reference_pages": [
+        "AMD:p3"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TMN",
+      "family": "actor_scope",
+      "output_sha256": "0abd53a2be8dae63a8211374b4a49d6dcfc5576f640c1f8687e074791b851dea"
+    },
+    {
+      "case_id": "TMN06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "已识别公告仅提出修订而非实施修订；针对该公告本身在公布时已经生效的命题，这一解释支持否定，而非返回的证据不足。末句较保守的措辞不改变对草案性质的正确识别。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p2"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "INSUFFICIENT",
+      "correct": false,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "TMN",
+      "family": "draft_status",
+      "output_sha256": "eab4999829d3533966d039999e6946c62652da0189dbda93ed01837042d95fb6"
+    },
+    {
+      "case_id": "TMN06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "明确识别公开征求意见稿，并区分拟删除个人许可要求与实际生效，正确否定命题。漏列DRF:p1属于引用覆盖诊断。",
+      "reference_pages": [
+        "DRF:p1",
+        "DRF:p2"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TMN",
+      "family": "draft_status",
+      "output_sha256": "611a93d8246aada2c9da221e2c5ecff3e49cadec41b5cd00076aa44e70ace35d"
+    },
+    {
+      "case_id": "TMN07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条与公告日期共同支持2024年5月3日生效。只列p10影响预列必要页面覆盖；该页页眉亦显示日期，解释无明确事实错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TMN",
+      "family": "effective_date",
+      "output_sha256": "559f4ada028d62567c7885aa57193176edb5d653906a2d81e2fac6d5cea371d8"
+    },
+    {
+      "case_id": "TMN07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "第15条与公告日期共同支持2024年5月3日生效。只列p10影响预列必要页面覆盖；该页页眉亦显示日期，解释无明确事实错误。",
+      "reference_pages": [
+        "AMD:p1",
+        "AMD:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TMN",
+      "family": "effective_date",
+      "output_sha256": "1bc6cef318339ecbb47c45ac9e89825b3c7074a20b8ac209a01df28776d78c50"
+    },
+    {
+      "case_id": "TMN08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "解释正确区分删除个人潜水许可条款与保留经营许可要求，也正确指出未提供个案许可记录；这些事实支持证据不足，不能支持所返否定标签。“contradicting the claim”等一般分类短语不另计事实错误。",
+      "reference_pages": [
+        "AMD:p3"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "TMN",
+      "family": "missing_permit_content",
+      "output_sha256": "6d3505caf95cac7d5d685f7d32554fd4831829d639d6b2773444f13bde1faa89"
+    },
+    {
+      "case_id": "TMN08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "misaligned",
+      "error_types": [],
+      "note": "解释正确区分删除个人潜水许可条款与保留经营许可要求，也正确指出未提供个案许可记录；这些事实支持证据不足，不能支持所返否定标签。“contradicting the claim”等一般分类短语不另计事实错误。",
+      "reference_pages": [
+        "AMD:p3"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "CONTRADICTED",
+      "correct": false,
+      "joint_compatible": false,
+      "joint_compatible_aligned": false,
+      "mpa_id": "TMN",
+      "family": "missing_permit_content",
+      "output_sha256": "6208980575f656e5deddae1bce9f92a11c4ebecddaec6f6775d277a498d252cf"
+    },
+    {
+      "case_id": "TSI05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(9)仅允许岸上捕鱼并明确禁止保护区内船上捕鱼；注册和一般许可不改变该限制。",
+      "reference_pages": [
+        "TSI:p8"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TSI",
+      "family": "method_limit",
+      "output_sha256": "f221ac2de79fd38bc3f7cc664996e914749291de4be2ed5b1ec1adf59d7513f4"
+    },
+    {
+      "case_id": "TSI05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(9)仅允许岸上捕鱼并明确禁止保护区内船上捕鱼；注册和一般许可不改变该限制。",
+      "reference_pages": [
+        "TSI:p8"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TSI",
+      "family": "method_limit",
+      "output_sha256": "71021025bacb954ba4505bb2b62b69cb6982d2c3990d9e8757c9a6a1daff0104"
+    },
+    {
+      "case_id": "TSI06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "准确引用8(6)的减半与向上取整规则，并据题设普通限额5计算2.5向上取整为3。",
+      "reference_pages": [
+        "TSI:p8"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TSI",
+      "family": "bait_rounding",
+      "output_sha256": "bca1536275e4267d4c46a45d7612d5379a5c98fc861176f3b05d192495d792ca"
+    },
+    {
+      "case_id": "TSI06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "准确引用8(6)的减半与向上取整规则，并据题设普通限额5计算2.5向上取整为3。",
+      "reference_pages": [
+        "TSI:p8"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TSI",
+      "family": "bait_rounding",
+      "output_sha256": "aa685c3e14aef393e3daa221f2fcdedd9e02ed6cf70d291a8ff86f61249734ca"
+    },
+    {
+      "case_id": "TSI07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "9(1)明确要求潜水者作为经管理机构许可的潜水企业的客户参与，解释与该规定一致。",
+      "reference_pages": [
+        "TSI:p9"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TSI",
+      "family": "business_client_condition",
+      "output_sha256": "104d39481957c16f6408a4f95fe5177330d165a056b05279f29b2569b5e42045"
+    },
+    {
+      "case_id": "TSI07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "9(1)明确要求潜水者作为经管理机构许可的潜水企业的客户参与，解释与该规定一致。",
+      "reference_pages": [
+        "TSI:p9"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TSI",
+      "family": "business_client_condition",
+      "output_sha256": "f08458724b6de15b401408272b488c57a3774bc6b486ddff6f792febabee31c8"
+    },
+    {
+      "case_id": "TSI08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "4(4)允许另以管理计划或内部规则限制活动；题设未提供这些文件，不能据基本条例断定具体地点没有游泳限制。",
+      "reference_pages": [
+        "TSI:p5"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "INSUFFICIENT",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TSI",
+      "family": "internal_rule_gap",
+      "output_sha256": "58c819319e2371cdefa47bd92d3a500e5fe722c2d8fbb6d56cb6e57ef8d72e9e"
+    },
+    {
+      "case_id": "TSI08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "4(4)允许另以管理计划或内部规则限制活动；题设未提供这些文件，不能据基本条例断定具体地点没有游泳限制。",
+      "reference_pages": [
+        "TSI:p5"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "INSUFFICIENT",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "TSI",
+      "family": "internal_rule_gap",
+      "output_sha256": "4f47aadab49585dad698b0e4dcc3cb4b9e5ef9d652ddf20f3e09b95d5eed0bd6"
+    },
+    {
+      "case_id": "UTH05",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(4)明文允许从受控区岸上进行鲨鱼钓放，题设结论与该例外一致。回答将页ID写成UTh:p10，属于标识符格式问题，另由客观指标计分。",
+      "reference_pages": [
+        "UTH:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "UTH",
+      "family": "shore_exception",
+      "output_sha256": "786fda59d9891c49fb34d539fb98af2ab14673a7a483cb7c9996707cebb2fb9c"
+    },
+    {
+      "case_id": "UTH05",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(4)明文允许从受控区岸上进行鲨鱼钓放，题设结论与该例外一致。回答将页ID写成UTh:p10，属于标识符格式问题，另由客观指标计分。",
+      "reference_pages": [
+        "UTH:p10"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "UTH",
+      "family": "shore_exception",
+      "output_sha256": "0b5759bc3224fa62436428610571665b842b77d3a3108db4ccc728717d6565f3"
+    },
+    {
+      "case_id": "UTH06",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(6)禁止日落至日出期间的船上捕鱼，一般有效许可不排除此禁令。UTh:p10的大小写错误仅影响引用标识符指标。",
+      "reference_pages": [
+        "UTH:p10"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "UTH",
+      "family": "night_fishing",
+      "output_sha256": "b7020ab90e40fcab20bed5f0b7455daba5af3b5783f502c29158cbed4188881d"
+    },
+    {
+      "case_id": "UTH06",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "8(6)禁止日落至日出期间的船上捕鱼，一般有效许可不排除此禁令。UTh:p10的大小写错误仅影响引用标识符指标。",
+      "reference_pages": [
+        "UTH:p10"
+      ],
+      "gold_label": "CONTRADICTED",
+      "prediction": "CONTRADICTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "UTH",
+      "family": "night_fishing",
+      "output_sha256": "a6614d2adb0ee5b5576d62e8d2b11c8d9251bc1c58967d799c79db03015d5f7e"
+    },
+    {
+      "case_id": "UTH07",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "5(6)要求携带渔具通过限制区的机动船开启GPS轨迹，并在通过后七个日历日内保留数据；解释概括了七日保留要求。",
+      "reference_pages": [
+        "UTH:p8"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "UTH",
+      "family": "data_retention",
+      "output_sha256": "5aae7c147117139ba37935654e64b1ca721559f011c91474c8c3c91bb4d553cf"
+    },
+    {
+      "case_id": "UTH07",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "5(6)要求携带渔具通过限制区的机动船开启GPS轨迹，并在通过后七个日历日内保留数据；解释概括了七日保留要求。",
+      "reference_pages": [
+        "UTH:p8"
+      ],
+      "gold_label": "SUPPORTED",
+      "prediction": "SUPPORTED",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "UTH",
+      "family": "data_retention",
+      "output_sha256": "0621d4727fe94cc35666da7169451272d6b06644f9fbd633cddfce929b2cc396"
+    },
+    {
+      "case_id": "UTH08",
+      "method": "direct",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "给定条文规定活动和许可条件，不能据此确认实际达到全面有效保护；解释未把规则直接等同于保护成效。",
+      "reference_pages": [
+        "UTH:p8",
+        "UTH:p10"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "INSUFFICIENT",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "UTH",
+      "family": "law_to_outcome_gap",
+      "output_sha256": "0212374ab9790887d02a3274b2236d3a5fd1be4413b44e4703739b4313f212a3"
+    },
+    {
+      "case_id": "UTH08",
+      "method": "structured",
+      "rationale_status": "consistent",
+      "alignment": "aligned",
+      "error_types": [],
+      "note": "给定条文规定活动和许可条件，不能据此确认实际达到全面有效保护；解释未把规则直接等同于保护成效。",
+      "reference_pages": [
+        "UTH:p8",
+        "UTH:p10"
+      ],
+      "gold_label": "INSUFFICIENT",
+      "prediction": "INSUFFICIENT",
+      "correct": true,
+      "joint_compatible": true,
+      "joint_compatible_aligned": true,
+      "mpa_id": "UTH",
+      "family": "law_to_outcome_gap",
+      "output_sha256": "5e916def8d8f371c1345ba8934d66597621cd87d899c4f4d294c3816d983f440"
+    }
+  ],
+  "input_sha256": {
+    "04_分析结果/新增模型对照_20260915/explanation_codes.json": "a276b7d19f8b5f3044d1d4981733d5e494565ad0e8ca7d2db185b2ea9a6ba630",
+    "04_分析结果/新增模型对照_20260915/Qwen3-14B-4bit_heldout_raw.jsonl": "b548736664503d3284ca0f72a4c499a2dd3a60c14277f13817ff0f94c34b49d2",
+    "04_分析结果/法规命题基准/cases_v1.json": "caa1599c3162edab738bd3ed6a70bab14dee4b9cd6d3650321984a0ac084ad44",
+    "04_分析结果/法规命题基准/evidence_v1.json": "aed69cd2b4ae0290080777509ebc45f893676ae8023edde200cd943674a1a92f"
+  }
+}

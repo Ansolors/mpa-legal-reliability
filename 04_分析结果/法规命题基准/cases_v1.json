@@ -1,0 +1,1597 @@
+[
+  {
+    "case_id": "ADD01",
+    "mpa_id": "ADD",
+    "mpa": "Addo Elephant National Park",
+    "family": "permit_conjunction",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Under regulation 3(1), a scientific research permit from the Minister alone satisfies the stated research-permit requirement in Addo.",
+    "evidence_ids": [
+      "ADD:p6"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "ADD:p6"
+    ],
+    "gold_basis_zh": "第3(1)条以 and 连接部长许可与管理机构许可，单有前者不足。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "ADD02",
+    "mpa_id": "ADD",
+    "mpa": "Addo Elephant National Park",
+    "family": "permit_conjunction",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Regulation 3(1) requires scientific research permits from both the Minister and the management authority.",
+    "evidence_ids": [
+      "ADD:p6"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "ADD:p6"
+    ],
+    "gold_basis_zh": "第3(1)(a)(b)并列且为累积要求。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "ADD03",
+    "mpa_id": "ADD",
+    "mpa": "Addo Elephant National Park",
+    "family": "anchoring_exception",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A 150-ton vessel is anchored in a recognised and approved anchoring site under the Marine Traffic Act, waiting to berth in a port, with National Ports Authority authorisation. It is in a Controlled Zone.",
+    "claim": "The over-100-ton anchoring prohibition in regulation 5(5) still applies to this vessel, despite its specified port authorisation.",
+    "evidence_ids": [
+      "ADD:p9"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "ADD:p9"
+    ],
+    "gold_basis_zh": "第5(6)条明确排除第5(5)条对获批准港口锚地、等候靠泊且有港务局授权船舶的适用。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "ADD04",
+    "mpa_id": "ADD",
+    "mpa": "Addo Elephant National Park",
+    "family": "missing_permit_content",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A researcher is planning fieldwork. No permit or register entry has been supplied.",
+    "claim": "The management authority has issued the researcher the second permit required by regulation 3(1)(b).",
+    "evidence_ids": [
+      "ADD:p6"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "ADD:p6"
+    ],
+    "gold_basis_zh": "法规规定许可要求，但未提供个案许可或签发记录。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "ADD05",
+    "mpa_id": "ADD",
+    "mpa": "Addo Elephant National Park",
+    "family": "anchoring_exception",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "With none of the exceptions in regulation 5(6) or authorisations in 5(7), anchoring a 150-ton vessel in a Controlled Zone is prohibited by 5(5).",
+    "evidence_ids": [
+      "ADD:p9"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "ADD:p9"
+    ],
+    "gold_basis_zh": "第5(5)条超过100吨，题设明确排除第5(6)(7)例外。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "ADD06",
+    "mpa_id": "ADD",
+    "mpa": "Addo Elephant National Park",
+    "family": "zone_specific_rule",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Having a valid fishing permit is sufficient under regulation 9 for fishing from a vessel in SICZ.",
+    "evidence_ids": [
+      "ADD:p12"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "ADD:p12"
+    ],
+    "gold_basis_zh": "第9(2)条禁止SICZ及CPICZ船上捕鱼；第9(1)许可不是充分条件。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "ADD07",
+    "mpa_id": "ADD",
+    "mpa": "Addo Elephant National Park",
+    "family": "scope_of_authority",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Regulation 4(14)-(15) makes residual authorisation subject to other required legal authorisations and consistency with the Act, regulations and designation purposes.",
+    "evidence_ids": [
+      "ADD:p8"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "ADD:p8"
+    ],
+    "gold_basis_zh": "残余授权权力有双重限制，不是无限裁量。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "ADD08",
+    "mpa_id": "ADD",
+    "mpa": "Addo Elephant National Park",
+    "family": "law_to_outcome_gap",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The regulations establish that actual fishing pressure in Addo fell by at least 30 percent in 2023.",
+    "evidence_ids": [
+      "ADD:p6",
+      "ADD:p12"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "ADD:p6",
+      "ADD:p12"
+    ],
+    "gold_basis_zh": "无活动观测或时间序列；法规无法证明现实捕鱼强度变化。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TSI01",
+    "mpa_id": "TSI",
+    "mpa": "Tsitsikamma",
+    "family": "permit_conjunction",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "The visitor has a valid recreational angling permit but is not a registered Tsitsikamma angler.",
+    "claim": "Under regulation 8(1), the visitor may fish in TCCZ 1 on the strength of the recreational angling permit alone.",
+    "evidence_ids": [
+      "TSI:p7",
+      "TSI:p8"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "TSI:p7"
+    ],
+    "gold_basis_zh": "第8(1)还要求登记为Tsitsikamma angler。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TSI02",
+    "mpa_id": "TSI",
+    "mpa": "Tsitsikamma",
+    "family": "access_threshold",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "A registered angler who has already accessed TCCZ 1-3 on four distinct days this calendar month cannot access them on a fifth day under regulation 8(4).",
+    "evidence_ids": [
+      "TSI:p7",
+      "TSI:p8"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "TSI:p8"
+    ],
+    "gold_basis_zh": "第8(4)条每自然月最多4天。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TSI03",
+    "mpa_id": "TSI",
+    "mpa": "Tsitsikamma",
+    "family": "seasonal_time",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A registered angler fishes from shore in TCCZ 2 at 18:30 on 15 July 2023.",
+    "claim": "The seasonal time restriction in regulation 8(8) permits this fishing at 18:30.",
+    "evidence_ids": [
+      "TSI:p8"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "TSI:p8"
+    ],
+    "gold_basis_zh": "4月至9月18:00起禁止；18:30在禁止时段。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TSI04",
+    "mpa_id": "TSI",
+    "mpa": "Tsitsikamma",
+    "family": "missing_permit_content",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "The visitor books a dive with Blue Bay Diving; no permit document or permit register has been supplied.",
+    "claim": "The management authority has authorised the named SCUBA business used by this visitor.",
+    "evidence_ids": [
+      "TSI:p9"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "TSI:p9"
+    ],
+    "gold_basis_zh": "只有许可要求，无经营者授权文件。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TSI05",
+    "mpa_id": "TSI",
+    "mpa": "Tsitsikamma",
+    "family": "method_limit",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "A registered angler with the relevant permit may fish from a vessel in TCCZ 3 under regulation 8(9).",
+    "evidence_ids": [
+      "TSI:p7",
+      "TSI:p8"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "TSI:p8"
+    ],
+    "gold_basis_zh": "第8(9)仅岸钓且禁止船钓。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TSI06",
+    "mpa_id": "TSI",
+    "mpa": "Tsitsikamma",
+    "family": "bait_rounding",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "Assume the applicable ordinary recreational daily bag limit for the bait organism is 5; all required registration and permits are held.",
+    "claim": "For a bait organism whose ordinary recreational daily bag limit is 5, regulation 8(6) gives a limit of 3 after halving and rounding up.",
+    "evidence_ids": [
+      "TSI:p8"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "TSI:p8"
+    ],
+    "gold_basis_zh": "5/2=2.5，奇数减半后向上取整为3；以题设一般限额5为条件。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TSI07",
+    "mpa_id": "TSI",
+    "mpa": "Tsitsikamma",
+    "family": "business_client_condition",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Regulation 9(1) requires a person SCUBA diving to be a client of a permitted business authorised by the management authority.",
+    "evidence_ids": [
+      "TSI:p9"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "TSI:p9"
+    ],
+    "gold_basis_zh": "第9(1)明确客户身份及经营者获准要求。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TSI08",
+    "mpa_id": "TSI",
+    "mpa": "Tsitsikamma",
+    "family": "internal_rule_gap",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "The basic regulation is supplied, but no management plan, internal rule or notice board for this site is supplied.",
+    "claim": "Swimming at the visitor's precise site is free of any restriction imposed through an internal rule under regulation 4(4).",
+    "evidence_ids": [
+      "TSI:p5"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "TSI:p5"
+    ],
+    "gold_basis_zh": "第4(4)允许内部规则，但没有提供有关规则或具体地点公告。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PEC01",
+    "mpa_id": "PEC",
+    "mpa": "Port Elizabeth Corals",
+    "family": "gear_species_limit",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Regulation 7(2) allows bottom trawling in the MPA merely because a person holds a valid fishing permit.",
+    "evidence_ids": [
+      "PEC:p6"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "PEC:p6"
+    ],
+    "gold_basis_zh": "只列大型中上层鱼类延绳钓或附件2远洋线钓，不含底拖网。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PEC02",
+    "mpa_id": "PEC",
+    "mpa": "Port Elizabeth Corals",
+    "family": "gear_species_limit",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Regulation 7(1)-(2) permits fishing for large pelagic species by longline subject to a valid permit and its applicable restrictions.",
+    "evidence_ids": [
+      "PEC:p6"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "PEC:p6"
+    ],
+    "gold_basis_zh": "第7(1)(2)(a)及尾句共同构成有条件许可。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PEC03",
+    "mpa_id": "PEC",
+    "mpa": "Port Elizabeth Corals",
+    "family": "research_cross_reference",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The coral restriction in regulation 7(3) is expressly absolute and is not subject to the scientific research provision.",
+    "evidence_ids": [
+      "PEC:p4",
+      "PEC:p6"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "PEC:p6"
+    ],
+    "gold_basis_zh": "第7(3)明确Subject to regulation 3；不能抹去科研交叉引用。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PEC04",
+    "mpa_id": "PEC",
+    "mpa": "Port Elizabeth Corals",
+    "family": "missing_permit_content",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "Vessel A holds a fishing permit. Its species conditions and the target species are not supplied.",
+    "claim": "The fishing permit held by Vessel A authorises catching the particular target species on this trip.",
+    "evidence_ids": [
+      "PEC:p6"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "PEC:p6"
+    ],
+    "gold_basis_zh": "未提供许可证的物种条件，无法由一般规则推出具体许可范围。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PEC05",
+    "mpa_id": "PEC",
+    "mpa": "Port Elizabeth Corals",
+    "family": "ministerial_discretion",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "When considering a broodstock collection permit under regulation 7(5), the Minister must consider whether collection could occur outside the MPA.",
+    "evidence_ids": [
+      "PEC:p7",
+      "PEC:p8"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "PEC:p7",
+      "PEC:p8"
+    ],
+    "gold_basis_zh": "第7(6)(d)明列境外采集可能性。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PEC06",
+    "mpa_id": "PEC",
+    "mpa": "Port Elizabeth Corals",
+    "family": "gear_stowage",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "A vessel not authorised to fish may leave its line-fishing hooks connected while inside the MPA under regulation 7(4)(a).",
+    "evidence_ids": [
+      "PEC:p6"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "PEC:p6"
+    ],
+    "gold_basis_zh": "未获准者需摘钩、收线并收置。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PEC07",
+    "mpa_id": "PEC",
+    "mpa": "Port Elizabeth Corals",
+    "family": "written_confirmation",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Regulation 5(3) requires the Minister's verbal anchoring authorisation to be confirmed in writing within three working days.",
+    "evidence_ids": [
+      "PEC:p5"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "PEC:p5"
+    ],
+    "gold_basis_zh": "三个工作日，不是三个月或仅口头无限期。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PEC08",
+    "mpa_id": "PEC",
+    "mpa": "Port Elizabeth Corals",
+    "family": "law_to_outcome_gap",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The supplied permit provisions prove that coral cover has increased in this MPA since 2019.",
+    "evidence_ids": [
+      "PEC:p4",
+      "PEC:p6",
+      "PEC:p7"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "PEC:p6"
+    ],
+    "gold_basis_zh": "无珊瑚盖度观测，许可条款不证明生态变化。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "UTH01",
+    "mpa_id": "UTH",
+    "mpa": "uThukela",
+    "family": "anchoring_exception",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A vessel is in the Offshore Restricted Zone and holds a permit under these regulations for an activity that requires anchoring.",
+    "claim": "Regulation 5(1) prohibits this anchoring even though the vessel holds the specified activity permit.",
+    "evidence_ids": [
+      "UTH:p7"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "UTH:p7"
+    ],
+    "gold_basis_zh": "第5(1)(c)列出需要锚泊的许可活动例外。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "UTH02",
+    "mpa_id": "UTH",
+    "mpa": "uThukela",
+    "family": "zone_specific_rule",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Regulation 8(2)(a) limits fishing in the Controlled-Pelagic Linefish Zone to linefishing and spearfishing for Annexure 2 species, subject to permit restrictions.",
+    "evidence_ids": [
+      "UTH:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "UTH:p10"
+    ],
+    "gold_basis_zh": "第8(2)(a)渔法、区域、物种清单及许可条件并存。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "UTH03",
+    "mpa_id": "UTH",
+    "mpa": "uThukela",
+    "family": "vessel_exception",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The transit minimum-speed rule in regulation 5(4) also applies to a SCUBA diving vessel without any exemption in 5(5).",
+    "evidence_ids": [
+      "UTH:p8"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "UTH:p8"
+    ],
+    "gold_basis_zh": "第5(5)明确不适用于潜水船。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "UTH04",
+    "mpa_id": "UTH",
+    "mpa": "uThukela",
+    "family": "unknown_zone",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A boat is said only to be inside the uThukela MPA; no location coordinates or named zone are supplied.",
+    "claim": "The boat's fishing location is within the uThukela Inshore Controlled Zone rather than a Restricted Zone.",
+    "evidence_ids": [
+      "UTH:p5",
+      "UTH:p6"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "UTH:p5",
+      "UTH:p6"
+    ],
+    "gold_basis_zh": "无坐标或具体位置，法规的分区存在不证明船位。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "UTH05",
+    "mpa_id": "UTH",
+    "mpa": "uThukela",
+    "family": "shore_exception",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Regulation 8(4) provides for shark catch-and-release fishing from the shore within a Controlled Zone, subject to the other applicable requirements.",
+    "evidence_ids": [
+      "UTH:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "UTH:p10"
+    ],
+    "gold_basis_zh": "第8(3)一般禁止受(4)(5)限定；(4)明确岸上控制区放流垂钓。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "UTH06",
+    "mpa_id": "UTH",
+    "mpa": "uThukela",
+    "family": "night_fishing",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Regulation 8(6) allows vessel fishing between sunset and sunrise if a fishing permit is held.",
+    "evidence_ids": [
+      "UTH:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "UTH:p10"
+    ],
+    "gold_basis_zh": "第8(6)禁止日落至日出船钓，未列一般许可豁免。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "UTH07",
+    "mpa_id": "UTH",
+    "mpa": "uThukela",
+    "family": "data_retention",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Under regulation 5(6), the GPS trail of a motorised vessel traversing a Restricted Zone with fishing gear must be retained for seven calendar days after passage.",
+    "evidence_ids": [
+      "UTH:p8"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "UTH:p8"
+    ],
+    "gold_basis_zh": "第5(6)保留7自然日。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "UTH08",
+    "mpa_id": "UTH",
+    "mpa": "uThukela",
+    "family": "law_to_outcome_gap",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The permit restrictions alone establish that the MPA satisfies all ecological outcome criteria for fully effective protection.",
+    "evidence_ids": [
+      "UTH:p8",
+      "UTH:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "UTH:p8",
+      "UTH:p10"
+    ],
+    "gold_basis_zh": "许可限制不提供完整MPA Guide活动影响和生态成效依据。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TMN01",
+    "mpa_id": "TMN",
+    "mpa": "Table Mountain National Park",
+    "family": "temporal_validity",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Before the 2024 amendment takes effect, the supplied original regulation 8 contains an individual SCUBA-diving permit requirement.",
+    "evidence_ids": [
+      "TMN:p7",
+      "AMD:p1",
+      "AMD:p3",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "TMN:p7"
+    ],
+    "gold_basis_zh": "原第8条含个人潜水许可；2024修法不能溯及适用于该历史时点。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TMN02",
+    "mpa_id": "TMN",
+    "mpa": "Table Mountain National Park",
+    "family": "temporal_validity",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "After applying GN R.4786, the individual SCUBA-diving permit requirement in original regulation 8 remains in force unchanged under that provision.",
+    "evidence_ids": [
+      "TMN:p7",
+      "AMD:p1",
+      "AMD:p3",
+      "AMD:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "AMD:p3",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "2024修法第2条删除或替换原个人许可条文；生效条款见第15条。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TMN03",
+    "mpa_id": "TMN",
+    "mpa": "Table Mountain National Park",
+    "family": "actor_scope",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The 2024 amendment abolishes the requirement to hold a permit for operating a SCUBA diving business in this MPA.",
+    "evidence_ids": [
+      "TMN:p7",
+      "AMD:p1",
+      "AMD:p3",
+      "AMD:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "AMD:p3"
+    ],
+    "gold_basis_zh": "2024修订仍明文要求潜水经营许可，与个人条款不同。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TMN04",
+    "mpa_id": "TMN",
+    "mpa": "Table Mountain National Park",
+    "family": "all_law_overclaim",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A private diver plans a non-commercial recreational dive; the separate site-access rules and records of compliance with them have not been supplied.",
+    "claim": "The planned private dive complies with the separate site-access rules that are not included in the supplied instruments.",
+    "evidence_ids": [
+      "TMN:p7",
+      "AMD:p1",
+      "AMD:p3",
+      "AMD:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "AMD:p3"
+    ],
+    "gold_basis_zh": "给定文书没有穷尽其他法律、内部规则和具体准入条件；不能从个人许可条文移除推出全面豁免。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TMN05",
+    "mpa_id": "TMN",
+    "mpa": "Table Mountain National Park",
+    "family": "actor_scope",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The text introduced in 2024 still requires a permit to operate or attempt to operate a SCUBA diving business.",
+    "evidence_ids": [
+      "TMN:p7",
+      "AMD:p1",
+      "AMD:p3",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "AMD:p3"
+    ],
+    "gold_basis_zh": "2024修订中经营者许可要求明文保留。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TMN06",
+    "mpa_id": "TMN",
+    "mpa": "Table Mountain National Park",
+    "family": "draft_status",
+    "split": "heldout",
+    "assessment_date": "2020-03-21",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "GN 321 of 20 March 2020 itself enacted the proposed removal of the individual SCUBA-diving permit requirement on its publication date.",
+    "evidence_ids": [
+      "DRF:p1",
+      "DRF:p2",
+      "DRF:p3",
+      "DRF:p8"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "DRF:p1"
+    ],
+    "gold_basis_zh": "2020公告首页明示草案及60天公众意见期；草案内拟议生效条款不使草案本身成为正式修法。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TMN07",
+    "mpa_id": "TMN",
+    "mpa": "Table Mountain National Park",
+    "family": "effective_date",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "GN R.4786 states that its amendments take effect on publication in the Gazette, which occurred on 3 May 2024.",
+    "evidence_ids": [
+      "AMD:p1",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "AMD:p1",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "公告日期与第15条共同给出生效日。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "TMN08",
+    "mpa_id": "TMN",
+    "mpa": "Table Mountain National Park",
+    "family": "missing_permit_content",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A business advertises tours in the MPA. No permit, permit registry entry or individual authorisation is supplied.",
+    "claim": "The named diving business has been issued the permit required by the 2024 amended provision.",
+    "evidence_ids": [
+      "TMN:p7",
+      "AMD:p1",
+      "AMD:p3",
+      "AMD:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "AMD:p3"
+    ],
+    "gold_basis_zh": "法规规定应当持证，但不能证明具体经营者已经获证。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "STI01",
+    "mpa_id": "STI",
+    "mpa": "Stilbaai",
+    "family": "temporal_validity",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Before the 2024 amendment takes effect, the supplied original regulation 6 contains an individual SCUBA-diving permit requirement.",
+    "evidence_ids": [
+      "STI:p3",
+      "STI:p4",
+      "AMD:p1",
+      "AMD:p5",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "STI:p3"
+    ],
+    "gold_basis_zh": "原第6条含个人潜水许可；2024修法不能溯及适用于该历史时点。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "STI02",
+    "mpa_id": "STI",
+    "mpa": "Stilbaai",
+    "family": "temporal_validity",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "After applying GN R.4786, the individual SCUBA-diving permit requirement in original regulation 6 remains in force unchanged under that provision.",
+    "evidence_ids": [
+      "STI:p3",
+      "STI:p4",
+      "AMD:p1",
+      "AMD:p5",
+      "AMD:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "AMD:p5",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "2024修法第6条删除或替换原个人许可条文；生效条款见第15条。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "STI03",
+    "mpa_id": "STI",
+    "mpa": "Stilbaai",
+    "family": "actor_scope",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The 2024 amendment abolishes the requirement to hold a permit for operating a SCUBA diving business in this MPA.",
+    "evidence_ids": [
+      "STI:p3",
+      "STI:p4",
+      "AMD:p1",
+      "AMD:p5",
+      "AMD:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "AMD:p5"
+    ],
+    "gold_basis_zh": "2024修订仍明文要求潜水经营许可，与个人条款不同。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "STI04",
+    "mpa_id": "STI",
+    "mpa": "Stilbaai",
+    "family": "all_law_overclaim",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A private diver plans a non-commercial recreational dive; the separate site-access rules and records of compliance with them have not been supplied.",
+    "claim": "The planned private dive complies with the separate site-access rules that are not included in the supplied instruments.",
+    "evidence_ids": [
+      "STI:p3",
+      "STI:p4",
+      "AMD:p1",
+      "AMD:p5",
+      "AMD:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "AMD:p5"
+    ],
+    "gold_basis_zh": "给定文书没有穷尽其他法律、内部规则和具体准入条件；不能从个人许可条文移除推出全面豁免。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "STI05",
+    "mpa_id": "STI",
+    "mpa": "Stilbaai",
+    "family": "actor_scope",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The text introduced in 2024 still requires a permit to operate or attempt to operate a SCUBA diving business.",
+    "evidence_ids": [
+      "STI:p3",
+      "STI:p4",
+      "AMD:p1",
+      "AMD:p5",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "AMD:p5"
+    ],
+    "gold_basis_zh": "2024修订中经营者许可要求明文保留。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "STI06",
+    "mpa_id": "STI",
+    "mpa": "Stilbaai",
+    "family": "draft_status",
+    "split": "heldout",
+    "assessment_date": "2020-03-21",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "GN 321 of 20 March 2020 itself enacted the proposed removal of the individual SCUBA-diving permit requirement on its publication date.",
+    "evidence_ids": [
+      "DRF:p1",
+      "DRF:p4",
+      "DRF:p8"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "DRF:p1"
+    ],
+    "gold_basis_zh": "2020公告首页明示草案及60天公众意见期；草案内拟议生效条款不使草案本身成为正式修法。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "STI07",
+    "mpa_id": "STI",
+    "mpa": "Stilbaai",
+    "family": "effective_date",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "GN R.4786 states that its amendments take effect on publication in the Gazette, which occurred on 3 May 2024.",
+    "evidence_ids": [
+      "AMD:p1",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "AMD:p1",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "公告日期与第15条共同给出生效日。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "STI08",
+    "mpa_id": "STI",
+    "mpa": "Stilbaai",
+    "family": "missing_permit_content",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A business advertises tours in the MPA. No permit, permit registry entry or individual authorisation is supplied.",
+    "claim": "The named diving business has been issued the permit required by the 2024 amended provision.",
+    "evidence_ids": [
+      "STI:p3",
+      "STI:p4",
+      "AMD:p1",
+      "AMD:p5",
+      "AMD:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "AMD:p5"
+    ],
+    "gold_basis_zh": "法规规定应当持证，但不能证明具体经营者已经获证。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PON01",
+    "mpa_id": "PON",
+    "mpa": "Pondoland",
+    "family": "temporal_validity",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Before the 2024 amendment takes effect, the supplied original regulation 8 contains an individual SCUBA-diving permit requirement.",
+    "evidence_ids": [
+      "PON:p6",
+      "PON:p7",
+      "AMD:p1",
+      "AMD:p7",
+      "AMD:p8",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "PON:p6"
+    ],
+    "gold_basis_zh": "原第8条含个人潜水许可；2024修法不能溯及适用于该历史时点。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PON02",
+    "mpa_id": "PON",
+    "mpa": "Pondoland",
+    "family": "temporal_validity",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "After applying GN R.4786, the individual SCUBA-diving permit requirement in original regulation 8 remains in force unchanged under that provision.",
+    "evidence_ids": [
+      "PON:p6",
+      "PON:p7",
+      "AMD:p1",
+      "AMD:p7",
+      "AMD:p8",
+      "AMD:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "AMD:p7",
+      "AMD:p8",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "2024修法第9条删除或替换原个人许可条文；生效条款见第15条。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PON03",
+    "mpa_id": "PON",
+    "mpa": "Pondoland",
+    "family": "actor_scope",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The 2024 amendment abolishes the requirement to hold a permit for operating a SCUBA diving business in this MPA.",
+    "evidence_ids": [
+      "PON:p6",
+      "PON:p7",
+      "AMD:p1",
+      "AMD:p7",
+      "AMD:p8",
+      "AMD:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "AMD:p7",
+      "AMD:p8"
+    ],
+    "gold_basis_zh": "2024修订仍明文要求潜水经营许可，与个人条款不同。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PON04",
+    "mpa_id": "PON",
+    "mpa": "Pondoland",
+    "family": "all_law_overclaim",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A private diver plans a non-commercial recreational dive; the separate site-access rules and records of compliance with them have not been supplied.",
+    "claim": "The planned private dive complies with the separate site-access rules that are not included in the supplied instruments.",
+    "evidence_ids": [
+      "PON:p6",
+      "PON:p7",
+      "AMD:p1",
+      "AMD:p7",
+      "AMD:p8",
+      "AMD:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "AMD:p7",
+      "AMD:p8"
+    ],
+    "gold_basis_zh": "给定文书没有穷尽其他法律、内部规则和具体准入条件；不能从个人许可条文移除推出全面豁免。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PON05",
+    "mpa_id": "PON",
+    "mpa": "Pondoland",
+    "family": "actor_scope",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The text introduced in 2024 still requires a permit to operate or attempt to operate a SCUBA diving business.",
+    "evidence_ids": [
+      "PON:p6",
+      "PON:p7",
+      "AMD:p1",
+      "AMD:p7",
+      "AMD:p8",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "AMD:p7",
+      "AMD:p8"
+    ],
+    "gold_basis_zh": "2024修订中经营者许可要求明文保留。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PON06",
+    "mpa_id": "PON",
+    "mpa": "Pondoland",
+    "family": "draft_status",
+    "split": "heldout",
+    "assessment_date": "2020-03-21",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "GN 321 of 20 March 2020 itself enacted the proposed removal of the individual SCUBA-diving permit requirement on its publication date.",
+    "evidence_ids": [
+      "DRF:p1",
+      "DRF:p6",
+      "DRF:p8"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "DRF:p1"
+    ],
+    "gold_basis_zh": "2020公告首页明示草案及60天公众意见期；草案内拟议生效条款不使草案本身成为正式修法。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PON07",
+    "mpa_id": "PON",
+    "mpa": "Pondoland",
+    "family": "effective_date",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "GN R.4786 states that its amendments take effect on publication in the Gazette, which occurred on 3 May 2024.",
+    "evidence_ids": [
+      "AMD:p1",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "AMD:p1",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "公告日期与第15条共同给出生效日。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "PON08",
+    "mpa_id": "PON",
+    "mpa": "Pondoland",
+    "family": "missing_permit_content",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A business advertises tours in the MPA. No permit, permit registry entry or individual authorisation is supplied.",
+    "claim": "The named diving business has been issued the permit required by the 2024 amended provision.",
+    "evidence_ids": [
+      "PON:p6",
+      "PON:p7",
+      "AMD:p1",
+      "AMD:p7",
+      "AMD:p8",
+      "AMD:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "AMD:p7",
+      "AMD:p8"
+    ],
+    "gold_basis_zh": "法规规定应当持证，但不能证明具体经营者已经获证。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "AMA01",
+    "mpa_id": "AMA",
+    "mpa": "Amathole (2011 inshore instrument)",
+    "family": "temporal_validity",
+    "split": "pilot",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Before the 2024 amendment takes effect, the supplied original regulation 4 contains an individual SCUBA-diving permit requirement.",
+    "evidence_ids": [
+      "AMA:p3",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "AMA:p3"
+    ],
+    "gold_basis_zh": "原第4条含个人潜水许可；2024修法不能溯及适用于该历史时点。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "AMA02",
+    "mpa_id": "AMA",
+    "mpa": "Amathole (2011 inshore instrument)",
+    "family": "temporal_validity",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "After applying GN R.4786, the individual SCUBA-diving permit requirement in original regulation 4 remains in force unchanged under that provision.",
+    "evidence_ids": [
+      "AMA:p3",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "2024修法第14条删除或替换原个人许可条文；生效条款见第15条。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "AMA03",
+    "mpa_id": "AMA",
+    "mpa": "Amathole (2011 inshore instrument)",
+    "family": "actor_scope",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The 2024 amendment abolishes the requirement to hold a permit for operating a SCUBA diving business in this MPA.",
+    "evidence_ids": [
+      "AMA:p3",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "2024修订仍明文要求潜水经营许可，与个人条款不同。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "AMA04",
+    "mpa_id": "AMA",
+    "mpa": "Amathole (2011 inshore instrument)",
+    "family": "all_law_overclaim",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A private diver plans a non-commercial recreational dive; the separate site-access rules and records of compliance with them have not been supplied.",
+    "claim": "The planned private dive complies with the separate site-access rules that are not included in the supplied instruments.",
+    "evidence_ids": [
+      "AMA:p3",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "给定文书没有穷尽其他法律、内部规则和具体准入条件；不能从个人许可条文移除推出全面豁免。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "AMA05",
+    "mpa_id": "AMA",
+    "mpa": "Amathole (2011 inshore instrument)",
+    "family": "actor_scope",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The text introduced in 2024 still requires a permit to operate or attempt to operate a SCUBA diving business.",
+    "evidence_ids": [
+      "AMA:p3",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "2024修订中经营者许可要求明文保留。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "AMA06",
+    "mpa_id": "AMA",
+    "mpa": "Amathole (2011 inshore instrument)",
+    "family": "draft_status",
+    "split": "heldout",
+    "assessment_date": "2020-03-21",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "GN 321 of 20 March 2020 itself enacted the proposed removal of the individual SCUBA-diving permit requirement on its publication date.",
+    "evidence_ids": [
+      "DRF:p1",
+      "DRF:p8"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "DRF:p1"
+    ],
+    "gold_basis_zh": "2020公告首页明示草案及60天公众意见期；草案内拟议生效条款不使草案本身成为正式修法。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "AMA07",
+    "mpa_id": "AMA",
+    "mpa": "Amathole (2011 inshore instrument)",
+    "family": "effective_date",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "GN R.4786 states that its amendments take effect on publication in the Gazette, which occurred on 3 May 2024.",
+    "evidence_ids": [
+      "AMD:p1",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "AMD:p1",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "公告日期与第15条共同给出生效日。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "AMA08",
+    "mpa_id": "AMA",
+    "mpa": "Amathole (2011 inshore instrument)",
+    "family": "missing_permit_content",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A business advertises tours in the MPA. No permit, permit registry entry or individual authorisation is supplied.",
+    "claim": "The named diving business has been issued the permit required by the 2024 amended provision.",
+    "evidence_ids": [
+      "AMA:p3",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_basis_zh": "法规规定应当持证，但不能证明具体经营者已经获证。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "DWE01",
+    "mpa_id": "DWE",
+    "mpa": "Dwesa-Cwebe",
+    "family": "speed_threshold",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A motorised vessel travels at 10 knots, 200 metres from the high-water mark, outside an estuary. There is no emergency and it is neither launching nor approaching a launch site.",
+    "claim": "After GN R.4786 takes effect, the new regulation 10(6) prohibits the described 10-knot operation.",
+    "evidence_ids": [
+      "DWE:p8",
+      "DWE:p9",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "AMD:p9"
+    ],
+    "gold_basis_zh": "第10(6)在500米内超过8节且无例外时禁止。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "DWE02",
+    "mpa_id": "DWE",
+    "mpa": "Dwesa-Cwebe",
+    "family": "estuary_exception",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A motorised vessel travels at 10 knots within 200 metres of the high-water mark inside an estuary.",
+    "claim": "The 8-knot restriction introduced by the new regulation 10(6) applies to the described estuary operation without an estuary exception.",
+    "evidence_ids": [
+      "DWE:p8",
+      "DWE:p9",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "AMD:p9"
+    ],
+    "gold_basis_zh": "第10(6)以Except in an estuary开头；不代表其他航行法完全允许。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "DWE03",
+    "mpa_id": "DWE",
+    "mpa": "Dwesa-Cwebe",
+    "family": "emergency_exception",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "Outside an estuary, a motorised vessel is within 500 metres of the high-water mark, and exceeding 8 knots is necessary in an emergency.",
+    "claim": "The new regulation 10(6) prohibits exceeding 8 knots in this stipulated emergency, with no emergency exception.",
+    "evidence_ids": [
+      "DWE:p8",
+      "DWE:p9",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "AMD:p9"
+    ],
+    "gold_basis_zh": "第10(6)保留必要紧急情形例外。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "DWE04",
+    "mpa_id": "DWE",
+    "mpa": "Dwesa-Cwebe",
+    "family": "unknown_distance",
+    "split": "pilot",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "A boat is in the MPA, but its distance from the high-water mark and whether it is in an estuary are unknown.",
+    "claim": "The boat is within the spatial reach of the 500-metre limit in the new regulation 10(6).",
+    "evidence_ids": [
+      "DWE:p8",
+      "DWE:p9",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "AMD:p9"
+    ],
+    "gold_basis_zh": "船位距离未知，无法套用500米阈值。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "DWE05",
+    "mpa_id": "DWE",
+    "mpa": "Dwesa-Cwebe",
+    "family": "alpha_flag",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Regulation 8(3) requires a vessel that has deployed divers in the MPA to display an alpha flag.",
+    "evidence_ids": [
+      "DWE:p7"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "DWE:p7"
+    ],
+    "gold_basis_zh": "第8(3)明文潜水旗要求。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "DWE06",
+    "mpa_id": "DWE",
+    "mpa": "Dwesa-Cwebe",
+    "family": "draft_status",
+    "split": "heldout",
+    "assessment_date": "2020-03-21",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "The draft text in GN 321 of 20 March 2020, without any final enactment, is sufficient evidence that its proposed vessel-speed amendment became legally operative on that date.",
+    "evidence_ids": [
+      "DRF:p1",
+      "DRF:p7",
+      "DRF:p8"
+    ],
+    "gold_label": "CONTRADICTED",
+    "gold_required_evidence": [
+      "DRF:p1"
+    ],
+    "gold_basis_zh": "征求意见草案不等于正式生效法规。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "DWE07",
+    "mpa_id": "DWE",
+    "mpa": "Dwesa-Cwebe",
+    "family": "permit_requirement",
+    "split": "heldout",
+    "assessment_date": "2024-01-31",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "Under regulation 11(1), scientific research in the MPA requires a scientific research permit issued by the Minister.",
+    "evidence_ids": [
+      "DWE:p9"
+    ],
+    "gold_label": "SUPPORTED",
+    "gold_required_evidence": [
+      "DWE:p9"
+    ],
+    "gold_basis_zh": "第11(1)明文部长科研许可。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  },
+  {
+    "case_id": "DWE08",
+    "mpa_id": "DWE",
+    "mpa": "Dwesa-Cwebe",
+    "family": "law_to_outcome_gap",
+    "split": "heldout",
+    "assessment_date": "2024-05-04",
+    "scope": "Evaluate only what the supplied instruments establish about the stated rule and facts. This is not a determination of compliance with all South African law. No unprovided permit, internal rule, exemption, customary right, case judgment, observation of actual activity, or ecological measurement may be assumed. The hypothetical facts in the case are stipulated; the claim is what must be assessed. A draft is evidence of a proposal, not evidence that its amendments entered into force. For historical cases, later material is supplied for comparison and must not be applied retroactively.",
+    "facts": "",
+    "claim": "These vessel restrictions establish that the number of marine mammal collisions actually declined after 3 May 2024.",
+    "evidence_ids": [
+      "DWE:p8",
+      "DWE:p9",
+      "AMD:p1",
+      "AMD:p9",
+      "AMD:p10"
+    ],
+    "gold_label": "INSUFFICIENT",
+    "gold_required_evidence": [
+      "AMD:p9"
+    ],
+    "gold_basis_zh": "无碰撞观测；法律修订本身不证明管理成效。",
+    "case_origin": "researcher_constructed_document_entailment_scenario"
+  }
+]

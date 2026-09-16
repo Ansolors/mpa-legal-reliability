@@ -1,0 +1,2612 @@
+{
+  "created_utc": "2026-09-16T07:28:36.883219+00:00",
+  "scope": "Descriptive results for the fixed constructed benchmark.",
+  "case_hash": "caa1599c3162edab738bd3ed6a70bab14dee4b9cd6d3650321984a0ac084ad44",
+  "rationale_rubric": {
+    "unit": "one complete model response checked against the supplied legal pages and stipulated facts",
+    "rationale_status": {
+      "consistent": "No definite substantive error identified; does not certify completeness or full legal correctness.",
+      "substantive_error": "A definite legal, factual, temporal, quantitative or scope error is present.",
+      "indeterminate": "The terse or ambiguous explanation cannot be confidently classified."
+    },
+    "alignment": {
+      "aligned": "The stated substantive explanation supports the returned label, even if the explanation misreads the law.",
+      "misaligned": "The substantive explanation supports a different label under the task conventions.",
+      "indeterminate": "The explanation is incomplete, internally inconsistent, or does not resolve the label."
+    },
+    "classification_phrase_policy": "Generic phrases such as \"the claim is supported\" are not independently counted as legal errors; assess the accompanying substantive proposition."
+  },
+  "splits": {
+    "pilot": {
+      "groups": [
+        {
+          "model": "Qwen3-4B-Instruct-2507-4bit",
+          "method": "direct",
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 25.0,
+          "accuracy": 0.6944444444444444,
+          "macro_f1": 0.6437932437932438,
+          "f1": {
+            "SUPPORTED": 0.46153846153846156,
+            "CONTRADICTED": 0.7555555555555555,
+            "INSUFFICIENT": 0.7142857142857143
+          },
+          "recall": {
+            "SUPPORTED": 0.3333333333333333,
+            "CONTRADICTED": 0.9444444444444444,
+            "INSUFFICIENT": 0.5555555555555556
+          },
+          "unsupported_decisions": 4,
+          "over_abstentions": 0,
+          "strict_json_label": 36,
+          "exact_schema_after_wrapper": 36,
+          "valid_citation_ids": 22,
+          "joint_consistent": 22,
+          "joint_consistent_aligned": 22,
+          "correct_with_substantive_error": 3,
+          "correct_with_indeterminate_reason": 0,
+          "word_limit_exceeded": 0,
+          "length_stops": 0,
+          "rationale_counts": {
+            "substantive_error": 10,
+            "consistent": 25,
+            "indeterminate": 1
+          },
+          "alignment_counts": {
+            "indeterminate": 3,
+            "aligned": 28,
+            "misaligned": 5
+          },
+          "error_type_counts": {
+            "permit_conjunction": 3,
+            "temporal_validity": 5,
+            "actor_scope": 4,
+            "cross_reference": 1,
+            "invented_individual_fact": 2,
+            "claim_scope": 1
+          },
+          "mean_required_page_recall": 0.4861111111111111,
+          "median_seconds": 6.96070370846428,
+          "prompt_tokens_range": [
+            844,
+            2487
+          ],
+          "generation_tokens_range": [
+            51,
+            113
+          ],
+          "confusion_matrix": {
+            "SUPPORTED": {
+              "SUPPORTED": 3,
+              "CONTRADICTED": 6,
+              "INSUFFICIENT": 0
+            },
+            "CONTRADICTED": {
+              "SUPPORTED": 1,
+              "CONTRADICTED": 17,
+              "INSUFFICIENT": 0
+            },
+            "INSUFFICIENT": {
+              "SUPPORTED": 0,
+              "CONTRADICTED": 4,
+              "INSUFFICIENT": 5
+            }
+          }
+        },
+        {
+          "model": "Qwen3-4B-Instruct-2507-4bit",
+          "method": "structured",
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 25.0,
+          "accuracy": 0.6944444444444444,
+          "macro_f1": 0.6437932437932438,
+          "f1": {
+            "SUPPORTED": 0.46153846153846156,
+            "CONTRADICTED": 0.7555555555555555,
+            "INSUFFICIENT": 0.7142857142857143
+          },
+          "recall": {
+            "SUPPORTED": 0.3333333333333333,
+            "CONTRADICTED": 0.9444444444444444,
+            "INSUFFICIENT": 0.5555555555555556
+          },
+          "unsupported_decisions": 4,
+          "over_abstentions": 0,
+          "strict_json_label": 36,
+          "exact_schema_after_wrapper": 36,
+          "valid_citation_ids": 26,
+          "joint_consistent": 19,
+          "joint_consistent_aligned": 19,
+          "correct_with_substantive_error": 6,
+          "correct_with_indeterminate_reason": 0,
+          "word_limit_exceeded": 0,
+          "length_stops": 0,
+          "rationale_counts": {
+            "substantive_error": 14,
+            "consistent": 22
+          },
+          "alignment_counts": {
+            "indeterminate": 4,
+            "aligned": 28,
+            "misaligned": 4
+          },
+          "error_type_counts": {
+            "permit_conjunction": 3,
+            "cross_reference": 4,
+            "activity_scope": 1,
+            "exception_scope": 1,
+            "temporal_validity": 3,
+            "zone_scope": 1,
+            "actor_scope": 4,
+            "invented_individual_fact": 3
+          },
+          "mean_required_page_recall": 0.5833333333333334,
+          "median_seconds": 7.579065395984799,
+          "prompt_tokens_range": [
+            1010,
+            2653
+          ],
+          "generation_tokens_range": [
+            50,
+            114
+          ],
+          "confusion_matrix": {
+            "SUPPORTED": {
+              "SUPPORTED": 3,
+              "CONTRADICTED": 6,
+              "INSUFFICIENT": 0
+            },
+            "CONTRADICTED": {
+              "SUPPORTED": 1,
+              "CONTRADICTED": 17,
+              "INSUFFICIENT": 0
+            },
+            "INSUFFICIENT": {
+              "SUPPORTED": 0,
+              "CONTRADICTED": 4,
+              "INSUFFICIENT": 5
+            }
+          }
+        },
+        {
+          "model": "Phi-4-mini-instruct-4bit",
+          "method": "direct",
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 21.0,
+          "accuracy": 0.5833333333333334,
+          "macro_f1": 0.5115995115995116,
+          "f1": {
+            "SUPPORTED": 0.15384615384615385,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.7142857142857143
+          },
+          "recall": {
+            "SUPPORTED": 0.1111111111111111,
+            "CONTRADICTED": 0.8333333333333334,
+            "INSUFFICIENT": 0.5555555555555556
+          },
+          "unsupported_decisions": 4,
+          "over_abstentions": 0,
+          "strict_json_label": 0,
+          "exact_schema_after_wrapper": 36,
+          "valid_citation_ids": 24,
+          "joint_consistent": 15,
+          "joint_consistent_aligned": 15,
+          "correct_with_substantive_error": 5,
+          "correct_with_indeterminate_reason": 1,
+          "word_limit_exceeded": 0,
+          "length_stops": 0,
+          "rationale_counts": {
+            "substantive_error": 16,
+            "indeterminate": 2,
+            "consistent": 18
+          },
+          "alignment_counts": {
+            "aligned": 25,
+            "misaligned": 10,
+            "indeterminate": 1
+          },
+          "error_type_counts": {
+            "permit_conjunction": 1,
+            "quantity_or_time": 1,
+            "invented_individual_fact": 4,
+            "activity_scope": 1,
+            "exception_scope": 1,
+            "temporal_validity": 4,
+            "actor_scope": 6,
+            "cross_reference": 1,
+            "claim_scope": 1
+          },
+          "mean_required_page_recall": 0.4722222222222222,
+          "median_seconds": 4.329477978986688,
+          "prompt_tokens_range": [
+            800,
+            2314
+          ],
+          "generation_tokens_range": [
+            51,
+            105
+          ],
+          "confusion_matrix": {
+            "SUPPORTED": {
+              "SUPPORTED": 1,
+              "CONTRADICTED": 8,
+              "INSUFFICIENT": 0
+            },
+            "CONTRADICTED": {
+              "SUPPORTED": 3,
+              "CONTRADICTED": 15,
+              "INSUFFICIENT": 0
+            },
+            "INSUFFICIENT": {
+              "SUPPORTED": 0,
+              "CONTRADICTED": 4,
+              "INSUFFICIENT": 5
+            }
+          }
+        },
+        {
+          "model": "Phi-4-mini-instruct-4bit",
+          "method": "structured",
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 23.0,
+          "accuracy": 0.6388888888888888,
+          "macro_f1": 0.5655398659249751,
+          "f1": {
+            "SUPPORTED": 0.3333333333333333,
+            "CONTRADICTED": 0.7317073170731707,
+            "INSUFFICIENT": 0.631578947368421
+          },
+          "recall": {
+            "SUPPORTED": 0.2222222222222222,
+            "CONTRADICTED": 0.8333333333333334,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "unsupported_decisions": 3,
+          "over_abstentions": 4,
+          "strict_json_label": 0,
+          "exact_schema_after_wrapper": 36,
+          "valid_citation_ids": 27,
+          "joint_consistent": 11,
+          "joint_consistent_aligned": 10,
+          "correct_with_substantive_error": 9,
+          "correct_with_indeterminate_reason": 3,
+          "word_limit_exceeded": 0,
+          "length_stops": 0,
+          "rationale_counts": {
+            "substantive_error": 17,
+            "consistent": 16,
+            "indeterminate": 3
+          },
+          "alignment_counts": {
+            "aligned": 19,
+            "indeterminate": 7,
+            "misaligned": 10
+          },
+          "error_type_counts": {
+            "invented_stipulated_fact": 1,
+            "permit_conjunction": 1,
+            "quantity_or_time": 2,
+            "activity_scope": 1,
+            "zone_scope": 1,
+            "claim_scope": 1,
+            "actor_scope": 9,
+            "cross_reference": 2,
+            "temporal_validity": 5,
+            "invented_individual_fact": 2
+          },
+          "mean_required_page_recall": 0.6342592592592593,
+          "median_seconds": 4.651576646021567,
+          "prompt_tokens_range": [
+            967,
+            2481
+          ],
+          "generation_tokens_range": [
+            46,
+            133
+          ],
+          "confusion_matrix": {
+            "SUPPORTED": {
+              "SUPPORTED": 2,
+              "CONTRADICTED": 5,
+              "INSUFFICIENT": 2
+            },
+            "CONTRADICTED": {
+              "SUPPORTED": 1,
+              "CONTRADICTED": 15,
+              "INSUFFICIENT": 2
+            },
+            "INSUFFICIENT": {
+              "SUPPORTED": 0,
+              "CONTRADICTED": 3,
+              "INSUFFICIENT": 6
+            }
+          }
+        }
+      ],
+      "paired": [
+        {
+          "model": "Qwen3-4B-Instruct-2507-4bit",
+          "improved": [],
+          "worsened": [],
+          "both_correct": 25,
+          "both_incorrect": 11,
+          "label_disagreements": []
+        },
+        {
+          "model": "Phi-4-mini-instruct-4bit",
+          "improved": [
+            "TSI02",
+            "PEC04",
+            "UTH01",
+            "DWE01"
+          ],
+          "worsened": [
+            "UTH02",
+            "TMN02"
+          ],
+          "both_correct": 19,
+          "both_incorrect": 11,
+          "label_disagreements": [
+            "ADD01",
+            "ADD02",
+            "TSI02",
+            "PEC02",
+            "PEC04",
+            "UTH01",
+            "UTH02",
+            "TMN02",
+            "DWE01"
+          ]
+        }
+      ]
+    },
+    "heldout": {
+      "groups": [
+        {
+          "model": "Qwen3-4B-Instruct-2507-4bit",
+          "method": "direct",
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 30.0,
+          "accuracy": 0.8333333333333334,
+          "macro_f1": 0.8196969696969697,
+          "f1": {
+            "SUPPORTED": 0.9090909090909091,
+            "CONTRADICTED": 0.75,
+            "INSUFFICIENT": 0.8
+          },
+          "recall": {
+            "SUPPORTED": 0.8333333333333334,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "unsupported_decisions": 3,
+          "over_abstentions": 0,
+          "strict_json_label": 36,
+          "exact_schema_after_wrapper": 36,
+          "valid_citation_ids": 24,
+          "joint_consistent": 24,
+          "joint_consistent_aligned": 24,
+          "correct_with_substantive_error": 6,
+          "correct_with_indeterminate_reason": 0,
+          "word_limit_exceeded": 0,
+          "length_stops": 0,
+          "rationale_counts": {
+            "consistent": 26,
+            "substantive_error": 10
+          },
+          "alignment_counts": {
+            "misaligned": 3,
+            "indeterminate": 2,
+            "aligned": 31
+          },
+          "error_type_counts": {
+            "zone_scope": 1,
+            "cross_reference": 3,
+            "actor_scope": 8,
+            "source_content": 1,
+            "invented_individual_fact": 1
+          },
+          "mean_required_page_recall": 0.5972222222222222,
+          "median_seconds": 5.538956374977715,
+          "prompt_tokens_range": [
+            790,
+            2483
+          ],
+          "generation_tokens_range": [
+            47,
+            97
+          ],
+          "confusion_matrix": {
+            "SUPPORTED": {
+              "SUPPORTED": 15,
+              "CONTRADICTED": 3,
+              "INSUFFICIENT": 0
+            },
+            "CONTRADICTED": {
+              "SUPPORTED": 0,
+              "CONTRADICTED": 9,
+              "INSUFFICIENT": 0
+            },
+            "INSUFFICIENT": {
+              "SUPPORTED": 0,
+              "CONTRADICTED": 3,
+              "INSUFFICIENT": 6
+            }
+          }
+        },
+        {
+          "model": "Qwen3-4B-Instruct-2507-4bit",
+          "method": "structured",
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 26.0,
+          "accuracy": 0.7222222222222222,
+          "macro_f1": 0.6989838118870377,
+          "f1": {
+            "SUPPORTED": 0.8387096774193549,
+            "CONTRADICTED": 0.6428571428571429,
+            "INSUFFICIENT": 0.6153846153846154
+          },
+          "recall": {
+            "SUPPORTED": 0.7222222222222222,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.4444444444444444
+          },
+          "unsupported_decisions": 5,
+          "over_abstentions": 0,
+          "strict_json_label": 36,
+          "exact_schema_after_wrapper": 36,
+          "valid_citation_ids": 26,
+          "joint_consistent": 19,
+          "joint_consistent_aligned": 19,
+          "correct_with_substantive_error": 6,
+          "correct_with_indeterminate_reason": 1,
+          "word_limit_exceeded": 0,
+          "length_stops": 0,
+          "rationale_counts": {
+            "consistent": 23,
+            "substantive_error": 12,
+            "indeterminate": 1
+          },
+          "alignment_counts": {
+            "misaligned": 5,
+            "aligned": 29,
+            "indeterminate": 2
+          },
+          "error_type_counts": {
+            "zone_scope": 1,
+            "cross_reference": 4,
+            "actor_scope": 10,
+            "source_content": 2,
+            "invented_individual_fact": 2
+          },
+          "mean_required_page_recall": 0.6527777777777778,
+          "median_seconds": 5.91900854150299,
+          "prompt_tokens_range": [
+            956,
+            2649
+          ],
+          "generation_tokens_range": [
+            45,
+            112
+          ],
+          "confusion_matrix": {
+            "SUPPORTED": {
+              "SUPPORTED": 13,
+              "CONTRADICTED": 5,
+              "INSUFFICIENT": 0
+            },
+            "CONTRADICTED": {
+              "SUPPORTED": 0,
+              "CONTRADICTED": 9,
+              "INSUFFICIENT": 0
+            },
+            "INSUFFICIENT": {
+              "SUPPORTED": 0,
+              "CONTRADICTED": 5,
+              "INSUFFICIENT": 4
+            }
+          }
+        },
+        {
+          "model": "Phi-4-mini-instruct-4bit",
+          "method": "direct",
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 16.0,
+          "accuracy": 0.4444444444444444,
+          "macro_f1": 0.40966286799620133,
+          "f1": {
+            "SUPPORTED": 0.625,
+            "CONTRADICTED": 0.2962962962962963,
+            "INSUFFICIENT": 0.3076923076923077
+          },
+          "recall": {
+            "SUPPORTED": 0.5555555555555556,
+            "CONTRADICTED": 0.4444444444444444,
+            "INSUFFICIENT": 0.2222222222222222
+          },
+          "unsupported_decisions": 7,
+          "over_abstentions": 2,
+          "strict_json_label": 0,
+          "exact_schema_after_wrapper": 36,
+          "valid_citation_ids": 23,
+          "joint_consistent": 16,
+          "joint_consistent_aligned": 14,
+          "correct_with_substantive_error": 0,
+          "correct_with_indeterminate_reason": 0,
+          "word_limit_exceeded": 0,
+          "length_stops": 0,
+          "rationale_counts": {
+            "consistent": 26,
+            "substantive_error": 7,
+            "indeterminate": 3
+          },
+          "alignment_counts": {
+            "misaligned": 6,
+            "indeterminate": 12,
+            "aligned": 18
+          },
+          "error_type_counts": {
+            "invented_individual_fact": 1,
+            "claim_scope": 2,
+            "exception_scope": 1,
+            "cross_reference": 1,
+            "actor_scope": 4,
+            "temporal_validity": 1,
+            "source_content": 1
+          },
+          "mean_required_page_recall": 0.5416666666666666,
+          "median_seconds": 3.6319712708937004,
+          "prompt_tokens_range": [
+            727,
+            2309
+          ],
+          "generation_tokens_range": [
+            41,
+            146
+          ],
+          "confusion_matrix": {
+            "SUPPORTED": {
+              "SUPPORTED": 10,
+              "CONTRADICTED": 7,
+              "INSUFFICIENT": 1
+            },
+            "CONTRADICTED": {
+              "SUPPORTED": 4,
+              "CONTRADICTED": 4,
+              "INSUFFICIENT": 1
+            },
+            "INSUFFICIENT": {
+              "SUPPORTED": 0,
+              "CONTRADICTED": 7,
+              "INSUFFICIENT": 2
+            }
+          }
+        },
+        {
+          "model": "Phi-4-mini-instruct-4bit",
+          "method": "structured",
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 18.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.4868388316664179,
+          "f1": {
+            "SUPPORTED": 0.6206896551724138,
+            "CONTRADICTED": 0.36363636363636365,
+            "INSUFFICIENT": 0.47619047619047616
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.4444444444444444,
+            "INSUFFICIENT": 0.5555555555555556
+          },
+          "unsupported_decisions": 4,
+          "over_abstentions": 7,
+          "strict_json_label": 0,
+          "exact_schema_after_wrapper": 35,
+          "valid_citation_ids": 21,
+          "joint_consistent": 14,
+          "joint_consistent_aligned": 11,
+          "correct_with_substantive_error": 4,
+          "correct_with_indeterminate_reason": 0,
+          "word_limit_exceeded": 0,
+          "length_stops": 0,
+          "rationale_counts": {
+            "consistent": 25,
+            "substantive_error": 10,
+            "indeterminate": 1
+          },
+          "alignment_counts": {
+            "misaligned": 8,
+            "indeterminate": 10,
+            "aligned": 18
+          },
+          "error_type_counts": {
+            "claim_scope": 1,
+            "activity_scope": 3,
+            "cross_reference": 2,
+            "exception_scope": 1,
+            "source_content": 2,
+            "temporal_validity": 3,
+            "actor_scope": 3
+          },
+          "mean_required_page_recall": 0.5555555555555556,
+          "median_seconds": 4.034168562153354,
+          "prompt_tokens_range": [
+            894,
+            2476
+          ],
+          "generation_tokens_range": [
+            41,
+            144
+          ],
+          "confusion_matrix": {
+            "SUPPORTED": {
+              "SUPPORTED": 9,
+              "CONTRADICTED": 5,
+              "INSUFFICIENT": 4
+            },
+            "CONTRADICTED": {
+              "SUPPORTED": 2,
+              "CONTRADICTED": 4,
+              "INSUFFICIENT": 3
+            },
+            "INSUFFICIENT": {
+              "SUPPORTED": 0,
+              "CONTRADICTED": 4,
+              "INSUFFICIENT": 5
+            }
+          }
+        }
+      ],
+      "paired": [
+        {
+          "model": "Qwen3-4B-Instruct-2507-4bit",
+          "improved": [],
+          "worsened": [
+            "TSI06",
+            "UTH08",
+            "PON08",
+            "AMA05"
+          ],
+          "both_correct": 26,
+          "both_incorrect": 6,
+          "label_disagreements": [
+            "TSI06",
+            "UTH08",
+            "PON08",
+            "AMA05"
+          ]
+        },
+        {
+          "model": "Phi-4-mini-instruct-4bit",
+          "improved": [
+            "ADD08",
+            "TSI08",
+            "TMN05",
+            "TMN08",
+            "AMA06"
+          ],
+          "worsened": [
+            "TSI05",
+            "UTH07",
+            "DWE07"
+          ],
+          "both_correct": 13,
+          "both_incorrect": 15,
+          "label_disagreements": [
+            "ADD08",
+            "TSI05",
+            "TSI08",
+            "PEC07",
+            "UTH07",
+            "TMN05",
+            "TMN06",
+            "TMN08",
+            "AMA06",
+            "DWE05",
+            "DWE07"
+          ]
+        }
+      ]
+    }
+  },
+  "shared_question_weights": {
+    "ADD05": 1.0,
+    "ADD06": 1.0,
+    "ADD07": 1.0,
+    "ADD08": 1.0,
+    "TSI05": 1.0,
+    "TSI06": 1.0,
+    "TSI07": 1.0,
+    "TSI08": 1.0,
+    "PEC05": 1.0,
+    "PEC06": 1.0,
+    "PEC07": 1.0,
+    "PEC08": 1.0,
+    "UTH05": 1.0,
+    "UTH06": 1.0,
+    "UTH07": 1.0,
+    "UTH08": 1.0,
+    "TMN05": 1.0,
+    "TMN06": 0.2,
+    "TMN07": 0.25,
+    "TMN08": 1.0,
+    "STI05": 1.0,
+    "STI06": 0.2,
+    "STI07": 0.25,
+    "STI08": 1.0,
+    "PON05": 1.0,
+    "PON06": 0.2,
+    "PON07": 0.25,
+    "PON08": 1.0,
+    "AMA05": 1.0,
+    "AMA06": 0.2,
+    "AMA07": 0.25,
+    "AMA08": 1.0,
+    "DWE05": 1.0,
+    "DWE06": 0.2,
+    "DWE07": 1.0,
+    "DWE08": 1.0
+  },
+  "sensitivity": [
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "analysis": "all_heldout",
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 30.0,
+          "accuracy": 0.8333333333333334,
+          "macro_f1": 0.8196969696969697,
+          "f1": {
+            "SUPPORTED": 0.9090909090909091,
+            "CONTRADICTED": 0.75,
+            "INSUFFICIENT": 0.8
+          },
+          "recall": {
+            "SUPPORTED": 0.8333333333333334,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.6666666666666666
+          }
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 26.0,
+          "accuracy": 0.7222222222222222,
+          "macro_f1": 0.6989838118870377,
+          "f1": {
+            "SUPPORTED": 0.8387096774193549,
+            "CONTRADICTED": 0.6428571428571429,
+            "INSUFFICIENT": 0.6153846153846154
+          },
+          "recall": {
+            "SUPPORTED": 0.7222222222222222,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.4444444444444444
+          }
+        }
+      },
+      "accuracy_difference": -0.11111111111111116,
+      "macro_f1_difference": -0.12071315780993197
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "analysis": "shared_draft_and_commencement_equal_group_weight",
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 29.0,
+          "correct": 23.0,
+          "accuracy": 0.7931034482758621,
+          "macro_f1": 0.7712962962962963,
+          "f1": {
+            "SUPPORTED": 0.8888888888888888,
+            "CONTRADICTED": 0.625,
+            "INSUFFICIENT": 0.8
+          },
+          "recall": {
+            "SUPPORTED": 0.8,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.6666666666666666
+          }
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 29.0,
+          "correct": 19.0,
+          "accuracy": 0.6551724137931034,
+          "macro_f1": 0.6384615384615385,
+          "f1": {
+            "SUPPORTED": 0.8,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.6153846153846154
+          },
+          "recall": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.4444444444444444
+          }
+        }
+      },
+      "accuracy_difference": -0.13793103448275867,
+      "macro_f1_difference": -0.13283475783475773
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "analysis": "exclude_shared_amendment_or_draft_inputs",
+      "groups": {
+        "direct": {
+          "n": 18,
+          "total_weight": 18.0,
+          "correct": 17.0,
+          "accuracy": 0.9444444444444444,
+          "macro_f1": 0.9454191033138402,
+          "f1": {
+            "SUPPORTED": 0.9473684210526315,
+            "CONTRADICTED": 0.8888888888888888,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 0.9,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        },
+        "structured": {
+          "n": 18,
+          "total_weight": 18.0,
+          "correct": 15.0,
+          "accuracy": 0.8333333333333334,
+          "macro_f1": 0.8244348244348244,
+          "f1": {
+            "SUPPORTED": 0.8888888888888888,
+            "CONTRADICTED": 0.7272727272727273,
+            "INSUFFICIENT": 0.8571428571428571
+          },
+          "recall": {
+            "SUPPORTED": 0.8,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.75
+          }
+        }
+      },
+      "accuracy_difference": -0.11111111111111105,
+      "macro_f1_difference": -0.12098427887901575
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "analysis": "exclude_four_outcome_wording_cases",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 26.0,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7435064935064934,
+          "f1": {
+            "SUPPORTED": 0.9090909090909091,
+            "CONTRADICTED": 0.75,
+            "INSUFFICIENT": 0.5714285714285714
+          },
+          "recall": {
+            "SUPPORTED": 0.8333333333333334,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.4
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 23.0,
+          "accuracy": 0.71875,
+          "macro_f1": 0.6129032258064516,
+          "f1": {
+            "SUPPORTED": 0.8387096774193549,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.3333333333333333
+          },
+          "recall": {
+            "SUPPORTED": 0.7222222222222222,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.2
+          }
+        }
+      },
+      "accuracy_difference": -0.09375,
+      "macro_f1_difference": -0.13060326770004183
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "analysis": "all_heldout",
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 16.0,
+          "accuracy": 0.4444444444444444,
+          "macro_f1": 0.40966286799620133,
+          "f1": {
+            "SUPPORTED": 0.625,
+            "CONTRADICTED": 0.2962962962962963,
+            "INSUFFICIENT": 0.3076923076923077
+          },
+          "recall": {
+            "SUPPORTED": 0.5555555555555556,
+            "CONTRADICTED": 0.4444444444444444,
+            "INSUFFICIENT": 0.2222222222222222
+          }
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 36.0,
+          "correct": 18.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.4868388316664179,
+          "f1": {
+            "SUPPORTED": 0.6206896551724138,
+            "CONTRADICTED": 0.36363636363636365,
+            "INSUFFICIENT": 0.47619047619047616
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.4444444444444444,
+            "INSUFFICIENT": 0.5555555555555556
+          }
+        }
+      },
+      "accuracy_difference": 0.05555555555555558,
+      "macro_f1_difference": 0.07717596367021656
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "analysis": "shared_draft_and_commencement_equal_group_weight",
+      "groups": {
+        "direct": {
+          "n": 36,
+          "total_weight": 29.0,
+          "correct": 13.0,
+          "accuracy": 0.4482758620689655,
+          "macro_f1": 0.4299100090449455,
+          "f1": {
+            "SUPPORTED": 0.6140350877192983,
+            "CONTRADICTED": 0.34782608695652173,
+            "INSUFFICIENT": 0.3278688524590164
+          },
+          "recall": {
+            "SUPPORTED": 0.4666666666666667,
+            "CONTRADICTED": 0.8,
+            "INSUFFICIENT": 0.2222222222222222
+          }
+        },
+        "structured": {
+          "n": 36,
+          "total_weight": 29.0,
+          "correct": 14.2,
+          "accuracy": 0.4896551724137931,
+          "macro_f1": 0.48276820144432975,
+          "f1": {
+            "SUPPORTED": 0.5607476635514019,
+            "CONTRADICTED": 0.372093023255814,
+            "INSUFFICIENT": 0.5154639175257733
+          },
+          "recall": {
+            "SUPPORTED": 0.4,
+            "CONTRADICTED": 0.64,
+            "INSUFFICIENT": 0.5555555555555556
+          }
+        }
+      },
+      "accuracy_difference": 0.04137931034482756,
+      "macro_f1_difference": 0.052858192399384274
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "analysis": "exclude_shared_amendment_or_draft_inputs",
+      "groups": {
+        "direct": {
+          "n": 18,
+          "total_weight": 18.0,
+          "correct": 10.0,
+          "accuracy": 0.5555555555555556,
+          "macro_f1": 0.5111111111111111,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.5333333333333333,
+            "INSUFFICIENT": 0.3333333333333333
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.25
+          }
+        },
+        "structured": {
+          "n": 18,
+          "total_weight": 18.0,
+          "correct": 9.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.5023310023310024,
+          "f1": {
+            "SUPPORTED": 0.46153846153846156,
+            "CONTRADICTED": 0.5454545454545454,
+            "INSUFFICIENT": 0.5
+          },
+          "recall": {
+            "SUPPORTED": 0.3,
+            "CONTRADICTED": 0.75,
+            "INSUFFICIENT": 0.75
+          }
+        }
+      },
+      "accuracy_difference": -0.05555555555555558,
+      "macro_f1_difference": -0.008780108780108709
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "analysis": "exclude_four_outcome_wording_cases",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.315,
+          "f1": {
+            "SUPPORTED": 0.625,
+            "CONTRADICTED": 0.32,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5555555555555556,
+            "CONTRADICTED": 0.4444444444444444,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.42911877394636017,
+          "f1": {
+            "SUPPORTED": 0.6206896551724138,
+            "CONTRADICTED": 0.38095238095238093,
+            "INSUFFICIENT": 0.2857142857142857
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.4444444444444444,
+            "INSUFFICIENT": 0.4
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.11411877394636016
+    }
+  ],
+  "leave_one_mpa_out": [
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "excluded_mpa": "ADD",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.8214896214896215,
+          "f1": {
+            "SUPPORTED": 0.9333333333333333,
+            "CONTRADICTED": 0.7619047619047619,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 0.875,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 23.0,
+          "accuracy": 0.71875,
+          "macro_f1": 0.6808658008658008,
+          "f1": {
+            "SUPPORTED": 0.8571428571428571,
+            "CONTRADICTED": 0.64,
+            "INSUFFICIENT": 0.5454545454545454
+          },
+          "recall": {
+            "SUPPORTED": 0.75,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.375
+          }
+        }
+      },
+      "accuracy_difference": -0.125,
+      "macro_f1_difference": -0.14062382062382062
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "excluded_mpa": "AMA",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.8385331143951833,
+          "f1": {
+            "SUPPORTED": 0.896551724137931,
+            "CONTRADICTED": 0.7619047619047619,
+            "INSUFFICIENT": 0.8571428571428571
+          },
+          "recall": {
+            "SUPPORTED": 0.8125,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.75
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 24.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7301587301587301,
+          "f1": {
+            "SUPPORTED": 0.8571428571428571,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 0.75,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": -0.09375,
+      "macro_f1_difference": -0.10837438423645318
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "excluded_mpa": "DWE",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 26.0,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7976850735471426,
+          "f1": {
+            "SUPPORTED": 0.896551724137931,
+            "CONTRADICTED": 0.7272727272727273,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 0.8125,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 22.0,
+          "accuracy": 0.6875,
+          "macro_f1": 0.6585513252179919,
+          "f1": {
+            "SUPPORTED": 0.8148148148148148,
+            "CONTRADICTED": 0.6153846153846154,
+            "INSUFFICIENT": 0.5454545454545454
+          },
+          "recall": {
+            "SUPPORTED": 0.6875,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.375
+          }
+        }
+      },
+      "accuracy_difference": -0.125,
+      "macro_f1_difference": -0.1391337483291507
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "excluded_mpa": "PEC",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 26.0,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7976850735471426,
+          "f1": {
+            "SUPPORTED": 0.896551724137931,
+            "CONTRADICTED": 0.7272727272727273,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 0.8125,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 22.0,
+          "accuracy": 0.6875,
+          "macro_f1": 0.6585513252179919,
+          "f1": {
+            "SUPPORTED": 0.8148148148148148,
+            "CONTRADICTED": 0.6153846153846154,
+            "INSUFFICIENT": 0.5454545454545454
+          },
+          "recall": {
+            "SUPPORTED": 0.6875,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.375
+          }
+        }
+      },
+      "accuracy_difference": -0.125,
+      "macro_f1_difference": -0.1391337483291507
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "excluded_mpa": "PON",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.8214896214896215,
+          "f1": {
+            "SUPPORTED": 0.9333333333333333,
+            "CONTRADICTED": 0.7619047619047619,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 0.875,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 24.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7301587301587301,
+          "f1": {
+            "SUPPORTED": 0.8571428571428571,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 0.75,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": -0.09375,
+      "macro_f1_difference": -0.09133089133089134
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "excluded_mpa": "STI",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 27.0,
+          "accuracy": 0.84375,
+          "macro_f1": 0.8385331143951833,
+          "f1": {
+            "SUPPORTED": 0.896551724137931,
+            "CONTRADICTED": 0.7619047619047619,
+            "INSUFFICIENT": 0.8571428571428571
+          },
+          "recall": {
+            "SUPPORTED": 0.8125,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.75
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 23.0,
+          "accuracy": 0.71875,
+          "macro_f1": 0.7071604938271605,
+          "f1": {
+            "SUPPORTED": 0.8148148148148148,
+            "CONTRADICTED": 0.64,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 0.6875,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": -0.125,
+      "macro_f1_difference": -0.1313726205680228
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "excluded_mpa": "TMN",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 28.0,
+          "accuracy": 0.875,
+          "macro_f1": 0.8634920634920635,
+          "f1": {
+            "SUPPORTED": 0.9333333333333333,
+            "CONTRADICTED": 0.8,
+            "INSUFFICIENT": 0.8571428571428571
+          },
+          "recall": {
+            "SUPPORTED": 0.875,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.75
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 24.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7301587301587301,
+          "f1": {
+            "SUPPORTED": 0.8571428571428571,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 0.75,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": -0.125,
+      "macro_f1_difference": -0.13333333333333341
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "excluded_mpa": "TSI",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 26.0,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7976850735471426,
+          "f1": {
+            "SUPPORTED": 0.896551724137931,
+            "CONTRADICTED": 0.7272727272727273,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 0.8125,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 23.0,
+          "accuracy": 0.71875,
+          "macro_f1": 0.6808658008658008,
+          "f1": {
+            "SUPPORTED": 0.8571428571428571,
+            "CONTRADICTED": 0.64,
+            "INSUFFICIENT": 0.5454545454545454
+          },
+          "recall": {
+            "SUPPORTED": 0.75,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.375
+          }
+        }
+      },
+      "accuracy_difference": -0.09375,
+      "macro_f1_difference": -0.11681927268134173
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "excluded_mpa": "UTH",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 26.0,
+          "accuracy": 0.8125,
+          "macro_f1": 0.7976850735471426,
+          "f1": {
+            "SUPPORTED": 0.896551724137931,
+            "CONTRADICTED": 0.7272727272727273,
+            "INSUFFICIENT": 0.7692307692307693
+          },
+          "recall": {
+            "SUPPORTED": 0.8125,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.625
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 23.0,
+          "accuracy": 0.71875,
+          "macro_f1": 0.7071604938271605,
+          "f1": {
+            "SUPPORTED": 0.8148148148148148,
+            "CONTRADICTED": 0.64,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 0.6875,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": -0.09375,
+      "macro_f1_difference": -0.09052457971998207
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "excluded_mpa": "ADD",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.4049641845743795,
+          "f1": {
+            "SUPPORTED": 0.6206896551724138,
+            "CONTRADICTED": 0.2608695652173913,
+            "INSUFFICIENT": 0.3333333333333333
+          },
+          "recall": {
+            "SUPPORTED": 0.5625,
+            "CONTRADICTED": 0.375,
+            "INSUFFICIENT": 0.25
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4507422402159244,
+          "f1": {
+            "SUPPORTED": 0.6153846153846154,
+            "CONTRADICTED": 0.3157894736842105,
+            "INSUFFICIENT": 0.42105263157894735
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.375,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.04577805564154491
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "excluded_mpa": "AMA",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4365079365079365,
+          "f1": {
+            "SUPPORTED": 0.6428571428571429,
+            "CONTRADICTED": 0.3333333333333333,
+            "INSUFFICIENT": 0.3333333333333333
+          },
+          "recall": {
+            "SUPPORTED": 0.5625,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.25
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 16.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.4829059829059829,
+          "f1": {
+            "SUPPORTED": 0.6153846153846154,
+            "CONTRADICTED": 0.3333333333333333,
+            "INSUFFICIENT": 0.5
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.375,
+            "INSUFFICIENT": 0.625
+          }
+        }
+      },
+      "accuracy_difference": 0.03125,
+      "macro_f1_difference": 0.0463980463980464
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "excluded_mpa": "DWE",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.3802298850574713,
+          "f1": {
+            "SUPPORTED": 0.6206896551724138,
+            "CONTRADICTED": 0.32,
+            "INSUFFICIENT": 0.2
+          },
+          "recall": {
+            "SUPPORTED": 0.5625,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.125
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 17.0,
+          "accuracy": 0.53125,
+          "macro_f1": 0.5124183006535947,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.4,
+            "INSUFFICIENT": 0.47058823529411764
+          },
+          "recall": {
+            "SUPPORTED": 0.5625,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": 0.09375,
+      "macro_f1_difference": 0.13218841559612343
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "excluded_mpa": "PEC",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.37222222222222223,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.25,
+            "INSUFFICIENT": 0.2
+          },
+          "recall": {
+            "SUPPORTED": 0.625,
+            "CONTRADICTED": 0.375,
+            "INSUFFICIENT": 0.125
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 16.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.4790849673202614,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.3,
+            "INSUFFICIENT": 0.47058823529411764
+          },
+          "recall": {
+            "SUPPORTED": 0.5625,
+            "CONTRADICTED": 0.375,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": 0.0625,
+      "macro_f1_difference": 0.10686274509803917
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "excluded_mpa": "PON",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.41530864197530865,
+          "f1": {
+            "SUPPORTED": 0.5925925925925926,
+            "CONTRADICTED": 0.32,
+            "INSUFFICIENT": 0.3333333333333333
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.25
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 16.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.49444444444444446,
+          "f1": {
+            "SUPPORTED": 0.5833333333333334,
+            "CONTRADICTED": 0.4,
+            "INSUFFICIENT": 0.5
+          },
+          "recall": {
+            "SUPPORTED": 0.4375,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.625
+          }
+        }
+      },
+      "accuracy_difference": 0.0625,
+      "macro_f1_difference": 0.07913580246913582
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "excluded_mpa": "STI",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4365079365079365,
+          "f1": {
+            "SUPPORTED": 0.6428571428571429,
+            "CONTRADICTED": 0.3333333333333333,
+            "INSUFFICIENT": 0.3333333333333333
+          },
+          "recall": {
+            "SUPPORTED": 0.5625,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.25
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 17.0,
+          "accuracy": 0.53125,
+          "macro_f1": 0.5203508771929825,
+          "f1": {
+            "SUPPORTED": 0.64,
+            "CONTRADICTED": 0.42105263157894735,
+            "INSUFFICIENT": 0.5
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.625
+          }
+        }
+      },
+      "accuracy_difference": 0.0625,
+      "macro_f1_difference": 0.08384294068504594
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "excluded_mpa": "TMN",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4365079365079365,
+          "f1": {
+            "SUPPORTED": 0.6428571428571429,
+            "CONTRADICTED": 0.3333333333333333,
+            "INSUFFICIENT": 0.3333333333333333
+          },
+          "recall": {
+            "SUPPORTED": 0.5625,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.25
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4617989417989418,
+          "f1": {
+            "SUPPORTED": 0.56,
+            "CONTRADICTED": 0.38095238095238093,
+            "INSUFFICIENT": 0.4444444444444444
+          },
+          "recall": {
+            "SUPPORTED": 0.4375,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": 0.0,
+      "macro_f1_difference": 0.02529100529100531
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "excluded_mpa": "TSI",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 13.0,
+          "accuracy": 0.40625,
+          "macro_f1": 0.3849206349206349,
+          "f1": {
+            "SUPPORTED": 0.5714285714285714,
+            "CONTRADICTED": 0.25,
+            "INSUFFICIENT": 0.3333333333333333
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.375,
+            "INSUFFICIENT": 0.25
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 15.0,
+          "accuracy": 0.46875,
+          "macro_f1": 0.4617989417989418,
+          "f1": {
+            "SUPPORTED": 0.56,
+            "CONTRADICTED": 0.38095238095238093,
+            "INSUFFICIENT": 0.4444444444444444
+          },
+          "recall": {
+            "SUPPORTED": 0.4375,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.5
+          }
+        }
+      },
+      "accuracy_difference": 0.0625,
+      "macro_f1_difference": 0.07687830687830693
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "excluded_mpa": "UTH",
+      "groups": {
+        "direct": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 14.0,
+          "accuracy": 0.4375,
+          "macro_f1": 0.4049641845743795,
+          "f1": {
+            "SUPPORTED": 0.6206896551724138,
+            "CONTRADICTED": 0.2608695652173913,
+            "INSUFFICIENT": 0.3333333333333333
+          },
+          "recall": {
+            "SUPPORTED": 0.5625,
+            "CONTRADICTED": 0.375,
+            "INSUFFICIENT": 0.25
+          }
+        },
+        "structured": {
+          "n": 32,
+          "total_weight": 32.0,
+          "correct": 17.0,
+          "accuracy": 0.53125,
+          "macro_f1": 0.5087719298245614,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.3333333333333333,
+            "INSUFFICIENT": 0.5263157894736842
+          },
+          "recall": {
+            "SUPPORTED": 0.5625,
+            "CONTRADICTED": 0.375,
+            "INSUFFICIENT": 0.625
+          }
+        }
+      },
+      "accuracy_difference": 0.09375,
+      "macro_f1_difference": 0.10380774525018194
+    }
+  ],
+  "by_mpa": [
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "mpa_id": "ADD",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7777777777777778,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7777777777777778,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "mpa_id": "AMA",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.5555555555555556,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.3888888888888889,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "mpa_id": "DWE",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 4.0,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 4.0,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "mpa_id": "PEC",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 4.0,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 4.0,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "mpa_id": "PON",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7777777777777778,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.3888888888888889,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "mpa_id": "STI",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.5555555555555556,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.5555555555555556,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "mpa_id": "TMN",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.3888888888888889,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.3888888888888889,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "mpa_id": "TSI",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 4.0,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7777777777777778,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Qwen3-4B-Instruct-2507-4bit",
+      "mpa_id": "UTH",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 4.0,
+          "accuracy": 1.0,
+          "macro_f1": 1.0,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.5555555555555556,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "mpa_id": "ADD",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.3888888888888889,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.7777777777777778,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 1.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "mpa_id": "AMA",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 1.0,
+          "accuracy": 0.25,
+          "macro_f1": 0.16666666666666666,
+          "f1": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.3888888888888889,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "mpa_id": "DWE",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.4444444444444444,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 1.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 1.0,
+          "accuracy": 0.25,
+          "macro_f1": 0.16666666666666666,
+          "f1": {
+            "SUPPORTED": 0.0,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.5
+          },
+          "recall": {
+            "SUPPORTED": 0.0,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 1.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "mpa_id": "PEC",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.4444444444444444,
+          "f1": {
+            "SUPPORTED": 0.0,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 0.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.5,
+          "f1": {
+            "SUPPORTED": 0.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.5
+          },
+          "recall": {
+            "SUPPORTED": 0.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 1.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "mpa_id": "PON",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.26666666666666666,
+          "f1": {
+            "SUPPORTED": 0.8,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.26666666666666666,
+          "f1": {
+            "SUPPORTED": 0.8,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "mpa_id": "STI",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 1.0,
+          "accuracy": 0.25,
+          "macro_f1": 0.16666666666666666,
+          "f1": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 1.0,
+          "accuracy": 0.25,
+          "macro_f1": 0.16666666666666666,
+          "f1": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "mpa_id": "TMN",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 1.0,
+          "accuracy": 0.25,
+          "macro_f1": 0.16666666666666666,
+          "f1": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.5555555555555556,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 1.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "mpa_id": "TSI",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.5555555555555556,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.6666666666666666,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 3.0,
+          "accuracy": 0.75,
+          "macro_f1": 0.5555555555555556,
+          "f1": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 0.6666666666666666
+          },
+          "recall": {
+            "SUPPORTED": 1.0,
+            "CONTRADICTED": 0.0,
+            "INSUFFICIENT": 1.0
+          }
+        }
+      }
+    },
+    {
+      "model": "Phi-4-mini-instruct-4bit",
+      "mpa_id": "UTH",
+      "groups": {
+        "direct": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 2.0,
+          "accuracy": 0.5,
+          "macro_f1": 0.3888888888888889,
+          "f1": {
+            "SUPPORTED": 0.6666666666666666,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.5,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        },
+        "structured": {
+          "n": 4,
+          "total_weight": 4.0,
+          "correct": 1.0,
+          "accuracy": 0.25,
+          "macro_f1": 0.16666666666666666,
+          "f1": {
+            "SUPPORTED": 0.0,
+            "CONTRADICTED": 0.5,
+            "INSUFFICIENT": 0.0
+          },
+          "recall": {
+            "SUPPORTED": 0.0,
+            "CONTRADICTED": 1.0,
+            "INSUFFICIENT": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "case_composition": {
+    "pilot": {
+      "CONTRADICTED": 18,
+      "SUPPORTED": 9,
+      "INSUFFICIENT": 9
+    },
+    "heldout": {
+      "SUPPORTED": 18,
+      "CONTRADICTED": 9,
+      "INSUFFICIENT": 9
+    }
+  },
+  "heldout_family_counts": {
+    "anchoring_exception": 1,
+    "zone_specific_rule": 1,
+    "scope_of_authority": 1,
+    "law_to_outcome_gap": 4,
+    "method_limit": 1,
+    "bait_rounding": 1,
+    "business_client_condition": 1,
+    "internal_rule_gap": 1,
+    "ministerial_discretion": 1,
+    "gear_stowage": 1,
+    "written_confirmation": 1,
+    "shore_exception": 1,
+    "night_fishing": 1,
+    "data_retention": 1,
+    "actor_scope": 4,
+    "draft_status": 5,
+    "effective_date": 4,
+    "missing_permit_content": 4,
+    "alpha_flag": 1,
+    "permit_requirement": 1
+  }
+}

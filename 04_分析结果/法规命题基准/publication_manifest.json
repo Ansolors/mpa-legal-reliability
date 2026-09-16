@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "exported_utc": "2026-09-16T07:28:17.895285+00:00",
+  "source_freeze_manifest_sha256": "29168e08d488118056f8a2a49ab365b3a286bdd110acb78b04a72f3d7f125b08",
+  "scope": "Publication export of the benchmark; claims, stipulated facts, reference labels, splits and source pages are unchanged.",
+  "files": {
+    "cases_v1.json": "caa1599c3162edab738bd3ed6a70bab14dee4b9cd6d3650321984a0ac084ad44",
+    "evidence_v1.json": "aed69cd2b4ae0290080777509ebc45f893676ae8023edde200cd943674a1a92f"
+  }
+}
